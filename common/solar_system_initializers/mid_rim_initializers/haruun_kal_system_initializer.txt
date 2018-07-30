@@ -1,0 +1,46 @@
+haruun_kal_system_initializer = {
+    name = "Al'Har"
+    class = "rl_standard_stars"
+    asteroids_distance = 100
+	flags={haruun_kal}
+
+    planet = {
+        class = "pc_g_star"
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Haruun Kal"
+        class = "pc_tropical"
+        orbit_distance = 49
+        orbit_angle = 87
+	size = 20
+        has_ring = no	
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     
+
+
+        moon = {
+       	 name = "Haruun Kal Moon Belt"
+       	 class = "pc_asteroid"
+       	 orbit_distance = 10
+       	 orbit_angle = 91
+      	 size = 2
+       	 has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Al'Har Asteroid Belt"
+        class = "pc_asteroid"
+        orbit_distance = 51
+        orbit_angle = 91
+        size = 8
+        has_ring = no
+
+    }
+}

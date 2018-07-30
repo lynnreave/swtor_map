@@ -1,0 +1,320 @@
+chandrila_system_initializer = {
+    name = "Chandrila"
+    class = "rl_standard_stars"
+	flags={chandrila}
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Expora"
+        class = "pc_molten"
+        orbit_distance = 24
+        orbit_angle = 139
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Chandrila"
+        class = "pc_continental"
+        orbit_distance = 44
+        orbit_angle = 43
+        size = 22
+        has_ring = no
+		#starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+        moon = {
+            name = "Chandra"
+            class = "pc_barren_cold"
+            orbit_distance = 8
+            orbit_angle = 135
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Chandrakant"
+            class = "pc_toxic"
+            orbit_distance = 3
+            orbit_angle = 88
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Lorora"
+        class = "pc_barren"
+        orbit_distance = 27
+        orbit_angle = -43
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Quenus"
+        class = "pc_gas_giant"
+        orbit_distance = 53
+        orbit_angle = 287
+        size = 23
+        has_ring = no
+
+
+        moon = {
+            name = "Quenus I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 37
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Quenus II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 179
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Quenus III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 265
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Asimuse"
+        class = "pc_gas_giant"
+        orbit_distance = 65
+        orbit_angle = 297
+        size = 25
+        has_ring = no
+
+        moon = {
+            name = "Asimuse I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 154
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Asimuse II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 309
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Asimuse III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 43
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Asimuse IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Asimuse V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 276
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Asimuse VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Asimuse VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 74
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Asimuse VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 165
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Asimuse IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 318
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Dolucar"
+        class = "pc_gas_giant"
+        orbit_distance = 86
+        orbit_angle = 66
+        size = 27
+        has_ring = no
+
+        moon = {
+            name = "Dolucar I"
+            class = random
+            orbit_distance = 11
+            orbit_angle = 243
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 26
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 276
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 98
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 156
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 127
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 204
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -74
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 183
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 89
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar XI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 261
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dolucar XII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 338
+            size = 6
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Sissubo"
+        class = "pc_frozen"
+        orbit_distance = 75
+        orbit_angle = 84
+        size = 17
+        has_ring = no
+
+    }
+}

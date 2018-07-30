@@ -1,0 +1,274 @@
+ossus_system_initializer = {
+    name = "Adega (Ossus)"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = none
+        orbit_distance = 0
+        size = 15
+    }
+
+    planet = {
+        name = "Adega Prime"
+        class = "pc_g_star"
+        orbit_distance = 12
+        orbit_angle = 308
+        size = 25
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Adega Besh"
+        class = "pc_k_star"
+        orbit_distance = 12
+        orbit_angle = 186
+        size = 15
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Kassa"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 102
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Tarassi"
+        class = "pc_barren"
+        orbit_distance = 20
+        orbit_angle = 218
+        size = 10
+        has_ring = no
+
+        moon = {
+            name = "Tarassi Minor"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 266
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Ossus"
+        class = "pc_gaia"
+        orbit_distance = 24
+        orbit_angle = 155
+        size = 20
+        has_ring = no
+     	
+
+        moon = {
+            name = "Mim"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 55
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Nerit"
+            class = "pc_continental"
+            orbit_distance = 10
+            orbit_angle = 137
+            size = 12
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Colsassa"
+        class = "pc_gas_giant"
+        orbit_distance = 45
+        orbit_angle = 194
+        size = 25
+        has_ring = no
+
+
+        moon = {
+            name = "Colsassa I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 61
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 191
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = -50
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 317
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa V"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 67
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa VI"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 268
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa VII"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 144
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa VIII"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 47
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 185
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 218
+            size = 9
+            has_ring = no
+
+        }
+        moon = {
+            name = "Colsassa XI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            size = 3
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Missarassa"
+        class = "pc_frozen"
+        orbit_distance = 40
+        orbit_angle = 204
+        size = 22
+        has_ring = no
+
+
+        moon = {
+            name = "Missarassa I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 60
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Missarassa II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 123
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Missarassa III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 94
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Missarassa IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 200
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Missarassa V"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 130
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Missarassa VI"
+            class = random
+            orbit_distance = 3
+            orbit_angle = -100
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Missarassa VII"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 202
+            size = 6
+            has_ring = no
+
+        }
+
+    }
+}

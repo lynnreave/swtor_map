@@ -1,0 +1,162 @@
+yavin_system_initializer = {
+    name = "Yavin"
+    class = "rl_standard_stars"
+    asteroids_distance = 50
+
+    planet = {
+        class = "pc_k_star"
+        orbit_distance = 0
+        size = 15
+    }
+
+    planet = {
+        name = "Fiddanl"
+        class = "pc_molten"
+        orbit_distance = 17
+        orbit_angle = 183
+        size = 6
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Stroiketcy"
+        class = "pc_frozen"
+        orbit_distance = 22
+        orbit_angle = 200
+        size = 5
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Yavin Prime"
+        class = "pc_gas_giant"
+        orbit_distance = 110
+        orbit_angle = -160
+        size = 35
+        has_ring = no
+
+        moon = {
+            name = "Yavin I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 110
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Yavin II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 10
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Yavin III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 80
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Yavin IV"
+            class = "pc_tropical"
+            orbit_distance = 4
+            orbit_angle = -155
+            has_ring = no
+	    size = 15
+        }
+        moon = {
+            name = "Yavin V"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 320
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Yavin VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 115
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Yavin VII"
+            class = "pc_nuked"
+            orbit_distance = 2.5
+            orbit_angle = 200
+            has_ring = no
+	    size = 9
+        }
+        moon = {
+            name = "Yavin VIII"
+            class = "pc_tundra"
+            orbit_distance = 3
+            orbit_angle = 68
+            has_ring = no
+	    size = 14
+        }
+        moon = {
+            name = "Yavin IX"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 126
+            has_ring = no
+	    size = 8
+        }
+        moon = {
+            name = "Yavin X"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 270
+            has_ring = no
+	    size = 10
+        }
+        moon = {
+            name = "Yavin XI"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 300
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Yavin XII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 86
+            has_ring = no
+	    size = 9
+        }
+        moon = {
+            name = "Yavin XIII"
+            class = "pc_desert"
+            orbit_distance = 3
+            orbit_angle = 230
+            has_ring = no
+	    size = 12
+        }
+        moon = {
+            name = "Yavin XXII"
+            class = "pc_asteroid"
+            orbit_distance = 10
+            orbit_angle = 260
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Yavin XXVI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 190
+            has_ring = no
+	    size = 5
+        }
+    }
+
+}

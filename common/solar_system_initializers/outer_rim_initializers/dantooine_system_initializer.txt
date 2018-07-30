@@ -1,0 +1,472 @@
+dantooine_system_initializer = {
+    name = "Dantooine"
+    class = "rl_standard_stars"
+    asteroids_distance = 130
+
+    planet = {
+        name = "Dina"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Doma"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 76
+        size = 9
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Camillo"
+        class = "pc_toxic"
+        orbit_distance = 28
+        orbit_angle = 132
+        size = 12
+        has_ring = no
+
+        moon = {
+            name = "Camillo I"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 45
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Camillo II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 243
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Camillo III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 133
+            has_ring = no
+	    size = 5
+        }
+
+    }
+
+    planet = {
+        name = "Camooine"
+        class = "pc_alpine"
+        orbit_distance = 30
+        orbit_angle = 115
+        size = 18
+        has_ring = no
+
+        moon = {
+            name = "Camooine I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 176
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Camooine II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 345
+            has_ring = no
+	    size = 8
+        }
+        moon = {
+            name = "Camooine III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 54
+            has_ring = no
+	    size = 6
+        }
+
+    }
+
+    planet = {
+        name = "Dantooine"
+        class = "pc_savannah"
+        orbit_distance = 28
+        orbit_angle = 220
+        size = 20
+        has_ring = no
+
+        moon = {
+            name = "Delos"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 59
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Letun"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 287
+            has_ring = no
+	    size = 4
+        }
+
+    }
+    planet = {
+        name = "Bannakon"
+        class = "pc_gas_giant"
+        orbit_distance = 70
+        orbit_angle = 176
+        size = 24
+        has_ring = no
+
+        moon = {
+            name = "Bannakon I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Bannakon II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Bannakon III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 166
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Bannakon IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 338
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Bannakon V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -43
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Bannakon VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 243
+            has_ring = no
+	    size = 2
+        }
+        moon = {
+            name = "Bannakon VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 54
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Bannakon VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Bannakon IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 207
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Bannakon X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 98
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Bannakon XI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 104
+            has_ring = no
+	    size = 4
+        }
+
+    }
+    planet = {
+        name = "Tamarena"
+        class = "pc_gas_giant"
+        orbit_distance = 70
+        orbit_angle = 144
+        size = 26
+        has_ring = no
+
+        moon = {
+            name = "Tamarena I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 134
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Tamarena II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 245
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Tamarena III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Tamarena IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -78
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Tamarena V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 249
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Tamarena VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Tamarena VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 212
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Tamarena VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Tamarena IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Tamarena X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 293
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Tamarena XXI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 111
+            has_ring = no
+	    size = 6
+        }
+
+    }
+    planet = {
+        name = "Dulbris"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 254
+        size = 29
+        has_ring = no
+
+        moon = {
+            name = "Dulbris I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 45
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Dulbris II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 123
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Dulbris III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 87
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Dulbris IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 275
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Dulbris V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 146
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Dulbris VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 265
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Dulbris VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 144
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Dulbris VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Dulbris IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Dulbris X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Dulbris XXV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 49
+            has_ring = no
+	    size = 5
+        }
+
+    }
+    planet = {
+        name = "Purnell"
+        class = "pc_gas_giant"
+        orbit_distance = 70
+        orbit_angle = 76
+        size = 22
+        has_ring = no
+
+        moon = {
+            name = "Parakus"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 232
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Purnell II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Purnell III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 258
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Purnell IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 122
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Purnell V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 85
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Purnell VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            has_ring = no
+	    size = 6
+        }
+
+    }
+
+}

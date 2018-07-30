@@ -1,0 +1,364 @@
+geonosis_system_initializer = {
+    name = "Geonosis"
+    class = "rl_standard_stars"
+	flags={geonosian_hives}
+
+    planet = {
+        name = "Ea"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Geriss"
+        class = "pc_barren"
+        orbit_distance = 32
+        orbit_angle = 222
+        size = 8
+        has_ring = no
+
+
+        moon = {
+            name = "Geriss Minor"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 127
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Geonosis"
+        class = "pc_desert"
+        orbit_distance = 40
+        orbit_angle = 304
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		
+
+
+
+        moon = {
+            name = "Bahryn"
+            class = "pc_arctic"
+            orbit_distance = 6
+            orbit_angle = 90
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis II"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 90
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 196
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis IV"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 213
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis V"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 115
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis VI"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 23
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis VII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = -50
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis VIII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 189
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis IX"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 189
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis X"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 222
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geonosis XV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 189
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Conus"
+        class = "pc_molten"
+        orbit_distance = 43
+        orbit_angle = 265
+        size = 17
+        has_ring = no
+
+
+        moon = {
+            name = "Conus I"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 184
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Conus II"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 225
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Conus III"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 92
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Conus IV"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 46
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Mabonte"
+        class = "pc_toxic"
+        orbit_distance = 27
+        orbit_angle = 63
+        size = 12
+        has_ring = no
+
+
+        moon = {
+            name = "Mabonte I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 340
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mabonte II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 225
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mabonte III"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 193
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Habon"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 183
+        size = 22
+        has_ring = no
+
+
+        moon = {
+            name = "Habon I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 219
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 83
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 267
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 46
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 223
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 308
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 134
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 114
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 144
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 96
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Habon XXI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 156
+            size = 6
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Abyssissa"
+        class = "pc_frozen"
+        orbit_distance = 78
+        orbit_angle = 257
+        has_ring = no
+	size = 10
+
+
+        moon = {
+            name = "Abyssissa Minor"
+            class = random
+            orbit_distance = 14
+            orbit_angle = 64
+            size = 5
+            has_ring = no
+
+        }
+    }
+}

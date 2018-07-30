@@ -1,0 +1,277 @@
+prakith_system_initializer = {
+    name = "Prakith"
+    class = "rl_standard_stars"
+
+    planet = {
+        name = "Prak"
+        class = "pc_m_star"
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Rake"
+        class = "pc_barren"
+        orbit_distance = 33
+        orbit_angle = 220
+        size = 16
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Mekith"
+        class = "pc_toxic"
+        orbit_distance = 31
+        orbit_angle = 13
+        size = 15
+        has_ring = no
+
+
+        moon = {
+            name = "Luthien"
+            class = "pc_nuked"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Prakith"
+        class = "pc_alpine"
+        orbit_distance = 14
+        orbit_angle = 102
+        size = 20
+        has_ring = no
+		init_effect = {
+		random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_great_pyramid"
+				add_resource = {
+					resource = food
+					amount = 3
+					replace = yes
+				}	
+		}
+		
+		
+		create_species = {
+						name = "Prakithi"
+						class = "HUM"
+						portrait = "human"
+						homeworld = THIS
+						traits = {
+							trait = "trait_pc_continental_preference"
+							#trait="trait_force_attuned"
+							trait="trait_resilient"
+							trait="trait_deviants"
+							trait="trait_decadent"
+							
+						}
+					}
+					create_country = {
+						name = "Cult of Malevolence"
+						government = primitive_feudalism
+						species = last_created
+						ethos = {
+						ethic="ethic_dark_side"
+						ethic="ethic_fanatic_spiritualist"
+						ethic="ethic_fanatic_militarist"
+						}
+						flag = {							
+							colors={
+								"black"
+								"red"
+								"null"
+								"null"
+							}
+						}
+						type = primitive
+					}
+					last_created_country = {
+						set_graphical_culture = preindustrial_01
+						set_country_flag = bronze_age
+						set_country_flag = SWGD
+						set_primitive_age = bronze_age
+							}
+							
+						
+					
+				random_tile = {
+				limit = {
+					has_blocker = no
+					has_grown_pop = no
+					has_growing_pop = no
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}
+			}
+			random_tile = {
+				limit = {
+					has_blocker = no
+					has_grown_pop = no
+					has_growing_pop = no
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}
+			}
+						
+					last_created_country = {		
+							
+							PREV = {
+								create_army = {
+									name = "Cultists"
+									owner = last_created
+									species = last_created
+									type = "primitive_army"
+								}
+							}
+							break = yes
+						}
+						
+		}
+		
+		
+
+        moon = {
+            name = "Inner Moon"
+            class = "pc_barren_cold"
+            orbit_distance = 8
+            orbit_angle = 181
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Outer Moon"
+            class = "pc_tundra"
+            orbit_distance = 9
+            orbit_angle = 132
+            size = 7
+            has_ring = no
+
+        }
+    }
+	
+
+    planet = {
+        name = "Delanoth"
+        class = "pc_gas_giant"
+        orbit_distance = 60
+        orbit_angle = 207
+        size = 20
+        has_ring = no
+
+
+        moon = {
+            name = "Thata"
+            class = "pc_arctic"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Anthuan"
+            class = "pc_barren_cold"
+            orbit_distance = 2.5
+            orbit_angle = 35
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "H-77-AT"
+            class = random_asteroid
+            orbit_distance = 2.5
+            orbit_angle = 207
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Huldra"
+            class = "pc_frozen"
+            orbit_distance = 2.5
+            orbit_angle = 59
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Joltarir"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Anthomist"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 235
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Iriosl"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 55
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sango"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 55
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Prakess"
+        class = "pc_frozen"
+        orbit_distance = 53
+        orbit_angle = 38
+        has_ring = no
+
+
+        moon = {
+            name = "Mot"
+            class = "pc_toxic"
+            orbit_distance = 8
+            orbit_angle = 181
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Pallas"
+            class = "pc_ocean"
+            orbit_distance = 11
+            orbit_angle = 91
+            size = 10
+            has_ring = no
+
+        }
+    }
+}

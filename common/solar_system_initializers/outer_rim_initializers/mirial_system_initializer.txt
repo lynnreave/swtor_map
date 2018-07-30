@@ -1,0 +1,124 @@
+mirial_system_initializer = {
+    name = "Mirial"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 18
+    }
+
+    planet = {
+        name = "Narakarna"
+        class = "pc_molten"
+        orbit_distance = 35
+        orbit_angle = 87
+        size = 15
+        has_ring = no
+
+        moon = {
+            name = "Kalichia"
+            class = "pc_barren"
+            orbit_distance = 10
+            orbit_angle = 115
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Patal"
+        class = "pc_barren"
+        orbit_distance = 20
+        orbit_angle = 64
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Mirial"
+        class = "pc_desert"
+        orbit_distance = 25
+        orbit_angle = 233
+        size = 18
+        has_ring = no
+
+        moon = {
+            name = "Loka"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 166
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Yuga"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 26
+            size = 6
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Yama"
+        class = "pc_gas_giant"
+        orbit_distance = 45
+        orbit_angle = 68
+        size = 25
+        has_ring = no
+
+        moon = {
+            name = "Imra"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 198
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Pitrs"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 264
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Diyu"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 55
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shani"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 160
+            size = 12
+            has_ring = yes
+
+        }
+
+    }
+
+    planet = {
+        name = "Bandya"
+        class = "pc_frozen"
+        orbit_distance = 50
+        orbit_angle = 33
+        size = 18
+        has_ring = no
+
+    }
+}

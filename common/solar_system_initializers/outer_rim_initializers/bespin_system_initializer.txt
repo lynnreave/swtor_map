@@ -1,0 +1,85 @@
+bespin_system_initializer = {
+    name = "Bespin"
+    class = "rl_standard_stars"
+	flags={bespin_guilds}
+    asteroids_distance = 75
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Miser"
+        class = "pc_molten"
+        orbit_distance = 24
+        orbit_angle = 212
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Orin"
+        class = "pc_molten"
+        orbit_distance = 33
+        orbit_angle = 320
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Velser's Ring"
+        class = "pc_asteroid"
+        orbit_distance = 18
+        orbit_angle = 358
+        size = 7
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Bespin"
+        class = "pc_gas_giant"
+        orbit_distance = 30
+        orbit_angle = 337
+        size = 30
+        has_ring = no
+
+
+        moon = {
+            name = "Bespin Colonies"
+            class = "pc_continental"
+            orbit_distance = 2
+            orbit_angle = 152
+            size = 20
+            has_ring = no
+			starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     		init_effect = {
+			prevent_anomaly = yes
+		}
+		        moon = {
+            name = "H'gaard"
+            class = "pc_frozen"
+            orbit_distance = 9
+            orbit_angle = 323
+            size = 8
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Drudonna"
+            class = "pc_arctic"
+            orbit_distance = 7
+            orbit_angle = 125
+            size = 5
+            has_ring = no
+
+        }
+    }
+}

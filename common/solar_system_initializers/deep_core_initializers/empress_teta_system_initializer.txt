@@ -1,0 +1,215 @@
+empress_teta_system_initializer = {
+    name = "Empress Teta (Koros)"
+    class = "rl_standard_stars"
+
+    planet = {
+        name = "Koros"
+        class = star
+        orbit_distance = 0
+        size = 17
+    }
+
+    planet = {
+        name = "Keres I"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 246
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Gillad"
+        class = "pc_desert"
+        orbit_distance = 8
+        orbit_angle = 289
+        size = 12
+        has_ring = no
+
+
+        moon = {
+            name = "Meno"
+            class = "pc_barren"
+            orbit_distance = 9
+            orbit_angle = 218
+            size = 3
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Mozos"
+        class = "pc_barren"
+        orbit_distance = 16
+        orbit_angle = 285
+        size = 11
+        has_ring = no
+
+
+        moon = {
+            name = "Nebe"
+            class = "pc_arid"
+            orbit_distance = 9
+            orbit_angle = 194
+            size = 8
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "T'Augon"
+            class = "pc_molten"
+            orbit_distance = 6
+            orbit_angle = 254
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Empress Teta (Koros Major)"
+        class = "pc_continental"
+        orbit_distance = 22
+        orbit_angle = 30
+        size = 22
+        has_ring = no
+	starting_planet = yes
+     	init_effect = {
+		prevent_anomaly = yes
+		
+		}
+
+        moon = {
+            name = "Atale"
+            class = "pc_arid"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 6
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Este"
+            class = "pc_barren"
+            orbit_distance = 5
+            orbit_angle = 19
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "YZ9-12"
+            class = random_asteroid
+            orbit_distance = 5
+            orbit_angle = 239
+            size = 3
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Tryast"
+        class = "pc_barren_cold"
+        orbit_distance = 19
+        orbit_angle = 65
+        size = 12
+        has_ring = no
+
+
+        moon = {
+            name = "Vini"
+            class = "pc_frozen"
+            orbit_distance = 10
+            orbit_angle = 253
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Phiris"
+        class = "pc_ocean"
+        orbit_distance = 19
+        orbit_angle = 92
+        size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Vargi"
+            class = "pc_molten"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 10
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Uinen"
+            class = "pc_barren"
+            orbit_distance = 8
+            orbit_angle = 197
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Phoros"
+        class = "pc_toxic"
+        orbit_distance = 27
+        orbit_angle = 299
+        size = 16
+        has_ring = no
+
+
+        moon = {
+            name = "Neith"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Ronika"
+        class = "pc_arid"
+        orbit_distance = 71
+        orbit_angle = 350
+        size = 16
+        has_ring = no
+
+
+        moon = {
+            name = "VIR-112"
+            class = random_asteroid
+            orbit_distance = 11
+            orbit_angle = 173
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Keres II"
+        class = "pc_frozen"
+        orbit_distance = 69
+        orbit_angle = 297
+        size = 25
+        has_ring = no
+
+    }
+}

@@ -1,0 +1,95 @@
+belsavis_system_initializer = {
+    name = "Belsavis"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = none
+        orbit_distance = 0
+        size = 15
+    }
+
+    planet = {
+        name = "Belsavis I"
+        class = star
+        orbit_distance = 12
+        orbit_angle = 308
+        size = 20
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Belsavis II"
+        class = star
+        orbit_distance = 12
+        orbit_angle = 186
+        size = 16
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Benex"
+        class = "pc_barren"
+        orbit_distance = 38
+        orbit_angle = 231
+        size = 13
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Klavi'ka"
+        class = "pc_barren_cold"
+        orbit_distance = 23
+        orbit_angle = 339
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Belsavis"
+        class = "pc_continental"
+        orbit_distance = 52
+        orbit_angle = 319
+        size = 20
+        has_ring = no
+	starting_planet = yes
+
+        moon = {
+            name = "Belsavis I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 149
+            has_ring = no
+
+        }
+        moon = {
+            name = "Belsavis II"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 53
+            has_ring = no
+
+        }
+        moon = {
+            name = "Belsavis III"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 67
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Neigo"
+        class = "pc_frozen"
+        orbit_distance = 54
+        orbit_angle = 256
+        size = 15
+        has_ring = no
+
+    }
+}

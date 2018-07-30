@@ -1,0 +1,227 @@
+rhen_var_system_initializer = {
+    name = "Tobali (Rhen Var)"
+    class = "rl_standard_stars"
+
+    planet = {
+        name = "Tor"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Rhen Var"
+        class = "pc_arctic"
+        orbit_distance = 100
+        orbit_angle = 45
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Mash Shareo"
+        class = "pc_gas_giant"
+        orbit_distance = 70
+        orbit_angle = 47
+        size = 25
+        has_ring = no
+
+        moon = {
+            name = "Mash Shareo I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 234
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Mash Shareo II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 14
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Mash Shareo III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -41
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Mash Shareo IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 211
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Mash Shareo V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+	    size = 2
+        }
+        moon = {
+            name = "Mash Shareo VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 143
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Mash Shareo VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 43
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Mash Shareo VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -147
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Mash Shareo IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 265
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Mash Shareo X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 87
+            has_ring = no
+	    size = 10
+        }
+        moon = {
+            name = "Mash Shareo XI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Mash Shareo XII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 146
+            has_ring = no
+	    size = 3
+        }
+
+    }
+
+    planet = {
+        name = "Dungal Lem"
+        class = "pc_gas_giant"
+        orbit_distance = 90
+        orbit_angle = 170
+        size = 29
+        has_ring = no
+
+        moon = {
+            name = "Dungal Lem I"
+            class = random
+            orbit_distance = 11
+            orbit_angle = 45
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Dungal Lem II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 247
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Dungal Lem III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 112
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Dungal Lem IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -23
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Dungal Lem V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 156
+            has_ring = no
+	    size = 10
+        }
+        moon = {
+            name = "Dungal Lem VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 34
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Dungal Lem VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 294
+            has_ring = no
+	    size = 3
+        }
+        moon = {
+            name = "Dungal Lem VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 88
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Dungal Lem IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -76
+            has_ring = no
+	    size = 4
+        }
+        moon = {
+            name = "Dungal Lem X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 254
+            has_ring = no
+	    size = 7
+        }
+        moon = {
+            name = "Dungal Lem XXIV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 44
+            has_ring = no
+	    size = 5
+        }
+
+    }
+}

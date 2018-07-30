@@ -1,0 +1,205 @@
+ziost_system_initializer = {
+    name = "Ziost"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Andross"
+        class = "pc_toxic"
+        orbit_distance = 37
+        orbit_angle = 76
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Ziost"		
+        class = "pc_arid"
+        orbit_distance = 65
+	orbit_angle = 213
+        size = 20
+        has_ring = no
+	tile_blockers = none
+	
+
+
+        moon = {
+            class = random
+	    name = "Ziost Minor"
+            orbit_distance = 6
+            orbit_angle = 47
+            has_ring = no
+	    size = 4
+
+        }
+
+        moon = {
+            class = random
+	    name = "Ziost Major"
+            orbit_distance = 5
+            orbit_angle = 142
+            has_ring = no
+	    size = 6
+
+        }
+
+    }
+
+    planet = {
+        name = "Vlooram"
+        class = "pc_gas_giant"
+        orbit_distance = 72
+        orbit_angle = 98
+        size = 25
+        has_ring = yes
+
+        moon = {
+	    name = "Vlooram I"
+            class = random
+            orbit_distance = 13
+            orbit_angle = 49
+	    size = 8
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Vlooram II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 287
+	    size = 5
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Vlooram III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -66
+	    size = 4
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Vlooram IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+	    size = 6
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Vlooram V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 78
+	    size = 3
+            has_ring = no
+
+        }
+       moon = {
+	    name = "Vlooram VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 237
+	    size = 4
+            has_ring = no
+
+        }
+       moon = {
+	    name = "Vlooram VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 189
+	    size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Komarist"
+        class = "pc_gas_giant"
+        orbit_distance = 88
+        orbit_angle = 166
+        size = 22
+        has_ring = no
+
+        moon = {
+	    name = "Komarist I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 243
+	    size = 5
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Komarist II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 44
+	    size = 9
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Komarist III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 178
+	    size = 6
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Komarist IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 235
+	    size = 6
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Fomentin"
+        class = "pc_arctic"
+        orbit_distance = 69
+        orbit_angle = 233
+        size = 15
+        has_ring = no
+
+        moon = {
+	    name = "Fomentin Minor"
+            class = random
+            orbit_distance = 6
+            orbit_angle = -46
+	    size = 6
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Lezorum"
+        class = "pc_frozen"
+        orbit_distance = 54
+        orbit_angle = 335
+        size = 10
+        has_ring = no
+
+    }
+
+}

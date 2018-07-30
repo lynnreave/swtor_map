@@ -1,0 +1,58 @@
+dorin_system_initializer = {
+    name = "Dorin"
+    class = "rl_standard_stars"
+	flags = {dorin}
+	usage = custom_empire
+	max_instances = 1
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 15
+    }
+
+    planet = {
+        name = "Dorin"
+        class = "pc_gaia"
+        orbit_distance = 45
+        orbit_angle = 118
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+        moon = {
+            name = "Baran"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 166
+            size = 10
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Dorin Abyss I"
+        class = "pc_black_hole"
+        orbit_distance = 100
+        orbit_angle = 360
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Dorin Abyss II"
+        class = "pc_black_hole"
+        orbit_distance = 0
+        orbit_angle = 180
+        size = 10
+        has_ring = no
+
+    }
+
+}

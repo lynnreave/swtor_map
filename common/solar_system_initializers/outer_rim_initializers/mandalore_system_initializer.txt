@@ -1,0 +1,395 @@
+mandalore_system_initializer = {
+    name = "Mandalore"
+    class = "sc_k"
+	flags = {mandalorian_clans}
+	usage = custom_empire
+	max_instances = 1
+
+    planet = {
+        class = "pc_k_star"
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Nog"
+        class = "pc_molten"
+        orbit_distance = 46
+        orbit_angle = 209
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Akaan"
+        class = "pc_barren"
+        orbit_distance = 21
+        orbit_angle = 11
+        size = 11
+        has_ring = no
+
+
+        moon = {
+            name = "Akaan Minor"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 188
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Akaan Major"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 352
+            size = 6
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Tracyn"
+        class = "pc_molten"
+        orbit_distance = 42
+        orbit_angle = 284
+        size = 9
+        has_ring = no
+
+
+        moon = {
+            name = "Tracyn I"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 172
+            has_ring = no
+           size = 6
+
+        }
+        moon = {
+            name = "Tracyn II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 75
+            has_ring = no
+           size = 3
+
+        }
+        moon = {
+            name = "Tracyn III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 170
+            has_ring = no
+           size = 3
+
+        }
+        moon = {
+            name = "Tracyn IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 139
+            has_ring = no
+           size = 5
+
+        }
+
+    }
+
+    planet = {
+        name = "Kalevala"
+        class = "pc_toxic"
+        orbit_distance = 45
+        orbit_angle = 51
+        size = 7
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Mandalore"
+		class = "pc_continental"
+        orbit_distance = 23
+        orbit_angle = 201
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+
+        moon = {
+            name = "Thoros"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 174
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Concordia"
+            class = "pc_alpine"
+            orbit_distance = 5
+            orbit_angle = 338
+            size = 7
+            has_ring = no
+			tile_blockers = none
+	}		
+
+    }
+
+    planet = {
+        name = "Mandallia"
+        class = "pc_continental"
+        orbit_distance = 24
+        orbit_angle = 115
+        size = 12
+        has_ring = no
+			tile_blockers = none
+			
+
+        moon = {
+            name = "Mandallia Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Bonagal"
+        class = "pc_gas_giant"
+        orbit_distance = 100
+        orbit_angle = 253
+        size = 24
+        has_ring = no
+
+
+        moon = {
+            name = "Bonagal I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 182
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 40
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 280
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 318
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 226
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 278
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Bonagal VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 278
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 329
+            size = 12
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 134
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 134
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bonagal XXXIV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 350
+            has_ring = no
+            size = 4
+
+        }
+
+    }
+
+    planet = {
+        name = "Shukut"
+        class = "pc_gas_giant"
+        orbit_distance = 110
+        orbit_angle = 144
+        size = 19
+        has_ring = no
+
+
+        moon = {
+            name = "Shukut I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 175
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 335
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 168
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 278
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 228
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 131
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 207
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 162
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 343
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 259
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shukut XXX"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 189
+            has_ring = no
+            size = 6
+
+        }
+    }
+
+    planet = {
+        name = "Werda"
+        class = "pc_frozen"
+        orbit_distance = 100
+        orbit_angle = 23
+        size = 18
+        has_ring = no
+
+    }
+}

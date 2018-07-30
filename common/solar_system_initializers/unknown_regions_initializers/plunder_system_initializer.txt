@@ -1,0 +1,33 @@
+plunder_system_initializer = {
+    name = "Plunder"
+    class = "pc_black_hole"
+    asteroids_distance = 150
+
+    planet = {
+        name = "Plunder Abyss"
+        class = "pc_black_hole"
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Plunder"
+        class = "pc_barren"
+        orbit_distance = 95
+        orbit_angle = 246
+        size = 20
+        has_ring = no
+
+        moon = {
+            name = "Plunder Moon"
+            class = "pc_arid"
+            orbit_distance = 10
+            orbit_angle = 234
+            size = 10
+            has_ring = no
+
+        }
+
+    }
+
+}

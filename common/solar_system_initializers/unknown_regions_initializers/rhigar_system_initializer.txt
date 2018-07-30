@@ -1,0 +1,51 @@
+rhigar_system_initializer = {
+    name = "Rhigar"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Rhigar"
+        class = "pc_arctic"
+        orbit_distance = 65
+        orbit_angle = 67
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		
+
+        moon = {
+            name = "Rhigar I"
+            class = "pc_alpine"
+            orbit_distance = 10
+            orbit_angle = 24
+            has_ring = no
+	    size = 6
+
+        }
+        moon = {
+            name = "Asdroni"
+            class = "pc_barren_cold"
+            orbit_distance = 4
+            orbit_angle = 125
+            has_ring = no
+	    size = 8
+
+        }
+        moon = {
+            name = "Rhigar III"
+            class = "pc_ocean"
+            orbit_distance = 4
+            orbit_angle = 287
+            has_ring = no
+	    size = 5
+
+        }
+
+    }
+
+}

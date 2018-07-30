@@ -1,0 +1,33 @@
+cioral_system_initializer = {
+    name = "Cioral"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Cioral"
+        class = "pc_tundra"
+        orbit_distance = 48
+        orbit_angle = 246
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		
+
+        moon = {
+            name = "Cioral Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 125
+            has_ring = no
+	    size = 7
+
+        }
+
+    }
+
+}

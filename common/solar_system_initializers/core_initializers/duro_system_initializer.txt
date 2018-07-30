@@ -1,0 +1,76 @@
+duro_system_initializer= {
+    name = "Duro"
+    class = random
+	flags = {duro}
+ 
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Lors"
+        class = "pc_molten"
+        orbit_distance = 45
+        orbit_angle = 212
+        size = 17
+        has_ring = no
+
+
+        moon = {
+	    name = "Lors Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Duro"
+        class = "pc_tropical"
+        orbit_distance = 72
+        orbit_angle = 4
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+    }
+
+    
+
+    planet = {
+        name = "Koli"
+        class = "pc_frozen"
+        orbit_distance = 89
+        orbit_angle = 196
+        has_ring = no
+	size = 10
+
+
+        moon = {
+	    name = "Koli Major"
+            class = random
+            orbit_distance = 14
+            orbit_angle = 227
+            has_ring = no
+	    size = 6
+
+        }
+
+        moon = {
+	    name = "Koli Minor"
+            class = random
+            orbit_distance = 14
+            orbit_angle = 149
+            has_ring = no
+	    size = 3
+
+        }
+    }
+}

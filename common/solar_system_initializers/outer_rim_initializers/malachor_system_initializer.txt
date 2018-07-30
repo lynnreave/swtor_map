@@ -1,0 +1,134 @@
+malachor_system_initializer = {
+    name = "Malachor"
+    class = "rl_standard_stars"
+	
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Malachor I"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 50
+        size = 13
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Malachor II"
+        class = "pc_arid"
+        orbit_distance = 28
+        orbit_angle = 171
+        size = 16
+        has_ring = no
+	tile_blockers = none
+	
+
+        moon = {
+            name = "Gossam"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 56
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Malachor III"
+        class = "pc_arid"
+        orbit_distance = 20
+        orbit_angle = 180
+        size = 18
+        has_ring = no
+	tile_blockers = none
+	
+
+        moon = {
+            name = "Sekion"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 13
+            has_ring = no
+            size = 6
+
+        }
+        moon = {
+            name = "Sorost"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 167
+            has_ring = no
+            size = 4
+
+        }
+
+    }
+
+    planet = {
+        name = "Malachor IV"
+        class = "pc_barren"
+        orbit_distance = 20
+        orbit_angle = 131
+        has_ring = no
+        size = 12
+
+    }
+
+    planet = {
+        name = "Malachor V"
+        class = "pc_arid"
+        orbit_distance = 16
+        orbit_angle = 66
+        size = 20
+        has_ring = no
+	tile_blockers = none
+	
+
+        moon = {
+            name = "Trayus"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 87
+            has_ring = no
+            size = 5
+
+        }
+    }
+
+    planet = {
+        name = "Malachor VI"
+        class = "pc_toxic"
+        orbit_distance = 20
+        orbit_angle = 328
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Malachor VII"
+        class = "pc_barren_cold"
+        orbit_distance = 35
+        orbit_angle = 237
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Malachor VIII"
+        class = "pc_frozen"
+        orbit_distance = 46
+        orbit_angle = 36
+        size = 8
+        has_ring = no
+
+    }
+}

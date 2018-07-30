@@ -1,0 +1,21 @@
+naporar_system_initializer = {
+    name = "Naporar"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Naporar"
+        class = "pc_alpine"
+        orbit_distance = 57
+        orbit_angle = 314
+        size = 16
+        has_ring = no
+		tile_blockers = none
+		
+
+}

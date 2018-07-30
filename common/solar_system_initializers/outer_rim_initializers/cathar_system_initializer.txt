@@ -1,0 +1,76 @@
+cathar_system_initializer = {
+    name = "Cathar"
+    class = "rl_standard_stars"
+	flags={cathar_tribes}
+    asteroids_distance = 179
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Sylvor"
+        class = "pc_molten"
+        orbit_distance = 68
+        orbit_angle = 226
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Jonak"
+        class = "pc_toxic"
+        orbit_distance = 44
+        orbit_angle = 307
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Cathar"
+        class = "pc_savannah"
+        orbit_distance = 26
+        orbit_angle = 39
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		
+
+        moon = {
+	    name = "Cathar Minor"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 357
+            has_ring = no
+	    size = 6
+
+        }
+    }
+
+    planet = {
+        name = "Veldt Asteroids"
+        class = "pc_asteroid"
+        orbit_distance = 41
+        orbit_angle = 293
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Ziyria"
+        class = "pc_frozen"
+        orbit_distance = 38
+        orbit_angle = 358
+        has_ring = no
+
+    }
+}

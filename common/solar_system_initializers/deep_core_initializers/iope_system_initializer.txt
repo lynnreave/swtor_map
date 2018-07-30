@@ -1,0 +1,60 @@
+iope_system_initializer = {
+    name = "Iope"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = none
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Iope Major"
+        class = "pc_a_star"
+        orbit_distance = 15
+        orbit_angle = 213
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Iope Minor"
+        class = "pc_f_star"
+        orbit_distance = 12
+        orbit_angle = 155
+        size = 15
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Acar Prime"
+        class = "pc_gas_giant"
+        orbit_distance = 24
+        orbit_angle = 192
+        size = 16
+        has_ring = no
+
+
+        moon = {
+            name = "Eridu"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 6
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Rhea"
+        class = "pc_molten"
+        orbit_distance = 42
+        orbit_angle = 99
+        size = 22
+        has_ring = no
+
+    }
+}

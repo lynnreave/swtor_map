@@ -1,0 +1,294 @@
+anaxes_system_initializer = {
+    name = "Axum (Anaxes)"
+    class = "rl_standard_stars"
+	flags = {anaxes}
+
+    planet = {
+        name = "Solis Axum"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Selgon"
+        class = "pc_molten"
+        orbit_distance = 31
+        orbit_angle = 225
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Grastes"
+        class = "pc_toxic"
+        orbit_distance = 25
+        orbit_angle = 347
+        size = 8
+        has_ring = no
+
+
+        moon = {
+	    name = "Grastes Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Axum"
+        class = "pc_continental"
+        orbit_distance = 23
+        orbit_angle = 280
+        size = 14
+        has_ring = no
+
+
+        moon = {
+	    name = "Axum Major"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Axum Minor"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 6
+            has_ring = no
+	    size = 3
+
+        }
+    }
+
+    planet = {
+        name = "Anaxes"
+        class = "pc_continental"
+        orbit_distance = 27
+        orbit_angle = 40
+        size = 20
+        has_ring = no
+		#starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+
+        moon = {
+	    name = "Anaxes Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Urfon"
+        class = "pc_frozen"
+        orbit_distance = 47
+        orbit_angle = 324
+        has_ring = no
+
+
+        moon = {
+	    name = "Urfon Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Phlors Rex"
+        class = "pc_gas_giant"
+        orbit_distance = 32
+        orbit_angle = 43
+        size = 17
+        has_ring = no
+
+
+        moon = {
+	    name = "Rex I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 186
+            size = 3
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Rex II"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 289
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Rex III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 63
+            size = 2
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Rex IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Rex V"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 228
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Rex VI"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 131
+            size = 3
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Rex VII"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 216
+            size = 3
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Rex XVIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 120
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Phlors Regina"
+        class = "pc_gas_giant"
+        orbit_distance = 64
+        orbit_angle = 356
+        size = 16
+        has_ring = no
+
+
+        moon = {
+	    name = "Regina I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 169
+            size = 3
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Regina II"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 301
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Regina III"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 87
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Regina IV"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 234
+            size = 2
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Regina V"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 100
+            size = 2
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Regina VI"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 326
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+	    name = "Regina XV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 103
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Ichium"
+        class = "pc_barren_cold"
+        orbit_distance = 83
+        orbit_angle = 30
+        has_ring = no
+
+    }
+}

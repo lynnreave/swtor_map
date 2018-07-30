@@ -1,0 +1,66 @@
+alsakan_system_initializer = {
+    name = "Alsakan"
+    class = "rl_standard_stars"
+	flags = {alsakan}
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Asko"
+        class = "pc_molten"
+        orbit_distance = 39
+        orbit_angle = 216
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Alsanto"
+        class = "pc_barren"
+        orbit_distance = 23
+        orbit_angle = 186
+        size = 7
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Alsakan"
+        class = "pc_continental"
+        orbit_distance = 32
+        orbit_angle = 161
+        size = 20
+        has_ring = no
+	#starting_planet = yes
+	tile_blockers = none
+	modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+		
+		}		
+	}		
+
+    planet = {
+        name = "Tholas"
+        class = "pc_frozen"
+        orbit_distance = 68
+        orbit_angle = 195
+        size = 34
+        has_ring = yes
+
+
+        moon = {
+            name = "Tholas Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 68
+            has_ring = no
+
+        }
+    }
+}

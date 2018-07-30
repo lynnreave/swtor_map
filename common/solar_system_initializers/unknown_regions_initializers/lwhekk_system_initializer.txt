@@ -1,0 +1,94 @@
+lwhekk_system_initializer= {
+    name = "Ssi'kaat" 
+	class = "rl_standard_stars"
+	flags={ssi_ruuvi}
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Ssi'kaat"
+        class = "pc_molten"
+        orbit_distance = 50
+        orbit_angle = 219
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Tikwa"
+        class = "pc_toxic"
+        orbit_distance = 43
+        orbit_angle = 273
+        has_ring = yes
+
+    }
+
+    planet = {
+        name = "Kerawik"
+        class = "pc_toxic"
+        orbit_distance = 17
+        orbit_angle = 253
+        size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Kerawik Major"
+            class = "pc_continental"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 8
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Kerawik Minor"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 115
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Lwhekk"
+        class = "pc_tropical"
+        orbit_distance = 30
+        orbit_angle = 195
+        size = 20
+        has_ring = no
+		starting_planet = no
+		tile_blockers = none
+		modifiers = none
+     
+
+
+        moon = {
+            name = "Lwhekk Minor"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 194
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Sh'tiku"
+        class = "pc_frozen"
+        orbit_distance = 103
+        orbit_angle = 345
+        size = 27
+        has_ring = no
+
+    }
+}

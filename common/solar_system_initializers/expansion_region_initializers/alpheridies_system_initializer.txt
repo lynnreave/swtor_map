@@ -1,0 +1,106 @@
+alpheridies_system_initializer = {
+    name = "Abron (Alpheridies)"
+    class = "rl_standard_stars"
+
+    planet = {
+        name = "Aber"
+        class = "pc_m_star"
+        orbit_distance = 0
+        size = 15
+    }
+
+    planet = {
+        name = "Mantor"
+        class = "pc_molten"
+        orbit_distance = 25
+        orbit_angle = 146
+        size = 10
+        has_ring = no
+
+        moon = {
+            name = "N'Agni"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 234
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+    planet = {
+        name = "Miraluk"
+        class = "pc_barren"
+        orbit_distance = 35
+        orbit_angle = 49
+        size = 20
+        has_ring = no
+
+        moon = {
+            name = "Shrowd"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 198
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Veil"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 113
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+    planet = {
+        name = "Alpheridies"
+        class = "pc_continental"
+        orbit_distance = 30
+        orbit_angle = 234
+        size = 20
+        has_ring = no
+
+    }
+    planet = {
+        name = "Forost"
+        class = "pc_frozen"
+        orbit_distance = 100
+        orbit_angle = 54
+        size = 13
+        has_ring = no
+
+        moon = {
+            name = "Forost I"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 143
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Forost II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 243
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Forost III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 67
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+
+}

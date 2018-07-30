@@ -1,0 +1,360 @@
+hoth_system_initializer= {
+    name = "Hoth"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = "pc_a_star"
+        orbit_distance = 0
+        size = 30
+    }
+
+    planet = {
+        name = "Shron"
+        class = "pc_molten"
+        orbit_distance = 39
+        orbit_angle = 306
+        size = 7
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Biosh"
+        class = "pc_barren"
+        orbit_distance = 31
+        orbit_angle = 285
+        size = 9
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Nushk"
+        class = "pc_toxic"
+        orbit_distance = 41
+        orbit_angle = 295
+        has_ring = no
+
+
+        moon = {
+            name = "Nushk I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Nushk II"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 251
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Nushk III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 176
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Nushk IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 129
+            size = 6
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Jhas"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 173
+        size = 18
+        has_ring = yes
+
+
+        moon = {
+            name = "Jhas I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 308
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas II"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 185
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 114
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas IV"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 105
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas V"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 183
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas VI"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 215
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas VII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 252
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas VIII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 183
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas IX"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 124
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas X"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 245
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Jhas XXIV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 43
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Ordaj"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 292
+        size = 16
+        has_ring = no
+
+
+        moon = {
+            name = "Ordaj I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 70
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 215
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 328
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 292
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 15
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ordaj XVII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = -67
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Hoth"
+        class = "pc_arctic"
+        orbit_distance = 50
+        orbit_angle = 285
+        size = 16
+        has_ring = no
+		init_effect = {
+
+		set_planet_flag = SW
+			create_species = {
+				name = "Wampa"
+				class = "PRE_MAM"
+				portrait = "pre_mam13"
+				traits = {
+					trait = random_presentient_trait
+				}
+				homeworld = FROM
+				sentient = no
+			}
+			while = {
+				limit = {
+					count_pops = {
+						limit = { is_sentient = no }
+						count < 3
+					}
+					free_pop_tiles > 0
+				}
+				best_tile_for_pop = {
+					create_pop = { species = last_created }
+				}
+			}
+		}
+
+        moon = {
+            name = "Hoth I"
+            class = random
+            orbit_distance = 11
+            orbit_angle = 79
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Hoth II"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 154
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Hoth III"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 303
+            size = 3
+            has_ring = no
+
+        }
+    }
+}

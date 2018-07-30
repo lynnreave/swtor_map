@@ -1,0 +1,30 @@
+ojom_system_initializer = {
+    name = "Ojom"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 30
+    }
+
+    planet = {
+        name = "Ojom"
+        class = "pc_arctic"
+        orbit_distance = 25
+        orbit_angle = 234
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Modgud"
+        class = "pc_gas_giant"
+        orbit_distance = 41
+        orbit_angle = 1
+        size = 20
+        has_ring = yes
+
+    }
+}

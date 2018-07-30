@@ -1,0 +1,59 @@
+eclipse_system_initializer = {
+    name = "Eclipse"
+    class = "rl_standard_stars"
+    asteroids_distance = 33
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Eclipse"
+        class = "pc_tundra"
+        orbit_distance = 33
+        orbit_angle = 299
+        size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "TT-33"
+            class = random_asteroid
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 3
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "ABX-2"
+            class = random_asteroid
+            orbit_distance = 6
+            orbit_angle = 189
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "14-LT"
+        class = random_asteroid
+        orbit_distance = 36
+        orbit_angle = 316
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "AP-231"
+        class = random_asteroid
+        orbit_distance = 18
+        orbit_angle = 143
+        has_ring = no
+
+    }
+}

@@ -1,0 +1,57 @@
+kadavo_system_initializer = {
+    name = "Kadavo"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Kadavo"
+        class = "pc_desert"
+        orbit_distance = 39
+        orbit_angle = 125
+        size = 18
+        has_ring = no
+		tile_blockers = none
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		
+
+    }
+
+    planet = {
+        name = "Scorb"
+        class = "pc_barren"
+        orbit_distance = 25
+        orbit_angle = 254
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Zorgia"
+        class = "pc_barren_cold"
+        orbit_distance = 25
+        orbit_angle = 78
+        size = 11
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Orterria"
+        class = "pc_arctic"
+        orbit_distance = 40
+        orbit_angle = 144
+        size = 14
+        has_ring = no
+
+    }
+}

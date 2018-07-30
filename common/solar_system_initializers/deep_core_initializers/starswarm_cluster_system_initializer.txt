@@ -1,0 +1,91 @@
+starswarm_cluster_system_initializer = {
+    name = "Starswarm Cluster"
+    class = random
+
+    planet = {
+        class = none
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        class = "pc_b_star"
+        orbit_distance = 27
+        orbit_angle = 227
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        class = "pc_a_star"
+        orbit_distance = 12
+        orbit_angle = 167
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        class = "pc_g_star"
+        orbit_distance = 5
+        orbit_angle = 109
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        class = "pc_k_star"
+        orbit_distance = 12
+        orbit_angle = 175
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        class = "pc_f_star"
+        orbit_distance = 15
+        orbit_angle = 21
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        class = "pc_m_star"
+        orbit_distance = 18
+        orbit_angle = 68
+        size = 16
+        has_ring = no
+
+    }
+
+    planet = {
+        class = "pc_f_star"
+        orbit_distance = 11
+        orbit_angle = 164
+        size = 30
+        has_ring = no
+
+    }
+
+    planet = {
+        class = "pc_a_star"
+        orbit_distance = 6
+        orbit_angle = 66
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        class = "pc_g_star"
+        orbit_distance = 9
+        orbit_angle = 226
+        size = 18
+        has_ring = no
+
+    }
+}

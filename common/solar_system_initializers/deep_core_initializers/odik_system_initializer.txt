@@ -1,0 +1,34 @@
+odik_system_initializer
+ = {
+    name = "Odik"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 30
+		
+		}
+
+    planet = {
+        name = "Odik"
+        class = "pc_tundra"
+        orbit_distance = 41
+        orbit_angle = 250
+        size = 15
+        has_ring = yes
+		home_planet = no
+
+    }
+
+    planet = {
+        name = "LK12-AT"
+        class = random_asteroid
+        orbit_distance = 29
+        orbit_angle = 222
+        size = 15
+        has_ring = no
+		home_planet = no
+
+    }
+}

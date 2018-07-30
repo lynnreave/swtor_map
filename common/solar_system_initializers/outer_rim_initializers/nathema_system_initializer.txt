@@ -1,0 +1,168 @@
+nathema_system_initializer = {
+    name = "Nathema (Medriaas)"
+    class = "rl_standard_stars"
+
+    planet = {
+        name = "Medriaas"
+        class = "pc_k_star"
+        orbit_distance = 0
+        size = 18
+    }
+
+    planet = {
+        name = "Porthon"
+        class = "pc_molten"
+        orbit_distance = 23
+        orbit_angle = 244
+        size = 11
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Torros"
+        class = "pc_molten"
+        orbit_distance = 20
+        orbit_angle = 135
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Nathema (Medriaas)"		
+        class = "pc_continental"
+        orbit_distance = 33
+	orbit_angle = 114
+        size = 20
+        has_ring = no
+	tile_blockers = none
+	
+
+
+        moon = {
+	    name = "Medriaas Minor"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 98
+            has_ring = no
+	    size = 6
+
+        }
+
+    }
+
+    planet = {
+        name = "Mendississ"
+        class = "pc_barren"
+        orbit_distance = 35
+        orbit_angle = 124
+        size = 25
+        has_ring = yes
+
+        moon = {
+	    name = "Mendississ I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 48
+	    size = 6
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Mendississ II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 183
+	    size = 4
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Mendississ III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 68
+	    size = 5
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Mendississ IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -89
+	    size = 3
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Mendississ V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 309
+	    size = 5
+            has_ring = no
+
+        }
+       moon = {
+	    name = "Mendississ VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+	    size = 6
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Jukaassim"
+        class = "pc_frozen"
+        orbit_distance = 67
+        orbit_angle = 227
+        size = 13
+        has_ring = no
+
+        moon = {
+	    name = "Jukaassim I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 146
+	    size = 4
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Jukaassim II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 287
+	    size = 6
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Jukaassim III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 58
+	    size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Leutug"
+        class = "pc_frozen"
+        orbit_distance = 54
+        orbit_angle = 46
+        size = 8
+        has_ring = no
+
+    }
+
+}

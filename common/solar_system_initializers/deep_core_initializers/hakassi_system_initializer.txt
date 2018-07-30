@@ -1,0 +1,70 @@
+hakassi_system_initializer = {
+    name = "Hakassi"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 16
+    }
+
+    planet = {
+        name = "Hakassi"
+        class = "pc_continental"
+        orbit_distance = 21
+        orbit_angle = 247
+        size = 15
+        has_ring = no
+
+
+        moon = {
+            name = "Anat"
+            class = "pc_ocean"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 7
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Atalant"
+        class = "pc_gas_giant"
+        orbit_distance = 9
+        orbit_angle = 146
+        size = 16
+        has_ring = yes
+
+    }
+
+    planet = {
+        name = "Pandora"
+        class = "pc_arctic"
+        orbit_distance = 30
+        orbit_angle = 187
+        size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Pandora Minor"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 6
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Pandora Major"
+            class = "pc_frozen"
+            orbit_distance = 11
+            orbit_angle = 61
+            size = 8
+            has_ring = no
+
+        }
+    }
+}

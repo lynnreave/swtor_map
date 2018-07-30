@@ -1,0 +1,65 @@
+ordo_system_initializer = {
+    name = "Ordo"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Ordo"
+	class = "pc_desert"
+        orbit_distance = 39
+        orbit_angle = 165
+        size = 19
+        has_ring = no
+	starting_planet = yes	
+	tile_blockers = none
+			
+
+
+        moon = {
+            name = "Ordo Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 28
+            size = 7
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Candaca"
+        class = "pc_toxic"
+        orbit_distance = 24
+        orbit_angle = 245
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Tovorol"
+        class = "pc_barren"
+        orbit_distance = 22
+        orbit_angle = 46
+        size = 13
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Kissandera"
+        class = "pc_barren_cold"
+        orbit_distance = 66
+        orbit_angle = 275
+        size = 12
+        has_ring = no
+
+    }
+
+}

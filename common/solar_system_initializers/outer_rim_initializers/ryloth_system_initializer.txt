@@ -1,0 +1,88 @@
+ryloth_system_initializer = {
+    name = "Ryloth"
+    class = "rl_standard_stars"
+    asteroids_distance = 205
+	flags = {twilek_clans}
+	usage = custom_empire
+	max_instances = 1
+
+    planet = {
+        class = "pc_g_star"
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Mon Bala"
+        class = "pc_molten"
+        orbit_distance = 20
+        orbit_angle = 205
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Ryloth"
+        class = "pc_arid"
+        orbit_distance = 27
+        orbit_angle = 47
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+        moon = {
+            name = "Ryloth I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 209
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Ryloth II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 18
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Ryloth III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 165
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Ryloth IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 78
+            has_ring = no
+	    size = 5
+        }
+        moon = {
+            name = "Ryloth V"
+            class = random
+            orbit_distance = 3
+            orbit_angle = -45
+            has_ring = no
+	    size = 8
+        }
+    }
+
+    planet = {
+        name = "Or Tuma"
+        class = "pc_arctic"
+        orbit_distance = 40
+        orbit_angle = 170
+        size = 14
+        has_ring = no
+
+    }
+}

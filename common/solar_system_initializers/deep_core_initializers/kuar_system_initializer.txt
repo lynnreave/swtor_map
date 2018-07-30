@@ -1,0 +1,79 @@
+kuar_system_initializer = {
+    name = "Kuar"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Hauhet"
+        class = random
+        orbit_distance = 32
+        orbit_angle = 244
+        size = 12
+        has_ring = no
+
+
+        moon = {
+            name = "H'Boly"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "KL-941"
+        class = random_asteroid
+        orbit_distance = 12
+        orbit_angle = 176
+        size = 6
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Axakh"
+        class = random
+        orbit_distance = 22
+        orbit_angle = 160
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Hauhet II"
+        class = random
+        orbit_distance = 15
+        orbit_angle = 228
+        size = 7
+        has_ring = no
+
+
+        moon = {
+            name = "Lahmu"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 3
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Kuar"
+        class = "pc_tundra"
+        orbit_distance = 32
+        orbit_angle = 56
+        size = 16
+        has_ring = no
+
+    }
+}

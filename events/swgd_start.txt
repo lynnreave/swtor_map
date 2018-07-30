@@ -1,0 +1,243 @@
+namespace = swgd_start
+
+event = {
+	id = swgd_start.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = { 
+			NOT = { has_country_flag = bronze_age }
+			NOT = { has_country_flag = industrial_age }
+			NOT = { has_country_flag = machine_age}
+			NOT = { has_country_flag = atomic_age }
+			NOT = { has_country_flag = early_space_age }
+			NOT = { has_country_flag = iron_age }
+			NOT = { has_country_flag = late_medieval_age }
+			NOT = { has_country_flag = renaissance_age }
+			NOT = { has_country_flag = steam_age }
+			
+			exists = capital_scope }
+						
+			if = {
+				limit = {ideal_planet_class = "pc_desert"}
+				capital_scope = {
+					change_pc = "pc_desert"
+					change_planet_size = 10
+					
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_tropical"}
+				capital_scope = {
+					change_pc = "pc_tropical"
+					change_planet_size = 10
+									}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_arid"}
+				capital_scope = {
+					change_pc = "pc_arid"
+					change_planet_size = 10
+					
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_continental"}
+				capital_scope = {
+					change_pc = "pc_continental"
+					change_planet_size = 10
+					
+					
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_ocean"}
+				capital_scope = {
+					change_pc = "pc_ocean"
+					change_planet_size = 10
+					
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_tundra"}
+				capital_scope = {
+					change_pc = "pc_tundra"
+					change_planet_size = 10
+					
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_arctic"}
+				capital_scope = {
+					change_pc = "pc_arctic"
+					change_planet_size = 10
+					
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_alpine"}
+				capital_scope = {
+					change_pc = "pc_alpine"
+					change_planet_size = 10
+					
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_savannah"}
+				capital_scope = {
+					change_pc = "pc_savannah"
+					change_planet_size = 10
+					
+				}
+			}
+		}
+	}
+}
+
+
+
+
+##Starting planet buildings
+
+event = {
+	id = swgd_start.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = { exists = capital_scope 
+			
+			NOT = { has_country_flag = bronze_age }
+			NOT = { has_country_flag = industrial_age }
+			NOT = { has_country_flag = machine_age}
+			NOT = { has_country_flag = atomic_age }
+			NOT = { has_country_flag = early_space_age }
+			NOT = { has_country_flag = iron_age }
+			NOT = { has_country_flag = late_medieval_age }
+			NOT = { has_country_flag = renaissance_age }
+			NOT = { has_country_flag = steam_age }
+				}
+		capital_scope = {
+		init_effect = {
+					random_tile = {
+						limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+						set_building = "building_capital_1"
+						add_resource = {
+							resource = food
+							amount = 1
+							replace = yes
+						}
+						
+						add_resource = {
+							resource = minerals
+							amount = 1
+						}
+						
+						random_neighboring_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_hydroponics_farm_1"
+							add_resource = {
+								resource = food
+								amount = 1
+								replace = yes
+							}						
+						}
+						random_neighboring_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_power_plant_1"
+							add_resource = {
+								resource = energy
+								amount = 1
+								replace = yes
+							}						
+						}
+						random_neighboring_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_power_plant_1"
+							add_resource = {
+								resource = energy
+								amount = 1
+								replace = yes
+							}						
+						}
+						random_neighboring_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_mining_network_1"
+							add_resource = {
+								resource = minerals
+								amount = 1
+								replace = yes
+							}						
+						}				
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_failing_infrastructure"
+						add_resource = {
+							resource = engineering_research
+							amount = 1
+							replace = yes
+						}				
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_failing_infrastructure"
+						add_resource = {
+							resource = society_research
+							amount = 1
+							replace = yes
+						}				
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_failing_infrastructure"
+						add_resource = {
+							resource = physics_research
+							amount = 1
+							replace = yes
+						}				
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_decrepit_dwellings"
+						add_resource = {
+							resource = energy
+							amount = 2
+							replace = yes
+						}					
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_decrepit_dwellings"
+						add_resource = {
+							resource = food
+							amount = 1
+							replace = yes
+						}					
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_decrepit_dwellings"
+						add_resource = {
+							resource = energy
+							amount = 1
+							replace = yes
+						}				
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						add_resource = {
+							resource = food
+							amount = 1
+							replace = yes
+						}				
+					}			
+				}
+			}
+	}
+	
+	}
+}	

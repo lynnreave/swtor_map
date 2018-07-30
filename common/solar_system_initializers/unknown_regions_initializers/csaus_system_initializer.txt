@@ -1,0 +1,21 @@
+csaus_system_initializer = {
+    name = "Csaus"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Csaus"
+        class = "pc_tundra"
+        orbit_distance = 50
+        orbit_angle = 132
+        size = 17
+        has_ring = no
+		tile_blockers = none
+		
+
+}

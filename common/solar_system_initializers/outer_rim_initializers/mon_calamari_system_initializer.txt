@@ -1,0 +1,255 @@
+mon_calamari_system_initializer = {
+    name = "Mon Calamari"
+    class = "rl_standard_stars"
+	flags={mon_calamari}
+	
+    planet = {
+        class = none
+        orbit_distance = 0
+        size = 15
+    }
+
+    planet = {
+        name = "Daca"
+        class = star
+        orbit_distance = 12
+        orbit_angle = 300
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Mon Calamari"
+        class = star
+        orbit_distance = 12
+        orbit_angle = 180
+        size = 16
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Mol Luxu"
+        class = "pc_barren"
+        orbit_distance = 22
+        orbit_angle = 139
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Dac (Mon Cala)"
+        class = "pc_ocean"		
+        orbit_distance = 25
+        orbit_angle = 71
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+        moon = {
+            name = "Dac Minor"
+            class = "pc_barren_cold"
+            orbit_distance = 15
+            orbit_angle = 180
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Iceberg I"
+        class = "pc_frozen"
+        orbit_distance = 14
+        orbit_angle = 281
+        size = 8
+        has_ring = no
+
+
+        moon = {
+            name = "Icemoon"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 210
+            has_ring = no
+            size = 4
+
+        }
+    }
+
+    planet = {
+        name = "Iceberg II"
+        class = "pc_frozen"
+        orbit_distance = 22
+        orbit_angle = 43
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Mon Eron"
+        class = "pc_continental"
+        orbit_distance = 14
+        orbit_angle = 180
+        size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Eron Major"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 13
+            has_ring = no
+            size = 6
+
+        }
+        moon = {
+            name = "Eron Minor"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 167
+            has_ring = no
+            size = 4
+
+        }
+
+    }
+
+    planet = {
+        name = "Sep Elopon"
+        class = "pc_gas_giant"
+        orbit_distance = 110
+        orbit_angle = 131
+        has_ring = yes
+        size = 21
+
+
+        moon = {
+            name = "Elopon I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 315
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Elopon II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 277
+            has_ring = no
+            size = 8
+
+        }
+        moon = {
+            name = "Elopon III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 188
+            has_ring = no
+            size = 3
+
+        }
+        moon = {
+            name = "Elopon IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 52
+            has_ring = no
+            size = 5
+
+        }
+        moon = {
+            name = "Elopon V"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 112
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Elopon VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 43
+            has_ring = no
+            size = 6
+
+        }
+        moon = {
+            name = "Elopon VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 152
+            has_ring = no
+            size = 2
+
+        }
+        moon = {
+            name = "Elopon VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 96
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Elopon IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 317
+            has_ring = no
+            size = 5
+
+        }
+        moon = {
+            name = "Elopon X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 114
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Elopon XXXII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 94
+            has_ring = no
+            size = 4
+
+        }
+
+    }
+
+    planet = {
+        name = "Iceberg III"
+        class = "pc_frozen"
+        orbit_distance = 100
+        orbit_angle = 157
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Iceberg IV"
+        class = "pc_frozen"
+        orbit_distance = 29
+        orbit_angle = 328
+        size = 25
+        has_ring = no
+
+    }
+}

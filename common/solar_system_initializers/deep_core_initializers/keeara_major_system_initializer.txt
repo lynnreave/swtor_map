@@ -1,0 +1,21 @@
+keeara_major_system_initializer = {
+    name = "Keeara Major"
+    class = "rl_standard_stars"
+    asteroids_distance = 28
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 30
+    }
+
+    planet = {
+        name = "Keeara Major"
+        class = "pc_tropical"
+        orbit_distance = 52
+        orbit_angle = 225
+        size = 22
+        has_ring = no
+
+    }
+}

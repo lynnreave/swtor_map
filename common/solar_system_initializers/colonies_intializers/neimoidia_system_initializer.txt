@@ -1,0 +1,201 @@
+neimoidia_system_initializer = {
+    name = "Neimodia"
+    class = "rl_standard_stars"
+    asteroids_distance = 127
+	flags= {neimoidian}
+	usage = custom_empire
+	max_instances = 1
+
+    planet = {
+	name = "Nen"
+        class = star
+        orbit_distance = 0
+        size = 25
+    }
+
+    planet = {
+        name = "Deel"
+        class = "pc_molten"
+        orbit_distance = 30
+        orbit_angle = 210
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Moonan"
+        class = "pc_toxic"
+        orbit_distance = 39
+        orbit_angle = 102
+        size = 17
+        has_ring = no
+
+
+        moon = {
+            name = "Moonan Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 6
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Moonan Major"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 195
+            size = 7
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Neimoidia"
+        class = "pc_continental"
+        orbit_distance = 37
+        orbit_angle = 178
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+
+
+        moon = {
+            name = "Neimoidia Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 7
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Saak Sooin Belt"
+        class = "pc_asteroid"
+        orbit_distance = 21
+        orbit_angle = 253
+        size = 7
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Partainu"
+        class = "pc_gas_giant"
+        orbit_distance = 90
+        orbit_angle = 194
+	size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Partainu I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 158
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 239
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 163
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 54
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 95
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 95
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 219
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 302
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 112
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -16
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Partainu XXII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 77
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+}

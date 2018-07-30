@@ -1,0 +1,40 @@
+had_abbadon_system_initializer = {
+    name = "Had Abbadon"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Iapetus"
+        class = "pc_gas_giant"
+        orbit_distance = 52
+        orbit_angle = 229
+        size = 20
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Had Abaddon"
+        class = "pc_arid"
+        orbit_distance = 17
+        orbit_angle = 44
+        size = 18
+        has_ring = yes
+
+    }
+
+    planet = {
+        name = "Adad"
+        class = "pc_nuked"
+        orbit_distance = 44
+        orbit_angle = 81
+        size = 15
+        has_ring = no
+
+    }
+}

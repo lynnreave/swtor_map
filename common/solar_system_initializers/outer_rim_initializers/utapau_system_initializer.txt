@@ -1,0 +1,407 @@
+utapau_system_initializer = {
+    name = "Utapau"
+    class = "rl_standard_stars"
+	flags={utapau_committee}
+
+    planet = {
+        class = "pc_f_star"
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Persoro"
+        class = "pc_molten"
+        orbit_distance = 50
+        orbit_angle = 205
+        has_ring = no
+	size = 14
+
+
+        moon = {
+            name = "Persoro I"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 58
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 176
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 305
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 175
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 82
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 49
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 20
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 247
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 123
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Persoro X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 123
+            size = 2
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Taktos"
+        class = "pc_molten"
+        orbit_distance = 40
+        orbit_angle = 311
+        has_ring = no
+	size = 12
+
+        moon = {
+            name = "Taktos I"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 204
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Taktos II"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 89
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Taktos III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 278
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Taktos IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 234
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Unistros"
+        class = "pc_continental"
+        orbit_distance = 30
+        orbit_angle = 179
+        has_ring = no
+	size = 18
+
+    }
+
+    planet = {
+        name = "Utapau"
+        class = "pc_savannah"
+        orbit_distance = 53
+        orbit_angle = 147
+        has_ring = no
+	size = 20
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+
+        moon = {
+            name = "Utapau I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 147
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Utapau II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 126
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Utapau III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 323
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Utapau IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 177
+            has_ring = no
+
+        }
+        moon = {
+            name = "Utapau V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 126
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Utapau VI"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 280
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Utapau VII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 279
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Utapau VIII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 281
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Utapau IX"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 285
+            size = 3
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Flauss"
+        class = "pc_toxic"
+        orbit_distance = 40
+        orbit_angle = 121
+        has_ring = no
+	size = 15
+
+    }
+
+    planet = {
+        name = "Barbilly"
+        class = "pc_gas_giant"
+        orbit_distance = 65
+        orbit_angle = 350
+        size = 20
+        has_ring = no
+
+
+        moon = {
+            name = "Barbilly I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 115
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Barbilly II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 88
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Barbilly III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 128
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Barbilly IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 48
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Barbilly V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 59
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Barbilly VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 153
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Barbilly VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 279
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Barbilly VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 52
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Chem"
+        class = "pc_gas_giant"
+        orbit_distance = 81
+        orbit_angle = 269
+        size = 26
+        has_ring = no
+
+
+        moon = {
+            name = "Chem I"
+            class = random
+            orbit_distance = 11
+            orbit_angle = 129
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Chem II"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 239
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Chem III"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 227
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Chem IV"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 69
+            size = 7
+            has_ring = no
+
+        }
+
+    }
+}

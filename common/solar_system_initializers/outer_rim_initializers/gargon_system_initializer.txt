@@ -1,0 +1,91 @@
+gargon_system_initializer = {
+    name = "Gargon"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Midussia"
+        class = "pc_toxic"
+        orbit_distance = 34
+        orbit_angle = 65
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Scorch"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 155
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Gargon"
+	class = "pc_arid"
+        orbit_distance = 38
+        orbit_angle = 44
+        size = 18
+        has_ring = no
+			tile_blockers = none
+			
+
+
+        moon = {
+            name = "Gargon I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 122
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Gargon II"
+            class = "pc_tropical"
+            orbit_distance = 5
+            orbit_angle = 246
+            size = 10
+            has_ring = no
+			tile_blockers = none
+	}		
+        moon = {
+            name = "Gargon III"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 14
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Gargon IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 267
+            size = 3
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Ortuum"
+        class = "pc_barren_cold"
+        orbit_distance = 67
+        orbit_angle = 324
+        size = 8
+        has_ring = no
+
+    }
+
+}

@@ -1,0 +1,80 @@
+vulpter_system_initializer = {
+    name = "Vulpter"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Vulpus"
+        class = random
+        orbit_distance = 33
+        orbit_angle = 217
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Kins"
+        class = "pc_toxic"
+        orbit_distance = 27
+        orbit_angle = 354
+        size = 8
+        has_ring = no
+
+
+        moon = {
+            name = "Ilan"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Vulpter"
+        class = "pc_continental"
+        orbit_distance = 15
+        orbit_angle = 63
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Nur"
+        class = random
+        orbit_distance = 22
+        orbit_angle = 194
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Vulp Minor"
+        class = random
+        orbit_distance = 42
+        orbit_angle = 113
+        size = 15
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Vulp Major"
+        class = random
+        orbit_distance = 23
+        orbit_angle = 298
+        size = 24
+        has_ring = no
+
+    }
+}

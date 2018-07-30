@@ -1,0 +1,165 @@
+chalacta_system_initializer = {
+    name = "Chalacta"
+    class = "rl_standard_stars"
+	
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Garuda"
+        class = "pc_molten"
+        orbit_distance = 26
+        orbit_angle = 56
+        size = 18
+        has_ring = no
+
+        moon = {
+            name = "Rudra"
+            class = "pc_toxic"
+            orbit_distance = 8
+            orbit_angle = 132
+            size = 10
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Thar"
+        class = "pc_desert"
+        orbit_distance = 28
+        orbit_angle = 122
+        size = 16
+        has_ring = no
+
+        moon = {
+            name = "Kuruk"
+            class = "pc_arid"
+            orbit_distance = 7
+            orbit_angle = 243
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Luni"
+            class = "pc_ocean"
+            orbit_distance = 3
+            orbit_angle = 243
+            size = 13
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Chalacta"
+        class = "pc_continental"
+        orbit_distance = 30
+        orbit_angle = 124
+        size = 22
+        has_ring = no
+
+
+        moon = {
+            name = "Nagi"
+            class = "pc_tropical"
+            orbit_distance = 9
+            orbit_angle = 65
+            size = 15
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lanka"
+            class = "pc_alpine"
+            orbit_distance = 3.5
+            orbit_angle = 132
+            size = 12
+            has_ring = no
+
+        }
+        moon = {
+            name = "Chinkara"
+            class = "pc_savannah"
+            orbit_distance = 3.5
+            orbit_angle = 246
+            size = 10
+            has_ring = no
+
+        }
+        moon = {
+            name = "Devivati"
+            class = "pc_nuked"
+            orbit_distance = 4
+            orbit_angle = 22
+            size = 8
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Nandi"
+        class = "pc_barren"
+        orbit_distance = 35
+        orbit_angle = 98
+        size = 10
+        has_ring = no
+
+
+        moon = {
+            name = "Candra"
+            class = "pc_barren_cold"
+            orbit_distance = 5
+            orbit_angle = 65
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Bhodchen"
+        class = "pc_tundra"
+        orbit_distance = 24
+        orbit_angle = 114
+        size = 14
+        has_ring = no
+
+        moon = {
+            name = "Ximala"
+            class = "pc_arctic"
+            orbit_distance = 5
+            orbit_angle = 233
+            size = 7
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Himavat"
+        class = "pc_frozen"
+        orbit_distance = 65
+        orbit_angle = 335
+        size = 18
+        has_ring = no
+
+        moon = {
+            name = "Soma"
+            class = "pc_gas_giant"
+            orbit_distance = 10
+            orbit_angle = 59
+            size = 12
+            has_ring = yes
+
+        }
+
+    }
+}

@@ -1,0 +1,131 @@
+iridonia_system_initializer = {
+    name = "Iridonia"
+    class = "rl_standard_stars"
+	flags = {zabrak_council}
+	usage = custom_empire
+	max_instances = 1
+	
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Marisiss"
+        class = "pc_molten"
+        orbit_distance = 24
+        orbit_angle = 132
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Iridonia"
+        class = "pc_arid"
+        orbit_distance = 20
+        orbit_angle = 234
+        size = 18
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+        moon = {
+            name = "Ouc"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 43
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Dar"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 145
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Zabrakior"
+        class = "pc_barren_cold"
+        orbit_distance = 54
+        orbit_angle = -126
+        size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Zabrakior I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 87
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zabrakior II"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 145
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zabrakior III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 245
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zabrakior IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 65
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zabrakior V"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 132
+            size = 3
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Baoress"
+        class = "pc_frozen"
+        orbit_distance = 68
+        orbit_angle = 234
+        size = 9
+        has_ring = no
+
+        moon = {
+            name = "Baoress Minor"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 54
+            size = 4
+            has_ring = no
+
+        }
+    }
+}

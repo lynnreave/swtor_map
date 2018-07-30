@@ -1,0 +1,41 @@
+sposia_system_initializer = {
+    name = "Sposia"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Sposia"
+        class = "pc_continental"
+        orbit_distance = 48
+        orbit_angle = 314
+        size = 17
+        has_ring = no
+		tile_blockers = none
+		
+        moon = {
+            name = "Sposia Major"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 48
+            has_ring = no
+	    size = 6
+
+        }
+        moon = {
+            name = "Sposia Minor"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 287
+            has_ring = no
+	    size = 4
+
+        }
+
+    }
+
+}

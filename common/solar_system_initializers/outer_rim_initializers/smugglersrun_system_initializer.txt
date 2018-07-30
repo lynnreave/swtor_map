@@ -1,0 +1,21 @@
+smugglersrun_system_initializer = {
+    name = "Smuggler's Run"
+    class = "rl_standard_stars"
+    asteroids_distance = 100
+
+    planet = {
+        class = none
+        orbit_distance = 0
+        size = 0
+    }
+
+    planet = {
+        name = "Skip 1"
+        class = "pc_asteroid"
+		orbit_distance = 100
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+
+    }
+}

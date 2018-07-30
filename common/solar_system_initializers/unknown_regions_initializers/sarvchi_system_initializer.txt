@@ -1,0 +1,32 @@
+sarvchi_system_initializer = {
+    name = "Sarvchi"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Sarvchi"
+        class = "pc_continental"
+        orbit_distance = 45
+        orbit_angle = 68
+        size = 18
+        has_ring = no
+		tile_blockers = none
+		
+        moon = {
+            name = "Sarvchi Minor"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 165
+            has_ring = no
+	    size = 5
+
+        }
+
+    }
+
+}

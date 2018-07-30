@@ -1,0 +1,172 @@
+kiros_system_initializer = {
+    name = "Kiros"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Noruop"
+        class = "pc_toxic"
+        orbit_distance = 25
+        orbit_angle = 76
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Tangor"
+        class = "pc_molten"
+        orbit_distance = 20
+        orbit_angle = 103
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Kiros"
+        class = "pc_continental"
+        orbit_distance = 28
+        orbit_angle = 87
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		modifiers = none
+     
+        moon = {
+            name = "Kiros Minor"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 76
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kiros Major"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 265
+            size = 6
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Ertisa"
+        class = "pc_barren_cold"
+        orbit_distance = 30
+        orbit_angle = 197
+        size = 15
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Kirosuss"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 26
+        size = 26
+        has_ring = yes
+
+        moon = {
+            name = "Kirosuss I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 268
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 345
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 243
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 32
+            size = 9
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 311
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 288
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 77
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kirosuss X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 166
+            size = 3
+            has_ring = no
+
+        }
+
+    }
+}

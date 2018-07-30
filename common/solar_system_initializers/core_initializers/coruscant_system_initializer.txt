@@ -1,0 +1,271 @@
+coruscant_system_initializer = {
+    name = "Coruscant"
+    class = "rl_standard_stars"
+
+    planet = {
+        name = "Coruscant Prime"
+        class = star
+        orbit_distance = 0
+        size = 30
+    }
+
+    planet = {
+        name = "Revisse"
+        class = "pc_molten"
+        orbit_distance = 27
+        orbit_angle = 197
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Platoril"
+        class = "pc_barren"
+        orbit_distance = 25
+        orbit_angle = 359
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Vandor-1"
+        class = "pc_barren"
+        orbit_distance = 30
+        orbit_angle = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Vandor-2"
+        class = "pc_barren"
+        orbit_distance = 20
+        orbit_angle = 337
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Vandor-3"
+        class = "pc_ocean"
+        orbit_distance = 25
+        orbit_angle = 14
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Coruscant"
+		flags = {coruscant}
+        class = "pc_continental"
+		orbit_distance = 13
+        orbit_angle = 100
+        size = 25        
+        has_ring = no
+		entity = "ai_planet_01_entity"			
+		starting_planet = yes			
+		tile_blockers = none
+		modifiers = None
+     	
+
+
+        moon = {
+            name = "Centax-1"
+            class = "pc_tundra"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Centax-2"
+            class = "pc_barren_cold"
+            orbit_distance = 6
+            orbit_angle = 47
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Centax-3"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 134
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Hesperidium"
+            class = "pc_tropical"
+            orbit_distance = 7
+            orbit_angle = 211
+            size = 6
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Muscave"
+        class = "pc_gas_giant"
+        orbit_distance = 61
+        orbit_angle = 75
+        size = 18
+        has_ring = no
+
+
+        moon = {
+            name = "Eplrys-1"
+            class = "pc_barren_cold"
+            orbit_distance = 7
+            orbit_angle = 67
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Eplrys-2"
+            class = "pc_barren_cold"
+            orbit_distance = 3
+            orbit_angle = 113
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Fryv"
+            class = "pc_barren_cold"
+            orbit_distance = 6
+            orbit_angle = 310
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Detian"
+            class = "pc_desert"
+            orbit_distance = 6
+            orbit_angle = 134
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Muscave XXI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 211
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Stentat"
+        class = "pc_gas_giant"
+        orbit_distance = 62
+        orbit_angle = 13
+        size = 16
+        has_ring = no
+
+
+        moon = {
+            name = "Stentat Minor"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Stentat Major"
+            class = "pc_barren_cold"
+            orbit_distance = 5
+            orbit_angle = 359
+            size = 6
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Hadreshan"
+            class = "pc_nuked"
+            orbit_distance = 4
+            orbit_angle = 285
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Pladus"
+            class = "pc_frozen"
+            orbit_distance = 6
+            orbit_angle = 297
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Stentat XXIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 56
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Improcco"
+        class = "pc_arctic"
+        orbit_distance = 40
+        orbit_angle = 74
+        size = 18
+        has_ring = no
+
+
+        moon = {
+            name = "Frozen Moon of Improcco"
+            class = "pc_frozen"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Nabatu"
+        class = "pc_barren_cold"
+        orbit_distance = 90
+        orbit_angle = 17
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Ulabos"
+        class = "pc_frozen"
+        orbit_distance = 64
+        orbit_angle = 15
+        size = 24
+        has_ring = yes
+
+    }
+}

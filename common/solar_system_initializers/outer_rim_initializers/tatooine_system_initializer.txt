@@ -1,0 +1,157 @@
+tatooine_system_initializer = {
+    name = "Tatoo"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = none
+        orbit_distance = 0
+        size = 15
+    }
+
+    planet = {
+        name = "Tatoo I"
+        class = "pc_g_star"
+        orbit_distance = 12
+        orbit_angle = 308
+        size = 15
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Tatoo II"
+        class = "pc_g_star"
+        orbit_distance = 12
+        orbit_angle = 186
+        size = 25
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Tatooine"
+        class = "pc_desert"
+        orbit_distance = 42
+        orbit_angle = 102
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		
+
+        moon = {
+            name = "Ghomrassen"
+            class = "pc_barren_cold"
+            orbit_distance = 7
+            orbit_angle = 266
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Guermessa"
+            class = "pc_barren_cold"
+            orbit_distance = 3
+            orbit_angle = 274
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Chenini"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 202
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Ohann"
+        class = "pc_gas_giant"
+        orbit_distance = 50
+        orbit_angle = 294
+        size = 15
+        has_ring = no
+
+
+        moon = {
+            name = "Ohann I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 261
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ohann II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 291
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ohann III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 237
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Adriana"
+        class = "pc_gas_giant"
+        orbit_distance = 37
+        orbit_angle = 204
+        size = 25
+        has_ring = yes
+
+
+        moon = {
+            name = "Adriana I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 60
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Adriana II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 123
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Adriana III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 94
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Adriana IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 200
+            size = 7
+            has_ring = no
+
+        }
+
+    }
+}

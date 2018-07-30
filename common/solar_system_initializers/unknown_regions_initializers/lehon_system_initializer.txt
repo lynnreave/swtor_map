@@ -1,0 +1,1465 @@
+lehon_system_initializer = {
+	name = "Lehon"
+   usage = fallen_empire_init
+	class = "rl_standard_stars"
+	flags = {fallen_empire_4}
+
+    planet = {
+	name = "Abo"
+        class = "pc_g_star"
+        orbit_distance = 0
+        size = 35
+		
+    }
+
+    planet = {
+        name = "Iwar"
+        class = "pc_barren"
+        orbit_distance = 35
+        orbit_angle = 214
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Meldina"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 244
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Taxiode"
+        class = "pc_toxic"
+        orbit_distance = 30
+        orbit_angle = 31
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Lehon (Rakata Prime)"
+        class = "pc_tropical"
+        orbit_distance = 26
+        orbit_angle = 116
+        size = 35
+        has_ring = no		
+		tile_blockers = none
+		modifiers = none
+			
+			init_effect = {
+		set_planet_flag = fallen_empire_world			
+		create_species = {
+			name = "Rakata"
+			class = "REP"
+			portrait = "rep3"
+			traits = { trait = "trait_pc_tropical_preference" 
+			trait = "trait_intelligent" 
+			trait = "trait_natural_engineers"
+			trait = "trait_extremely_adaptive"
+					}
+			extra_trait_points = 2
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = "Infinite Empire Remnants"
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			government = stagnated_ascendancy
+			species = last_created
+			ethos = {
+				ethic = ethic_fanatic_xenophobe
+			}
+			flag={
+					icon={
+						category="starwarssilver"
+						file="18.dds"
+					}
+					background={
+						category="backgrounds"
+						file="00_solid.dds"
+					}
+					colors={
+						"black"
+						"black"
+						"null"
+						"null"
+					}
+				}
+			effect = {
+				set_country_flag = fallen_empire_4	
+				set_graphical_culture = "fallen_empire_04"
+				add_minerals = 5000
+				add_energy = 5000		
+				# must initialize global designs here
+				add_global_ship_design = "Imperium"
+				add_global_ship_design = "Supremacy"
+				add_global_ship_design = "Glory"
+				add_global_ship_design = "Reaper"
+				add_global_ship_design = "Devastator"
+				add_global_ship_design = "Servitor"
+				add_global_ship_design = "Destiny"		
+			}
+		}
+	}
+			
+
+			init_effect = {
+				set_planet_flag = fallen_empire_world
+				prevent_anomaly = yes
+				set_owner = last_created_country
+				set_capital = yes
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}				
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				create_pop = { 
+					species = owner_main_species
+					ethos = owner 
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no num_adjacent_tiles > 3 }
+					set_building = "building_capital_3"
+					add_resource = {
+						resource = minerals
+						amount = 1
+						replace = yes
+					}
+					add_resource = {
+						resource = food
+						amount = 1
+					}			
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_agri_processing_complex"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}				
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_agri_processing_complex"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}				
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_ancient_factory"
+					add_resource = {
+						resource = minerals
+						amount = 1
+						replace = yes
+					}					
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_ancient_factory"
+					add_resource = {
+						resource = minerals
+						amount = 1
+						replace = yes
+					}					
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}			
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_dark_matter_power_plant"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}	
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_ancient_factory"
+					add_resource = {
+						resource = minerals
+						amount = 1
+						replace = yes
+					}					
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_ancient_factory"
+					add_resource = {
+						resource = minerals
+						amount = 1
+						replace = yes
+					}					
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_ancient_factory"
+					add_resource = {
+						resource = minerals
+						amount = 1
+						replace = yes
+					}					
+				}
+				random_tile = {
+					limit = { has_building = no has_blocker = no }
+					set_building = "building_ancient_factory"
+					add_resource = {
+						resource = minerals
+						amount = 1
+						replace = yes
+					}					
+				}
+				every_tile = {
+					limit = { has_building = no has_blocker = no has_pop = no }			
+					set_blocker = tb_ancient_ruins
+							}				
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "xenomorph_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "xenomorph_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "xenomorph_army"
+				}			
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "xenomorph_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "xenomorph_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "xenomorph_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "defense_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "defense_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "defense_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "defense_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "defense_army"
+				}
+				create_army = {
+					name = random
+					owner = last_created_country
+					species = last_created_country
+					type = "defense_army"
+				}	
+				create_spaceport = {
+					owner = last_created_country
+					initial_module = "fallen_empire_weapon"
+				}
+				spaceport = {
+					set_spaceport_level = 6		
+					set_spaceport_module = {
+						slot = 1
+						module = "crew_quarters"
+					}	
+					set_spaceport_module = {
+						slot = 2
+						module = "fleet_academy"
+					}
+					set_spaceport_module = {
+						slot = 3
+						module = "synchronized_defenses"
+					}
+					set_spaceport_module = {
+						slot = 4
+						module = "engineering_bay"
+					}				
+				}	
+				create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Reaper"
+						graphical_culture = last_created_country
+					}
+					set_location = {
+						target = PREV
+						distance = 20
+						angle = 90
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Reaper"
+						graphical_culture = last_created_country
+					}
+					set_location = {
+						target = PREV
+						distance = 20
+						angle = 180
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Reaper"
+						graphical_culture = last_created_country
+					}
+					set_location = {
+						target = PREV
+						distance = 20
+						angle = 270
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Reaper"
+						graphical_culture = last_created_country
+					}
+					set_location = {
+						target = PREV
+						distance = 20
+						angle = 0
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Servitor"
+						graphical_culture = last_created_country
+					}
+					set_location = {
+						target = PREV
+						distance = 80
+					}
+				}					
+			}
+			create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Servitor"
+						graphical_culture = last_created_country
+					}
+					set_location = {
+						target = PREV
+						distance = 90
+					}				
+				}
+			}				
+			create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Servitor"
+						graphical_culture = last_created_country
+					}
+					set_location = {
+						target = PREV
+						distance = 100
+					}
+				}
+			}	
+			
+				create_fleet = {
+					effect = {
+						set_owner = last_created_country
+						create_ship = {
+							name = random
+							design = "Imperium"
+							graphical_culture = last_created_country
+						}
+						set_location = {
+							target = PREV
+							distance = 20
+							angle = random 
+						}					
+					}
+				}
+						
+			create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}				
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}				
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}					
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}					
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}			
+					set_location = {
+						target = PREV
+						distance = 70
+						angle = random 
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = last_created_country
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}					
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Supremacy"
+						graphical_culture = last_created_country
+					}				
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}					
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}
+					create_ship = {
+						name = random
+						design = "Glory"
+						graphical_culture = last_created_country
+					}				
+					set_location = {
+						target = PREV
+						distance = 90
+						angle = random 
+					}
+				}
+			}		
+			create_fleet = {
+					effect = {
+						set_owner = last_created_country
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Supremacy"
+							graphical_culture = last_created_country
+						}				
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}						
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}
+						create_ship = {
+							name = random
+							design = "Glory"
+							graphical_culture = last_created_country
+						}			
+						set_location = {
+							target = PREV
+							distance = 45
+							angle = random 
+						}
+					}
+									
+			}
+			}
+
+        moon = {
+            name = "Rakata Minor"
+            class = "pc_barren"
+			entity = "barren_planet_01_destroyed_entity"
+            orbit_distance = 10
+            orbit_angle = 50
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Rakata Major"
+            class = "pc_gaia"
+            orbit_distance = 5
+            orbit_angle = 172
+            size = 12
+            has_ring = no
+		
+		}
+	}
+
+    planet = {
+        name = "Desten"
+        class = "pc_barren_cold"
+        orbit_distance = 30
+        orbit_angle = 147
+        has_ring = no
+	size=14
+
+
+        moon = {
+            name = "Desten I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 229
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Desten II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 188
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Desten III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 38
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Desten IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 257
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Desten V"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 6
+            size = 2
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Geraps Sule"
+        class = "pc_gas_giant"
+        orbit_distance = 41
+        orbit_angle = 284
+        has_ring = no
+	size = 20
+
+
+        moon = {
+            name = "Geraps I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 196
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 288
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 142
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 114
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 76
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 113
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 42
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 223
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geraps XI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 3
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Verla Klest"
+        class = "pc_gas_giant"
+        orbit_distance = 60
+        orbit_angle = 202
+        has_ring = no
+	size = 26
+
+        moon = {
+            name = "Verla I"
+            class = random
+            orbit_distance = 11
+            orbit_angle = 254
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Verla II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 274
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Verla III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 288
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Verla IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 129
+            size = 7
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Verla V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 103
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Verla VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 291
+            has_ring = no
+
+        }
+        moon = {
+            name = "Verla VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 329
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Verla IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 158
+            size = 7
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Ding Briar"
+        class = "pc_gas_giant"
+        orbit_distance = 90
+        orbit_angle = 70
+        has_ring = no
+	size = 23
+
+        moon = {
+            name = "Ding I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 264
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding II"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 191
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 256
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 237
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 203
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 81
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 278
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 53
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 162
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 55
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Ding XVIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 231
+            size = 5
+            has_ring = no
+
+        }
+    }
+}

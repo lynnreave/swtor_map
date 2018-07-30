@@ -1,0 +1,336 @@
+the_maw_system_initializer = {
+    name = "The Maw"
+    class = "sc_black_hole"
+
+    planet = {
+        class = "pc_black_hole"
+        orbit_distance = 0
+        size = 40
+		init_effect = {
+		create_cloud_country = yes		
+			save_event_target_as = voidhome_star
+			event_target:cloud_country = {
+				save_event_target_as = voidhome_owner
+				create_fleet = { name = "Abyssal Host" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "YAQU"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SHAR"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "APED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "HAPI"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+				}
+				create_fleet = { name = "Chasmal Horde" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "ANED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "DJER"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SEME"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "MERN"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+				}
+				create_fleet = { name = "Storm Horde" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "ANED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "DJER"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SEME"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "MERN"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+			}
+		create_fleet = { name = "Death Horde" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "ANED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "DJER"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SEME"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "MERN"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+		}
+		create_fleet = { name = "Void Horde" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "ANED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "DJER"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SEME"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "MERN"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+		}
+		create_fleet = { name = "Death Horde" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "ANED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "DJER"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SEME"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "MERN"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+		}
+		create_fleet = { name = "Abyssal Host" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "YAQU"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SHAR"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "APED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "HAPI"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+				}
+				create_fleet = { name = "Abyssal Host" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "YAQU"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SHAR"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "APED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "HAPI"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+				}
+				create_fleet = { name = "Abyssal Host" }
+				last_created_fleet = {
+					set_owner = event_target:cloud_country
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = return_point
+					set_aggro_range = 150
+					create_ship = {
+						name = "YAQU"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "SHAR"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "APED"
+						design = "Cloud Entity"
+					}
+					create_ship = {
+						name = "HAPI"
+						design = "Cloud Entity"
+					}
+					set_location = event_target:voidhome_star
+				}
+		}
+		}
+    }
+
+    planet = {
+        class = "pc_black_hole"
+        orbit_distance = 58
+        orbit_angle = 149
+        has_ring = no
+
+    }
+
+    planet = {
+	name = "Abeloth's Planet"
+        class = "pc_tropical"
+        orbit_distance = 20
+        orbit_angle = 200
+        has_ring = no
+	size = 15
+	init_effect = {
+		random_tile = {
+			limit = { has_blocker = no has_building = no }
+				set_building = "building_great_pyramid"
+				}		
+			
+		random_tile = {					
+			limit = { has_building = no has_blocker = no has_pop = no }			
+				set_blocker = tb_ancient_ruins
+			}		
+		random_tile = {					
+			limit = { has_building = no has_blocker = no has_pop = no }			
+				set_blocker = tb_ancient_ruins
+			}	
+		random_tile = {					
+			limit = { has_building = no has_blocker = no has_pop = no }			
+				set_blocker = tb_ancient_ruins
+			}	
+		}
+    }
+
+    planet = {
+        class = "pc_black_hole"
+        orbit_distance = 30
+        orbit_angle = 114
+        has_ring = no
+
+    }
+
+   
+
+   
+
+    planet = {
+        class = "pc_black_hole"
+        orbit_distance = 0
+        orbit_angle = 279
+        has_ring = no		
+
+    }
+
+  
+
+    #planet = {
+    #    class = "pc_black_hole"
+    #    orbit_distance = 1
+    ##    orbit_angle = 96
+    #    has_ring = no
+	#	
+
+    #}
+
+    planet = {
+        class = "pc_black_hole"
+        orbit_distance = 52
+        orbit_angle = 164
+        has_ring = no
+		
+		}
+
+    
+
+  
+
+    planet = {
+        class = "pc_black_hole"
+        orbit_distance = 1
+        orbit_angle = 171
+        has_ring = no
+		
+
+    }
+
+    planet = {
+        class = "pc_black_hole"
+        orbit_distance = 1
+        orbit_angle = 68
+        has_ring = no
+
+    }
+	    planet = {
+        class = "pc_black_hole"
+        orbit_distance = 50
+        orbit_angle = 68
+        has_ring = no
+
+    }
+}

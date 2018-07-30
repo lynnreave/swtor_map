@@ -1,0 +1,84 @@
+arkania_system_initializer = {
+    name = "Perave (Arkania)"
+    class = "rl_standard_stars"
+	flags= {arkania}
+	usage = custom_empire
+	max_instances = 1
+
+    planet = {
+	name = "Olim"
+        class = "pc_f_star"
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Loui"
+        class = "pc_molten"
+        orbit_distance = 25
+        orbit_angle = 135
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Hoco"
+        class = "pc_arid"
+        orbit_distance = 34
+        orbit_angle = 26
+        size = 14
+        has_ring = yes
+
+
+        moon = {
+            name = "Tate"
+            class = "pc_barren"
+            orbit_distance = 10
+            orbit_angle = 233
+            size = 6
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Arkania"
+        class = "pc_arctic"
+        orbit_distance = 39
+        orbit_angle = 31
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		
+
+    }
+
+    planet = {
+        name = "Kop"
+        class = "pc_frozen"
+        orbit_distance = 75
+        orbit_angle = 97
+	size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Pai"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 276
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+}

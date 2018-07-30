@@ -1,0 +1,41 @@
+tsoss_beacon_system_initializer = {
+    name = "Tsoss Beacon"
+    class = "rl_standard_stars"
+    asteroids_distance = 34
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Tsoss Beacon"
+        class = random_asteroid
+        orbit_distance = 34
+        orbit_angle = 231
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "VL-82"
+        class = random_asteroid
+        orbit_distance = 0
+        orbit_angle = 180
+        size = 6
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Daala"
+        class = "pc_tropical"
+        orbit_distance = 38
+        orbit_angle = 184
+        size = 12
+        has_ring = yes
+
+    }
+}

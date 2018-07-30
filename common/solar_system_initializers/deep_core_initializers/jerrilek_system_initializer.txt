@@ -1,0 +1,31 @@
+jerrilek_system_initializer = {
+    name = "Jerrilek"
+    class = "rl_standard_stars"
+    asteroids_distance = 84
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 28
+    }
+
+    planet = {
+        name = "Jerrilek"
+        class = "pc_tropical"
+        orbit_distance = 30
+        orbit_angle = 219
+        size = 24
+        has_ring = yes
+
+    }
+
+    planet = {
+        name = "FT-287"
+        class = random_asteroid
+        orbit_distance = 54
+        orbit_angle = 63
+        size = 7
+        has_ring = no
+
+    }
+}

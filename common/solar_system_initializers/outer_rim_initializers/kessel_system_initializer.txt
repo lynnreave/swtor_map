@@ -1,0 +1,88 @@
+kessel_system_initializer = {
+    name = "Kessa (Kessel)"
+	 class = random
+    asteroids_distance = 48
+
+    planet = {
+        class = "pc_a_star"
+		name = "Kessa"
+        orbit_distance = 0
+        size = 25
+    }
+
+    planet = {
+        name = "Senna"
+        class = "pc_molten"
+        orbit_distance = 28
+        orbit_angle = 225
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Diamond Asteroids"
+        class = "pc_asteroid"
+        orbit_distance = 20
+        orbit_angle = 21
+        size = 10
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Kessel"
+        class = "pc_alpine"
+        orbit_distance = 25
+        orbit_angle = 66
+        size = 16
+        has_ring = no
+		#modifiers = none
+		init_effect = {
+			add_modifier = {
+				modifier = "mineral_rich"
+					}
+		}
+		
+		init_effect = {
+		random_tile = {					
+			limit = { has_building = no has_blocker = no has_pop = no }			
+				set_blocker = tb_ancient_ruins
+			}			
+			
+		random_tile = {					
+			limit = { has_building = no has_blocker = no has_pop = no }			
+				set_blocker = tb_ancient_ruins
+			}		
+		random_tile = {					
+			limit = { has_building = no has_blocker = no has_pop = no }			
+				set_blocker = tb_ancient_ruins
+			}	
+		random_tile = {					
+			limit = { has_building = no has_blocker = no has_pop = no }			
+				set_blocker = tb_ancient_ruins
+			}	
+		}
+
+
+        moon = {
+            name = "Sky Bogey"
+            class = "pc_barren"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 10
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Karedda"
+        class = "pc_frozen"
+        orbit_distance = 38
+        orbit_angle = 163
+        size = 18
+        has_ring = no
+
+    }
+}

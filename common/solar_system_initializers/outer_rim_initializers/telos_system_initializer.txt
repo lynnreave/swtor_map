@@ -1,0 +1,87 @@
+telos_system_initializer = {
+    name = "Telos"
+    class = "rl_standard_stars"
+    asteroids_distance = 30
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Telos I"
+        class = "pc_molten"
+        orbit_distance = 20
+        orbit_angle = 346
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Telos II"
+        class = "pc_toxic"
+        orbit_distance = 28
+        orbit_angle = 235
+        size = 16
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Telos III"
+        class = "pc_barren"
+        orbit_distance = 18
+        orbit_angle = 98
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Telos IV"
+        class = "pc_continental"
+        orbit_distance = 20
+        orbit_angle = 180
+        size = 20
+        has_ring = no
+
+    }
+    planet = {
+        name = "Telos V"
+        class = "pc_gas_giant"
+        orbit_distance = 54
+        orbit_angle = 65
+        size = 28
+        has_ring = no
+
+    }
+    planet = {
+        name = "Telos VI"
+        class = "pc_gas_giant"
+        orbit_distance = 50
+        orbit_angle = 144
+        size = 25
+        has_ring = yes
+
+    }
+    planet = {
+        name = "Telos VII"
+        class = "pc_barren_cold"
+        orbit_distance = 38
+        orbit_angle = 254
+        size = 12
+        has_ring = no
+
+    }
+    planet = {
+        name = "Telos VIII"
+        class = "pc_frozen"
+        orbit_distance = 58
+        orbit_angle = 76
+        size = 16
+        has_ring = no
+
+    }
+}

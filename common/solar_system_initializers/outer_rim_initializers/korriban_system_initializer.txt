@@ -1,0 +1,168 @@
+korriban_system_initializer = {
+    name = "Horuset (Korriban)"
+    class = "rl_standard_stars"
+    asteroids_distance = 113
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Korriba Scar II"
+        class = "pc_asteroid"
+		size= 5
+		orbit_distance = 20
+        orbit_angle = 142
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Korriba Scar III"
+        class = "pc_asteroid"
+		size= 5
+        orbit_distance = 0
+        orbit_angle = 322
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Korriba Scar VI"
+        class = "pc_asteroid"
+		size= 5
+        orbit_distance = 0
+        orbit_angle = 210
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Korriba Scar I"
+        class = "pc_asteroid"
+		size= 5
+        orbit_distance = 0
+        orbit_angle = 248
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Korriba Scar"
+        class = "pc_asteroid"
+		size= 5
+        orbit_distance = 0
+        orbit_angle = 42
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Korriba Scar V"
+        class = "pc_asteroid"
+		size= 5
+        orbit_distance = 0
+        orbit_angle = 129
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Korriba Scar IV"
+        class = "pc_asteroid"
+		size= 5
+        orbit_distance = 0
+        orbit_angle = 40
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Korriban (Moraband)"		
+        class = "pc_arid"
+        orbit_distance = 35
+		orbit_angle = 159
+        size = 20
+        has_ring = no
+	tile_blockers = none
+	
+		
+
+
+        moon = {
+            class = random
+		name = "Korriban I"
+            orbit_distance = 9
+            orbit_angle = 186
+            has_ring = no
+
+        }
+
+        moon = {
+            class = random
+			name = "Korriban II"
+            orbit_distance = 5
+            orbit_angle = 38
+            has_ring = no
+
+        }
+
+        moon = {
+            class = random
+			name = "Korriban III"
+            orbit_distance = 2
+            orbit_angle = 310
+            has_ring = no
+
+        }
+
+        moon = {
+            class = random
+			name = "Korriban IV"
+            orbit_distance = 4
+            orbit_angle = 12
+            has_ring = no
+
+        }
+
+        moon = {
+            class = random
+			name = "Korriban V"
+            orbit_distance = 4
+            orbit_angle = 310
+            has_ring = no
+
+        }
+
+        moon = {
+            class = random
+			name = "Korriban VI"
+            orbit_distance = 4
+            orbit_angle = 31
+            has_ring = no
+
+        }
+
+        moon = {
+            class = random
+			name = "Korriban VII"
+            orbit_distance = 5
+            orbit_angle = 11
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Ashes of Kor"
+        class = "pc_asteroid"
+		size= 5
+        orbit_distance = 58
+        orbit_angle = 45
+        size = 8
+        has_ring = no
+
+    }
+}

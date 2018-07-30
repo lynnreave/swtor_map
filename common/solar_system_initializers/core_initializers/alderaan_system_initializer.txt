@@ -1,0 +1,93 @@
+alderaan_system_initializer = {
+    name = "Alderaan"
+    class = "rl_standard_stars"
+	flags={alderaan_kingdom}
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Raisa"
+        class = "pc_molten"
+        orbit_distance = 42
+        orbit_angle = 234
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Alderaan"
+        class = "pc_alpine"
+        orbit_distance = 43
+        orbit_angle = 291
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		entity = gaia_planet_01_entity
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = "natural_beauty"
+			}
+		}
+		
+		
+
+
+
+        moon = {
+            name = "Quel'os"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 251
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Delaya"
+        class = "pc_ocean"
+        orbit_distance = 28
+        orbit_angle = 58
+        size = 15
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Avirandel"
+        class = "pc_barren_cold"
+        orbit_distance = 37
+        orbit_angle = 306
+        size = 17
+        has_ring = no
+
+
+        moon = {
+	    name = "Avirandel Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 262
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Avishan"
+        class = "pc_frozen"
+        orbit_distance = 60
+        orbit_angle = 19
+        size = 28
+        has_ring = no
+
+    }
+}

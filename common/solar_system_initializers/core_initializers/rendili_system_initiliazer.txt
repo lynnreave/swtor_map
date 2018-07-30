@@ -1,0 +1,85 @@
+rendili_system_initializer = {
+    name = "Rendili"
+    class = "rl_standard_stars"
+	flags={rendili}
+    asteroids_distance = 193
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 35
+    }
+
+    planet = {
+        name = "Moltar"
+        class = "pc_molten"
+        orbit_distance = 63
+        orbit_angle = 210
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Rendili"
+        class = "pc_continental"
+        orbit_distance = 43
+        orbit_angle = 107
+        size = 20
+        has_ring = no
+		#starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+
+        moon = {
+            name = "Rendili Minor"
+            class = "pc_tropical"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Killis"
+        class = "pc_toxic"
+        orbit_distance = 30
+        orbit_angle = 113
+        has_ring = no
+
+
+        moon = {
+            name = "Killis Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Killis Major"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 200
+            size = 7
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Rendili Belt"
+        class = "pc_asteroid"
+        orbit_distance = 57
+        orbit_angle = 158
+        size = 8
+        has_ring = no
+
+    }
+}

@@ -1,0 +1,82 @@
+du_hutta_system_initializer = {
+    name = "Du Hutta"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Ibsisol"
+        class = "pc_molten"
+        orbit_distance = 30
+        orbit_angle = 46
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Loormot"
+        class = "pc_barren"
+        orbit_distance = 28
+        orbit_angle = 258
+        size = 13
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Du Hutta"
+        class = "pc_tropical"
+        orbit_distance = 34
+        orbit_angle = 347
+        size = 20
+        has_ring = no
+			tile_blockers = none
+			
+        moon = {
+            name = "Du Hutta Minor"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 109
+            size = 5
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Jorrmet"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 143
+        size = 23
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Oliphar"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 344
+        size = 25
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Tybothil"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 65
+        size = 21
+        has_ring = no
+
+    }
+
+}

@@ -1,0 +1,82 @@
+bengali_system_initializer = {
+    name = "Bengali"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Joryul"
+        class = "pc_molten"
+        orbit_distance = 25
+        orbit_angle = 265
+        size = 11
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Yulmon"
+        class = "pc_barren"
+        orbit_distance = 18
+        orbit_angle = 143
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Bengali"
+        class = "pc_tropical"
+        orbit_distance = 22
+        orbit_angle = 78
+        size = 18
+        has_ring = no
+		tile_blockers = none
+		modifiers = none
+     
+        moon = {
+            name = "Deshari"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 284
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Tendrul"
+        class = "pc_barren_cold"
+        orbit_distance = 45
+        orbit_angle = 245
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Norchyut"
+        class = "pc_frozen"
+        orbit_distance = 60
+        orbit_angle = 54
+        size = 12
+        has_ring = yes
+
+        moon = {
+            name = "Norchyut Minor"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 287
+            size = 3
+            has_ring = no
+
+        }
+
+    }
+
+}

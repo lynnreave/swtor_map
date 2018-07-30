@@ -1,0 +1,637 @@
+onderon_system_initializer = {
+    name = "Japrael (Onderon)"
+    class = "rl_standard_stars"
+	flags = {onderon}
+
+    planet = {
+        name = "Prael"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Bara"
+        class = "pc_molten"
+        orbit_distance = 35
+        orbit_angle = 195
+        size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Bara Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 184
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Onderon"
+        class = "pc_tropical"
+        orbit_distance = 25
+        orbit_angle = 125
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+
+
+        moon = {
+            name = "Dxun"
+            class = "pc_tropical"
+            orbit_distance = 8
+            orbit_angle = 135
+            size = 8
+            has_ring = no
+			tile_blockers = none
+			init_effect = {
+			
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dense_jungle"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dense_jungle"
+				add_resource = {
+					resource = society_research
+					amount = 2
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dense_jungle"
+				add_resource = {
+					resource = society_research
+					amount = 2
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dangerous_wildlife"
+				add_resource = {
+					resource = society_research
+					amount = 2
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dangerous_wildlife"
+				add_resource = {
+					resource = society_research
+					amount = 2
+					replace = yes
+				}				
+			}
+						
+			
+			}
+
+        }
+        moon = {
+            name = "Dagri"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 111
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Evas"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 167
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Suthre"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 185
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Fillata"
+        class = "pc_toxic"
+        orbit_distance = 27
+        orbit_angle = 255
+        size = 12
+        has_ring = no
+
+
+        moon = {
+            name = "Fillata I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 124
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Fillata II"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 47
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Fillata III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 109
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Morvolo"
+        class = "pc_frozen"
+        orbit_distance = 23
+        orbit_angle = 258
+        size = 12
+        has_ring = no
+
+
+        moon = {
+            name = "Morvolo I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 142
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Morvolo II"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 174
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Morvolo III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 102
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Morvolo IV"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 138
+            size = 6
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Mulchoop"
+        class = "pc_gas_giant"
+        orbit_distance = 60
+        orbit_angle = 260
+		size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Mulchoop I"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 110
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop IV"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 249
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 104
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop VI"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 33
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop VII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 46
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 151
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 267
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Mulchoop XXXI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 10
+            size = 6
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Caloma"
+        class = "pc_gas_giant"
+        orbit_distance = 70
+        orbit_angle = 289
+	size = 18
+        has_ring = no
+
+
+        moon = {
+            name = "Caloma I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 336
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 297
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 308
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 315
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma V"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 126
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 310
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 162
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 33
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -90
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 157
+            has_ring = no
+
+        }
+        moon = {
+            name = "Caloma XXVII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 157
+            has_ring = no
+
+        }
+
+    }
+
+    planet = {
+        name = "Twing"
+        class = "pc_gas_giant"
+        orbit_distance = 69
+        orbit_angle = 231
+	size = 15
+        has_ring = no
+
+
+        moon = {
+            name = "Twing I"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 215
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 311
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing IV"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 133
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 55
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 137
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing VIII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 19
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing IX"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 225
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing X"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 146
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Twing XXII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 67
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Overt"
+        class = "pc_gas_giant"
+        orbit_distance = 56
+        orbit_angle = 49
+		size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Overt I"
+            class = random
+            orbit_distance = 11
+            orbit_angle = 24
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Overt II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 173
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Overt III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 246
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Overt IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 201
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Overt V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 93
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Overt VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 3
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Overt VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 176
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Overt VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 245
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Overt IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 90
+            size = 3
+            has_ring = no
+
+        }
+
+    }
+}

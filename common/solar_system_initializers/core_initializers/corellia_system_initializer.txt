@@ -1,0 +1,126 @@
+corellia_system_initializer = {
+    name = "Corellia"
+    class = "rl_standard_stars"
+	flags={corellian_empire}
+
+    planet = {
+        name = "Corell"
+        class = "pc_g_star"
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Corellia"
+        class = "pc_continental"
+        orbit_distance = 69
+        orbit_angle = 212
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+
+
+        moon = {
+            name = "Gus Talen"
+            class = "pc_continental"
+            orbit_distance = 9
+            orbit_angle = 179
+            size = 6
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Corellia Minor"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 273
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gus Treta"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 67
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Drall"
+        class = "pc_continental"
+        orbit_distance = 31
+        orbit_angle = 223
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Twin Worlds"
+        class = "pc_barren_cold"
+        orbit_distance = 51
+        orbit_angle = 98
+        size = 1
+        has_ring = no
+
+
+        moon = {
+            name = "Talus"
+            class = "pc_continental"
+            orbit_distance = 7
+            orbit_angle = 209
+            size = 16
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Tralus"
+            class = "pc_continental"
+            orbit_distance = 3
+            orbit_angle = 216
+            size = 16
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Selonia"
+        class = "pc_ocean"
+        orbit_distance = 44
+        orbit_angle = 297
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Crollia"
+        class = "pc_barren_cold"
+        orbit_distance = 86
+        orbit_angle = 234
+        size = 14
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Soronia"
+        class = "pc_frozen"
+        orbit_distance = 75
+        orbit_angle = 206
+        size = 28
+        has_ring = no
+
+    }
+}

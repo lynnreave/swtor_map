@@ -1,0 +1,261 @@
+brentaal_system_initializer = {
+    name = "Brentaal"
+    class = "rl_standard_stars"
+	flags={brentaal}
+
+
+    planet = {
+        name = "Brenta"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Sollace"
+        class = "pc_molten"
+        orbit_distance = 23
+        orbit_angle = 227
+        size = 9
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Tremaal"
+        class = "pc_barren"
+        orbit_distance = 20
+        orbit_angle = 142
+        size = 12
+        has_ring = no
+
+
+        moon = {
+            name = "Tremaal Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Gastol"
+        class = "pc_gas_giant"
+        orbit_distance = 27
+        orbit_angle = 238
+        size = 14
+        has_ring = no
+
+
+        moon = {
+            name = "Gastol I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 218
+            size = 6
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gastol II"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 297
+            size = 2
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gastol III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 237
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Brentaal IV"
+        class = "pc_continental"
+        orbit_distance = 21
+        orbit_angle = 331
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	
+        moon = {
+            name = "Brentaal Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Brentaal Major"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 269
+            size = 7
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Gumbus"
+        class = "pc_gas_giant"
+        orbit_distance = 45
+        orbit_angle = 209
+        size = 20
+        has_ring = no
+
+
+        moon = {
+            name = "Gumbus I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 199
+            size = 3
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gumbus II"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 69
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gumbus III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 214
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gumbus IV"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 180
+            size = 7
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gumbus V"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 269
+            size = 2
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gumbus VI"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 58
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gumbus VII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 37
+            size = 4
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Gumbus VIII"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 119
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Gumbus IX"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 46
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Gumbus XVI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 46
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Cavas"
+        class = "pc_gas_giant"
+        orbit_distance = 40
+        orbit_angle = 177
+        size = 18
+        has_ring = no
+
+
+        moon = {
+            name = "Cavas Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 5
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Cavas Major"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 39
+            size = 6
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Javaal"
+        class = "pc_frozen"
+        orbit_distance = 51
+        orbit_angle = 4
+        has_ring = no
+
+    }
+}

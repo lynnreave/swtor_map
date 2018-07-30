@@ -1,0 +1,48 @@
+naos_system_initializer = {
+    name = "Naos"
+    class = "rl_standard_stars"
+	asteroids_distance = 160
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 18
+    }
+
+    planet = {
+        name = "Naos"
+        class = "pc_barren_cold"
+        orbit_distance = 60
+        orbit_angle = 30
+        size = 12
+        has_ring = no
+        
+		moon = {
+            name = "Naos I"
+            class = pc_barren_cold
+            orbit_distance = 8
+            orbit_angle = 308
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Naos II"
+            class = pc_barren_cold
+            orbit_distance = 2
+            orbit_angle = 250
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Naos III"
+            class = "pc_arctic"
+            orbit_distance = 2
+            orbit_angle = 78
+            size = 5
+            has_ring = no
+
+        }
+    }
+}

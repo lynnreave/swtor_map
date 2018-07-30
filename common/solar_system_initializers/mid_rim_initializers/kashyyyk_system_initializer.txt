@@ -1,0 +1,454 @@
+kashyyyk_system_initializer = {
+    name = "Kashyyyk (Hsskassi)"
+    class = "rl_standard_stars"
+    asteroids_distance = 100
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Taakarroo"
+        class = "pc_molten"
+        orbit_distance = 30
+        orbit_angle = 193
+	size = 10
+        has_ring = no
+
+
+        moon = {
+            name = "Taakarroo Minor"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 180
+	    size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Kallalarra"
+        class = "pc_toxic"
+        orbit_distance = 25
+        orbit_angle = 0
+	size = 12
+        has_ring = no
+
+
+        moon = {
+            name = "Kaliar"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 247
+	    size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kantolir"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 293
+	    size = 8
+            has_ring = no
+
+        }
+        moon = {
+	    name = "Kalartion"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 10
+	    size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Kashyyyk"
+        class = "pc_tropical"
+        orbit_distance = 26
+        orbit_angle = 280
+	size = 20
+        has_ring = no	
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+	flags={wookiee_clans}
+     	
+
+
+        moon = {
+            name = "Karchiwroo"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 74
+            size = 10
+            has_ring = no
+
+        }
+        moon = {
+            name = "Warranurr"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 91
+	   size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Rawrroo"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 20
+	    size = 7
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Gryyyl Asteroid Belt"
+        class = "pc_asteroid"
+        orbit_distance = 16
+        orbit_angle = 91
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Trandosha"
+        class = "pc_arid"
+        orbit_distance = 37
+        orbit_angle = 340
+        size = 20
+        has_ring = no
+		
+
+        moon = {
+            name = "Akoshissss"
+            class = "pc_barren"
+            orbit_distance = 10
+            orbit_angle = 180
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Wasskah"
+            class = "pc_continental"
+            orbit_distance = 8
+            orbit_angle = 36
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Alaris"
+        class = "pc_gas_giant"
+        orbit_distance = 50
+        orbit_angle = 35
+        size = 20
+        has_ring = no
+
+
+        moon = {
+            name = "Alaris Prime"
+            class = "pc_tropical"
+            orbit_distance = 11
+            orbit_angle = 332
+            size = 10
+            has_ring = no
+
+        }
+        moon = {
+            name = "Alaris II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 175
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Alaris III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 263
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Alaris IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 79
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Alaris V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 14
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Alaris VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 300
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Alaris VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 203
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Alaris VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 114
+            size = 3
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Shurr"
+        class = "pc_gas_giant"
+        orbit_distance = 75
+        orbit_angle = 78
+        size = 18
+        has_ring = no
+
+
+        moon = {
+            name = "Shurr I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 284
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 192
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 70
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 192
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 273
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 254
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 5
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 98
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 222
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -46
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Shurr XIV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 113
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Kuhurrik"
+        class = "pc_gas_giant"
+        orbit_distance = 105
+        orbit_angle = 202
+        size = 30
+        has_ring = no
+
+
+        moon = {
+            name = "Kuhurrik I"
+            class = random
+            orbit_distance = 13
+            orbit_angle = 271
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 267
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 127
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 302
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 275
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 37
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 287
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 21
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 64
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -50
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kuhurrik XXVI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 243
+            size = 3
+            has_ring = no
+
+        }
+    }
+}

@@ -1,0 +1,45 @@
+thule_system_initializer = {
+    name = "Thurra"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Thule"		
+        class = "pc_arid"
+        orbit_distance = 58
+	orbit_angle = 79
+        size = 20
+        has_ring = no
+	tile_blockers = none
+	
+		
+
+
+        moon = {
+	    name = "Sivvi"
+            class = "pc_barren_cold"
+            orbit_distance = 6
+            orbit_angle = 187
+            has_ring = no
+	    size = 6
+
+        }
+
+    }
+
+    planet = {
+        name = "Enenpa"
+        class = "pc_barren"
+        orbit_distance = 32
+        orbit_angle = 87
+        size = 17
+        has_ring = yes
+
+    }
+
+}

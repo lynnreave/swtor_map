@@ -1,0 +1,51 @@
+lamaro_system_initializer = {
+    name = "Lamaro"
+    class = "rl_standard_stars"
+	asteroids_distance = 210
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Lamarebb"
+        class = "pc_gas_giant"
+        orbit_distance = 60
+        orbit_angle = 30
+        size = 18
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Lamarecc"
+        class = "pc_gas_giant"
+        orbit_distance = 60
+        orbit_angle = 30
+        size = 16
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Great Menahua"   #Lamaredd after 550 BBY
+        class = "pc_ocean"
+        orbit_distance = 25
+        orbit_angle = 78
+        size = 11
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Lamaremm"
+        class = "pc_arctic"
+        orbit_distance = 40
+        orbit_angle = 144
+        size = 14
+        has_ring = no
+
+    }
+}

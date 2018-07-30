@@ -1,0 +1,206 @@
+pantora_system_initializer= {
+    name = "Pantora"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Imoj"
+        class = "pc_barren"
+        orbit_distance = 32
+        orbit_angle = 32
+        size = 8
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Lutvik"
+        class = "pc_gas_giant"
+        orbit_distance = 45
+        orbit_angle = 198
+        size = 23
+        has_ring = no
+
+
+        moon = {
+            name = "Lutvik I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 180
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lutvik II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 251
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lutvik III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 176
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lutvik IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 129
+            size = 3
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Orto Plutonia"
+        class = "pc_arctic"
+        orbit_distance = 40
+        orbit_angle = 311
+        size = 20
+        has_ring = no
+
+        moon = {
+            name = "Pantora"
+            class = "pc_continental"
+            orbit_distance = 12
+            orbit_angle = 114
+            size = 12
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Tokorol"
+        class = "pc_gas_giant"
+        orbit_distance = 100
+        orbit_angle = 65
+        size = 26
+        has_ring = yes
+
+
+        moon = {
+            name = "Tokorol I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 308
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol II"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 185
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 114
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol IV"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 105
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol V"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 183
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol VI"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 215
+            size = 2
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol VII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 252
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol VIII"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 183
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol IX"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 124
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol X"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 245
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Tokorol XXVII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 43
+            size = 8
+            has_ring = no
+
+        }
+    }
+    planet = {
+        name = "Irta Plutonia"
+        class = "pc_frozen"
+        orbit_distance = 68
+        orbit_angle = 124
+        size = 13
+        has_ring = no
+
+    }
+
+}

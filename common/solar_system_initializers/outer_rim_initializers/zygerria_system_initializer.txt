@@ -1,0 +1,56 @@
+zygerria_system_initializer = {
+    name = "Zygerria"
+    class = "rl_standard_stars"
+	flags = {zygerrian_empire}
+	usage = custom_empire
+	max_instances = 1
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Thorgol"
+        class = "pc_barren"
+        orbit_distance = 25
+        orbit_angle = 69
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Zygerria"
+        class = "pc_savannah"
+        orbit_distance = 25
+        orbit_angle = 125
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     
+
+        moon = {
+            name = "Zygor"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 211
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Scintarria"
+        class = "pc_barren_cold"
+        orbit_distance = 26
+        orbit_angle = 144
+        size = 10
+        has_ring = no
+
+    }
+}

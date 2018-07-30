@@ -1,0 +1,30 @@
+cambria_system_initializer = {
+    name = "Cambria"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Cambria"
+        class = "pc_molten"
+        orbit_distance = 28
+        orbit_angle = 223
+        size = 15
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Madi V"
+        class = "pc_gas_giant"
+        orbit_distance = 23
+        orbit_angle = 84
+        size = 20
+        has_ring = no
+
+    }
+}

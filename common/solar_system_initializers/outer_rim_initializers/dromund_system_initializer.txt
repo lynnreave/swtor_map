@@ -1,0 +1,148 @@
+dromund_system_initializer = {
+    name = "Dromund"
+    class = "sc_b"
+	flags = {sith_empire}
+	usage = custom_empire
+	max_instances = 1
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Dromund Ixin"
+        class = "pc_barren"
+        orbit_distance = 34
+        orbit_angle = 228
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Dromund Kalakar"
+        class = "pc_gas_giant"
+        orbit_distance = 45
+        orbit_angle = 341
+        size = 16
+        has_ring = no
+
+
+        moon = {
+            name = "Kalakar I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 48
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kalakar II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 137
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kalakar III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 281
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kalakar IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 154
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kalakar V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -76
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kalakar VI"
+            class = "pc_molten"
+            orbit_distance = 2.5
+            orbit_angle = 66
+            has_ring = no
+	    size = 6
+
+        }
+    }
+
+    planet = {
+        name = "Dromund Kaas"
+        class = "pc_tropical"
+        orbit_distance = 55
+        orbit_angle = 294
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+		}
+		
+
+
+        moon = {
+            name = "Kaas Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 180
+            has_ring = no
+
+        }
+        moon = {
+            name = "Kaas Major"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 92
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Dromund Fels"
+        class = "pc_arid"
+        orbit_distance = 48
+        orbit_angle = 160
+        size = 15
+        has_ring = no
+	tile_blockers = none
+	
+
+        moon = {
+            name = "Fels Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 162
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Dromund Tyne"
+        class = "pc_barren_cold"
+        orbit_distance = 83
+        orbit_angle = 266
+        size = 22
+        has_ring = no
+
+
+    }
+}

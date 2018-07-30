@@ -1,0 +1,85 @@
+katarr_system_initializer = {
+    name = "Katarr"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Marratuk"
+        class = "pc_toxic"
+        orbit_distance = 28
+        orbit_angle = 288
+        size = 8
+        has_ring = no
+
+    }
+    planet = {
+        name = "Katarr"
+        class = "pc_continental"
+        orbit_distance = 49
+        orbit_angle = 143
+        size = 18
+        has_ring = no
+
+        moon = {
+            name = "Katarr Minor"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 299
+            size = 5
+            has_ring = no
+
+        }
+    }
+    planet = {
+        name = "Terenahil"
+        class = "pc_barren_cold"
+        orbit_distance = 57
+        orbit_angle = 54
+        size = 15
+        has_ring = no
+
+        moon = {
+            name = "Terenahil I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 337
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Terenahil II"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 56
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Terenahil III"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 254
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Terenahil IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 133
+            size = 4
+            has_ring = no
+
+        }
+
+    }
+
+}
