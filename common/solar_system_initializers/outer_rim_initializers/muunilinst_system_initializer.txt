@@ -1,0 +1,97 @@
+muunilinst_system_initializer = {
+    name = "Muunilinst"
+    class = "rl_standard_stars"
+    ##asteroids_distance = 82
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Varhus"
+        class = random
+		orbit_distance = 20
+        orbit_angle = 142
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Trinciuum"
+        class = "pc_gas_giant"
+		size= 5
+        orbit_distance = 17
+        orbit_angle = 322
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Muunilinst"		
+        class = "pc_continental"
+        orbit_distance = 35
+		orbit_angle = 159
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		starting_planet = yes
+		
+
+
+        moon = {
+            class = random
+			name = "Muunilinst I"
+            orbit_distance = 9
+            orbit_angle = 186
+            has_ring = no
+
+        }
+
+        moon = {
+            class = random
+			name = "Muunilinst II"
+            orbit_distance = 5
+            orbit_angle = 38
+            has_ring = no
+
+        }
+
+       
+    }
+
+    planet = {
+        name = "Godsspire Asteroid Belt"
+        class = "pc_asteroid"
+		size= 5
+        orbit_distance = 10
+        orbit_angle = 248
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Havath Prime"
+        class = "pc_gas_giant"
+		size= 25
+        orbit_distance = 14
+        orbit_angle = 42
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Havath Minor"
+        class = "pc_gas_giant"
+		size= 16
+        orbit_distance = 23
+        orbit_angle = 129
+        has_ring = no
+
+    }
+
+   
+   
+
+}

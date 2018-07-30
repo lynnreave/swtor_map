@@ -1,0 +1,185 @@
+pyrshak_system_initializer = {
+	name = "Pyrshak"
+    class = "rl_standard_stars"
+	
+	planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+	
+	planet = {
+        name = "Pyr"
+        class = "pc_molten"
+        orbit_distance = 27
+        orbit_angle = 197
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Manaan"
+        class = "pc_ocean"
+        orbit_distance = 45
+        orbit_angle = 294
+        size = 16
+        has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Selkath"
+				class = "SELKATH"
+				portrait = "rep6"
+				homeworld = THIS
+				traits = {
+					trait="trait_intelligent"
+					trait="trait_natural_sociologists"
+					trait="trait_additrait_rooted"
+					trait="trait_additrait_sociable"
+				}
+			}
+			create_country = {
+				name = "Manaan Council"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_fanatic_pacifist"
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_eve_online_04.dds"
+					}
+					background={
+						category="backgrounds"
+						file="circle.dds"
+					}
+					colors={
+						"turquoise"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+    }
+	
+	planet = {
+        name = "Navlaas"
+        class = "pc_gas_giant"
+        orbit_distance = 61
+        orbit_angle = 75
+        size = 18
+        has_ring = no
+		moon = {
+            name = "Navlaas I"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 137
+            has_ring = no
+        }
+        moon = {
+            name = "Navlaas II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 281
+            has_ring = no
+        }
+        moon = {
+            name = "Navlaas III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 154
+            has_ring = no
+        }
+        moon = {
+            name = "Navlaas VII"
+            class = "pc_barren_cold"
+            orbit_distance = 7
+            orbit_angle = 67
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Navlaas IV"
+            class = "pc_barren_cold"
+            orbit_distance = 3
+            orbit_angle = 113
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Navlaas VI"
+            class = "pc_barren_cold"
+            orbit_distance = 6
+            orbit_angle = 310
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Navlaas VIII"
+            class = "pc_desert"
+            orbit_distance = 6
+            orbit_angle = 134
+            size = 8
+            has_ring = no
+
+        }
+        moon = {
+            name = "Navlaas V"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 211
+            size = 4
+            has_ring = no
+
+        }
+    }
+}

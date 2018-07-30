@@ -50,12 +50,12 @@ belsavis_system_initializer = {
 
     planet = {
         name = "Belsavis"
-        class = "pc_continental"
+        class = "pc_geothermal"
         orbit_distance = 52
         orbit_angle = 319
         size = 20
         has_ring = no
-	starting_planet = yes
+		starting_planet = yes
 
         moon = {
             name = "Belsavis I"

@@ -1,0 +1,119 @@
+devaron_system_initializer = {
+    name = "Devaron"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Devaron"
+        class = "pc_mangrove"
+        orbit_distance = 34
+        orbit_angle = 66
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Devaronian"
+				class = "DEVARONIAN"
+				portrait = "rep10"
+				homeworld = THIS
+				traits = {
+					trait="trait_additrait_free_spirits"
+					trait="trait_nomadic"
+					trait="trait_additrait_pioneers"
+				}
+			}
+			create_country = {
+				name = "Devaronian Republic"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_xenophile"
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_13.dds"
+					}
+					background={
+						category="backgrounds"
+						file="pattern_01.dds"
+					}
+					colors={
+						"dark_green"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+        moon = {
+            name = "Devaron Major"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 245
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Devaron Minor"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 13
+            size = 7
+            has_ring = no
+        }
+    }
+}

@@ -1,0 +1,211 @@
+dagobah_system_initializer = {
+    name = "Dagobah"
+    class = "rl_standard_stars"
+
+    planet = {
+		name = "Darlo"
+        class = "pc_a_star"
+        orbit_distance = 0
+        size = 30
+    }
+	
+	planet = {
+        name = "Ness"
+        class = "pc_molten"
+        orbit_distance = 39
+        orbit_angle = 306
+        size = 7
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Dagobah"
+        class = "pc_swamp"
+        orbit_distance = 31
+        orbit_angle = 285
+        size = 16
+        has_ring = no
+		
+		moon = {
+            name = "Dagobah Ia"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+
+        }
+    }
+	
+	planet = {
+        name = "Undar"
+        class = "pc_barren"
+        orbit_distance = 41
+        orbit_angle = 295
+        has_ring = no
+		
+		moon = {
+            name = "Undar Major"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Undar Minor"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+
+        }
+	}
+		
+	planet = {
+        name = "Bubbok"
+        class = "pc_frozen"
+        orbit_distance = 80
+        orbit_angle = 173
+        has_ring = no
+		
+		moon = {
+            name = "Bubbok I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bubbok II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Bubbok III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+
+        }
+	}
+		
+	planet = {
+        name = "Sty"
+        class = "pc_gas_giant"
+        orbit_distance = 110
+        orbit_angle = 292
+        size = 16
+        has_ring = no
+		
+		moon = {
+            name = "Sty I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 70
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 215
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 328
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 292
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 15
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sty LV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = -67
+            size = 5
+            has_ring = no
+
+        }
+	}
+}

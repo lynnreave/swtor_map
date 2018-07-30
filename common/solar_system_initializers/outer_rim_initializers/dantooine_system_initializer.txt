@@ -1,7 +1,7 @@
 dantooine_system_initializer = {
     name = "Dantooine"
     class = "rl_standard_stars"
-    asteroids_distance = 130
+    ##asteroids_distance = 130
 
     planet = {
         name = "Dina"

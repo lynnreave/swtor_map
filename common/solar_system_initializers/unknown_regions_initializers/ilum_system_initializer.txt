@@ -1,0 +1,367 @@
+ilum_system_initializer = {
+    name = "Ilum"
+    class = "rl_standard_stars"
+
+    planet = {
+		name = "Asar"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Jike"
+        class = "pc_barren"
+        orbit_distance = 20
+        orbit_angle = 246
+        size = 6
+        has_ring = no
+		tile_blockers = none
+    }
+	
+	planet = {
+        name = "Bory"
+        class = "pc_barren"
+        orbit_distance = 24
+        orbit_angle = 56
+        size = 8
+        has_ring = no
+		tile_blockers = none
+    }
+	
+	planet = {
+        name = "Cala"
+        class = "pc_barren"
+        orbit_distance = 26
+        orbit_angle = 112
+        size = 10
+        has_ring = no
+		tile_blockers = none
+    }
+	
+	planet = {
+        name = "Ilum"
+        class = "pc_glacial"
+        orbit_distance = 42
+        orbit_angle = 68
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		init_effect = {
+			add_modifier = {
+				modifier = "ultra_rich"
+				days = -1
+			}
+		}
+		moon = {
+            name = "Ilum Major"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Ilum Minor"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+			size = 4
+        }
+    }
+	
+	planet = {
+        name = "Trop"
+        class = "pc_gas_giant"
+        orbit_distance = 68
+        orbit_angle = 254
+        size = 29
+        has_ring = no
+
+        moon = {
+            name = "Trop I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 45
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Trop II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 123
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Trop III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 87
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Trop IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 275
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Trop V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 146
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Trop VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 265
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Trop VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 144
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Trop VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Trop IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Trop X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Trop XI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 49
+            has_ring = no
+			size = 5
+        }
+    }
+	
+    planet = {
+        name = "Eton"
+        class = "pc_gas_giant"
+        orbit_distance = 88
+        orbit_angle = 76
+        size = 22
+        has_ring = no
+
+        moon = {
+            name = "Eton I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 232
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Eton II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Eton III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 258
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Eton IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 122
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Eton V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 85
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Eton VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            has_ring = no
+			size = 6
+        }
+		moon = {
+            name = "Eton VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 144
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Eton VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Eton IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Eton X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Eton XLI"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 49
+            has_ring = no
+			size = 5
+        }
+    }
+	
+	planet = {
+        name = "Fern"
+        class = "pc_gas_giant"
+        orbit_distance = 110
+        orbit_angle = 76
+        size = 22
+        has_ring = no
+
+        moon = {
+            name = "Fern I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 232
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Fern II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Fern III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 258
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Fern IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 122
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Fern V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 85
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Fern VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            has_ring = no
+			size = 6
+        }
+		moon = {
+            name = "Fern VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 144
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Fern VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Fern IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Fern X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Fern XX"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 49
+            has_ring = no
+			size = 5
+        }
+    }
+}

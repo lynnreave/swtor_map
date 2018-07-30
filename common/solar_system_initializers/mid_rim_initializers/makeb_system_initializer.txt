@@ -2,7 +2,7 @@ makeb_system_initializer = {
     name = "Makeb"
     class = "rl_standard_stars"
 	flags = {hutt_clans}
-    asteroids_distance = 100
+    ##asteroids_distance = 100
 
     planet = {
         class = "pc_g_star"
@@ -22,7 +22,7 @@ makeb_system_initializer = {
 
     planet = {
         name = "Makeb"
-        class = "pc_continental"
+        class = "pc_hajungle"
         orbit_distance = 39
         orbit_angle = 69
         size = 20

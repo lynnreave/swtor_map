@@ -1,0 +1,146 @@
+zakuul_system_initializer = {
+	name = "Zakuul"
+    class = "rl_standard_stars"
+	
+	planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+	
+	planet = {
+        name = "Nayid"
+        class = "pc_barren"
+        orbit_distance = 34
+        orbit_angle = 228
+        size = 12
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Maworr"
+        class = "pc_barren"
+        orbit_distance = 45
+        orbit_angle = 341
+        size = 12
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Zakuul"
+        class = "pc_swamp"
+        orbit_distance = 55
+        orbit_angle = 294
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Zakuul"
+				class = "HUMAN"
+				portrait = "human"
+				homeworld = THIS
+				traits = {
+					trait="trait_additrait_united"
+					trait="trait_additrait_easily_satisfied"
+					trait="trait_additrait_rooted"
+					trait="trait_sedentary"
+					trait="trait_industrious"
+					trait="trait_thrifty"
+				}
+			}
+			create_country = {
+				name = "Eternal Empire"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_authoritarian"
+					ethic="ethic_fanatic_spiritualist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_13.dds"
+					}
+					background={
+						category="backgrounds"
+						file="pattern_01.dds"
+					}
+					colors={
+						"dark_green"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+        moon = {
+            name = "Zakuul I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 48
+            has_ring = no
+        }
+        moon = {
+            name = "Zakuul II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 137
+            has_ring = no
+        }
+        moon = {
+            name = "Zakuul III"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 281
+            has_ring = no
+        }
+    }
+}

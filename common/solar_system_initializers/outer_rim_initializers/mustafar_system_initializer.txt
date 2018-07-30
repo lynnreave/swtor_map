@@ -1,0 +1,81 @@
+mustafar_system_initializer = {
+    name = "Mustafar"
+    class = "rl_standard_stars"
+    planet = {
+		name = "Priate"
+        class = star
+        orbit_distance = 0
+        size = 18
+    }
+
+    planet = {
+        name = "Schada"
+        class = "pc_molten"
+        orbit_distance = 27
+        orbit_angle = 143
+        size = 18
+        has_ring = no     
+
+    }
+
+    planet = {
+        name = "Jestefad"
+        class = "pc_gas_giant"
+        orbit_distance = 34
+        orbit_angle = 231
+        size = 20
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Mustafar"
+        class = "pc_molten"
+        orbit_distance = 24
+        orbit_angle = 187
+        size = 17
+        has_ring = no
+		tile_blockers = none
+	}    
+
+    planet = {
+        name = "Lefrani"
+        class = "pc_gas_giant"
+        orbit_distance = 55
+        orbit_angle = 104
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Rietta"
+        class = "pc_gas_giant"
+        orbit_distance = 64
+        orbit_angle = 245
+        size = 24
+        has_ring = yes
+		
+		moon = {
+            name = "Rietta Minor"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 133
+            size = 6
+            has_ring = no
+
+        }
+		
+		moon = {
+            name = "Rietta Major"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 133
+            size = 9
+            has_ring = no
+
+        }
+
+    }
+
+}

@@ -1,7 +1,7 @@
 lamaro_system_initializer = {
     name = "Lamaro"
     class = "rl_standard_stars"
-	asteroids_distance = 210
+	##asteroids_distance = 210
 
     planet = {
         class = star

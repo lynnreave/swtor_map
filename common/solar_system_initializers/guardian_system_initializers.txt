@@ -24,7 +24,7 @@ guardians_artist_init_01 = {
 	}
 
 	max_instances = 1
-	spawn_chance = 100
+	spawn_chance = 0
 	#scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 	
 	flags = { guardians_artists_system enclave }
@@ -72,7 +72,7 @@ guardians_artist_init_01 = {
 				create_country = {
 					name = "The Artisan Troupe"
 					type = enclave
-					government = "artist_government"
+					#government = "artist_government"
 					species = last_created
 					flag = {
 						icon = {
@@ -202,8 +202,8 @@ guardians_artist_init_02 = {
 	}
 
 	max_instances = 1
-	#spawn_chance = 100
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	#spawn_chance = 0
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 	
 	flags = { guardians_artists_system enclave }
 	
@@ -250,7 +250,7 @@ guardians_artist_init_02 = {
 				create_country = {
 					name = "The Artisan Troupe"
 					type = enclave
-					government = "artist_government"
+					#government = "artist_government"
 					species = last_created
 					flag = {
 						icon = {
@@ -380,8 +380,8 @@ guardians_artist_init_03 = {
 	}
 
 	max_instances = 1
-	#spawn_chance = 100
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	#spawn_chance = 0
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 	
 	flags = { guardians_artists_system enclave }
 	
@@ -428,7 +428,7 @@ guardians_artist_init_03 = {
 				create_country = {
 					name = "The Artisan Troupe"
 					type = enclave
-					government = "artist_government"
+					#government = "artist_government"
 					species = last_created
 					flag = {
 						icon = {
@@ -557,10 +557,10 @@ guardians_curator_init_01 = {
 		}
 	}
 
-	max_instances = 1
-	#spawn_chance = 100
+	max_instances = 0
+	#spawn_chance = 0
 	#sigma (2) always spawns
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 	
 	flags = { guardians_curators_system enclave }
 	
@@ -579,7 +579,7 @@ guardians_curator_init_01 = {
 			create_country = {
 				name = "Curator Alpha Enclave"
 				type = enclave
-				government = curator_government
+				#government = curator_government
 				species = last_created
 				flag = {
 					icon = {
@@ -809,8 +809,8 @@ guardians_curator_init_02 = {
 		}
 	}
 
-	max_instances = 1
-	spawn_chance = 100
+	max_instances = 0
+	spawn_chance = 0
 	#scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 	
 	flags = { guardians_curators_system enclave }
@@ -834,7 +834,7 @@ guardians_curator_init_02 = {
 			create_country = {
 				name = "Curator Sigma Enclave"
 				type = enclave
-				government = curator_government
+				#government = curator_government
 				species = last_created
 				flag = {
 					icon = {
@@ -911,9 +911,9 @@ guardians_curator_init_03 = {
 		}
 	}
 
-	max_instances = 1
-	#spawn_chance = 100
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	max_instances = 0
+	#spawn_chance = 0
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 	
 	flags = { guardians_curators_system enclave }
 	
@@ -936,7 +936,7 @@ guardians_curator_init_03 = {
 			create_country = {
 				name = "Curator Lambda Enclave"
 				type = enclave
-				government = curator_government
+				#government = curator_government
 				species = last_created
 				flag = {
 					icon = {
@@ -1040,8 +1040,8 @@ guardians_trader_init_01 = {
 		}
 	}
 
-	max_instances = 1
-	spawn_chance = 100
+	max_instances = 0
+	spawn_chance = 0
 
 	flags = { guardians_traders_system enclave }
 
@@ -1091,7 +1091,7 @@ guardians_trader_init_01 = {
 				create_country = {
 					name = "XuraCorp"
 					type = enclave
-					government = trader_government
+					#government = trader_government
 					species = last_created
 					flag = {
 						icon = {
@@ -1172,9 +1172,9 @@ guardians_trader_init_02 = {
 		}
 	}
 
-	max_instances = 1
-	#spawn_chance = 100
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	max_instances = 0
+	#spawn_chance = 0
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 
 	flags = { guardians_traders_system enclave }
 
@@ -1224,7 +1224,7 @@ guardians_trader_init_02 = {
 				create_country = {
 					name = "Riggan Commerce Exchange"
 					type = enclave
-					government = trader_government
+					#government = trader_government
 					species = last_created
 					flag = {
 						icon = {
@@ -1305,9 +1305,9 @@ guardians_trader_init_03 = {
 		}
 	}
 
-	max_instances = 1
-	#spawn_chance = 100
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	max_instances = 0
+	#spawn_chance = 0
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 
 	flags = { guardians_traders_system enclave }
 
@@ -1357,7 +1357,7 @@ guardians_trader_init_03 = {
 				create_country = {
 					name = "Muutagan Merchant Guild"
 					type = enclave
-					government = trader_government
+					#government = trader_government
 					species = last_created
 					flag = {
 						icon = {
@@ -1441,7 +1441,7 @@ guardians_init_stellarites = {
 	}
 
 	max_instances = 1
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 	
 	flags = { guardians_stellarite_system guardian }
 	
@@ -1521,7 +1521,7 @@ guardians_init_dragon = {
 	}
 
 	max_instances = 1
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 
 	flags = { guardians_dragon_system guardian }
 
@@ -1691,7 +1691,7 @@ guardians_init_horror = {
 	}
 
 	max_instances = 1
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 	
 	planet = {
 		count = 1
@@ -1724,7 +1724,7 @@ guardians_init_dreadnought = {
 	}
 
 	max_instances = 1
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 	
 	planet = {
 		count = 1
@@ -1943,29 +1943,17 @@ guardians_init_dreadnought = {
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_city_ruins"
-				add_resource = {
-					resource = engineering_research
-					amount = 3
-					replace = yes
-				}					
+				set_deposit = d_engineering_deposit					
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_city_ruins"
-				add_resource = {
-					resource = society_research
-					amount = 3
-					replace = yes
-				}					
+				set_deposit = d_society_deposit					
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_city_ruins"
-				add_resource = {
-					resource = physics_research
-					amount = 3
-					replace = yes
-				}					
+				set_deposit = d_physics_deposit					
 			}
 		}
 		
@@ -1992,29 +1980,17 @@ guardians_init_dreadnought = {
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_city_ruins"
-				add_resource = {
-					resource = engineering_research
-					amount = 3
-					replace = yes
-				}					
+				set_deposit = d_engineering_deposit					
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_city_ruins"
-				add_resource = {
-					resource = society_research
-					amount = 3
-					replace = yes
-				}					
+				set_deposit = d_society_deposit					
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_city_ruins"
-				add_resource = {
-					resource = physics_research
-					amount = 3
-					replace = yes
-				}					
+				set_deposit = d_physics_deposit					
 			}
 		}
 	}
@@ -2608,7 +2584,7 @@ guardians_init_wraith = {
 	}
 
 	max_instances = 1
-	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 0	# scales by galaxy size (1000 stars = 10x base)
 
 	flags = { guardians_wraith_system guardian }
 

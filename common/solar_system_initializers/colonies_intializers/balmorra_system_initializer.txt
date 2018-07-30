@@ -1,0 +1,70 @@
+balmorra_system_initializer = {
+    name = "Balmorra"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Balmorra"
+        class = "pc_continental"
+        orbit_distance = 15
+        orbit_angle = 66
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		modifiers = none
+     	init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = "mineral_rich"
+				days = -1
+			}
+		}
+		
+        moon = {
+            name = "Balmorra I"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 245
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Balmorra II"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 13
+            size = 7
+            has_ring = no
+        }
+		moon = {
+            name = "Balmorra III"
+            class = random
+            orbit_distance = 4
+            orbit_angle = 46
+            size = 8
+            has_ring = no
+        }
+        moon = {
+            name = "Balmorra IV"
+            class = random
+            orbit_distance = 3
+            orbit_angle = 135
+            size = 5
+            has_ring = no
+        }
+    }
+
+    planet = {
+        name = "Nevoota"
+        class = "pc_continental"
+        orbit_distance = 28
+        orbit_angle = 98
+        size = 13
+        has_ring = no
+    }
+}

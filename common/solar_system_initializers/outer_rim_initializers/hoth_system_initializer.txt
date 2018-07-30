@@ -1,4 +1,4 @@
-hoth_system_initializer= {
+hoth_system_initializer = {
     name = "Hoth"
     class = "rl_standard_stars"
 
@@ -15,7 +15,6 @@ hoth_system_initializer= {
         orbit_angle = 306
         size = 7
         has_ring = no
-
     }
 
     planet = {
@@ -297,7 +296,7 @@ hoth_system_initializer= {
 
     planet = {
         name = "Hoth"
-        class = "pc_arctic"
+        class = "pc_frozen_desert"
         orbit_distance = 50
         orbit_angle = 285
         size = 16
@@ -310,15 +309,15 @@ hoth_system_initializer= {
 				class = "PRE_MAM"
 				portrait = "pre_mam13"
 				traits = {
-					trait = random_presentient_trait
+					trait=random_traits
 				}
 				homeworld = FROM
-				sentient = no
+				#is_sapient = no
 			}
 			while = {
 				limit = {
 					count_pops = {
-						limit = { is_sentient = no }
+						limit = { is_sapient = no }
 						count < 3
 					}
 					free_pop_tiles > 0

@@ -1,0 +1,238 @@
+clakdor_system_initializer = {
+    name = "Clak'dor"
+    class = "rl_standard_stars"
+
+    planet = {
+		name = "Colu"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Clak'dor II"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 76
+        size = 9
+        has_ring = no
+    }
+
+    planet = {
+        name = "Clak'dor III"
+        class = "pc_molten"
+        orbit_distance = 28
+        orbit_angle = 132
+        size = 12
+        has_ring = no
+    }
+
+    planet = {
+        name = "Clak'dor IV"
+        class = "pc_barren"
+        orbit_distance = 30
+        orbit_angle = 115
+        size = 18
+        has_ring = no
+		moon = {
+            name = "Clak'dor IV Major"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 45
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Clak'dor IV Minor"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 123
+            has_ring = no
+			size = 5
+        }
+	}
+	
+	planet = {
+        name = "Clak'dor V"
+        class = "pc_gas_giant"
+        orbit_distance = 50
+        orbit_angle = 254
+        size = 29
+        has_ring = no
+
+        moon = {
+            name = "Clak'dor Va"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 45
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Clak'dor Vb"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 123
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Clak'dor Vc"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 87
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Clak'dor Vd"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 275
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Clak'dor Ve"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 146
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Clak'dor Vf"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 265
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Clak'dor Vg"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 144
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Clak'dor Vh"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Clak'dor Vi"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Clak'dor Vj"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            has_ring = no
+			size = 3
+        }
+    }
+
+    planet = {
+        name = "Bith"
+        class = "pc_toxic"
+        orbit_distance = 76
+        orbit_angle = 66
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Bith"
+				class = "BITH"
+				portrait = "art6"
+				homeworld = THIS
+				traits = {
+					trait="trait_intelligent"
+					trait="trait_charismatic"
+					trait="trait_additrait_passionate"
+				}
+			}
+			create_country = {
+				name = "Bith Republic"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_xenophile"
+					ethic="ethic_pacifist"
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_13.dds"
+					}
+					background={
+						category="backgrounds"
+						file="pattern_01.dds"
+					}
+					colors={
+						"dark_green"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+	}
+}

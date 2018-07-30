@@ -1,0 +1,125 @@
+skako_system_initializer = {
+    name = "Skako"
+	class = "rl_standard_stars"
+	flags={skako}
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Skako"
+		class = "pc_tropical" 		
+        orbit_distance = 25
+        orbit_angle = 85
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Skakoan"
+				class = "SKAKOAN"
+				portrait = "skakoan"
+				homeworld = THIS
+				traits = {
+					trait="trait_additrait_passionate"
+					trait=random_traits
+				}
+			}
+			create_country = {
+				name = "Collectivized Techno Guild"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_xenophobe"
+					ethic="ethic_spiritualist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="cis_g.dds"
+					}
+					background={
+						category="backgrounds"
+						file="hexagone.dds"
+					}
+					colors={
+						"gray_0"
+						"hsv_24-52-80"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+
+        moon = {
+            name = "Bador"
+            class = "pc_barren"
+            orbit_distance = 13
+            orbit_angle = 180
+            size = 8
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Ronay"
+            class = random
+            orbit_distance = 6
+            orbit_angle = 211
+            size = 8
+            has_ring = no
+
+        }
+    }
+
+}

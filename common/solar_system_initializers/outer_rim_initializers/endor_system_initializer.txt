@@ -1,7 +1,7 @@
 endor_system_initializer = {
     name = "Endor"
     class = "rl_standard_stars"
-    asteroids_distance = 160
+    ##asteroids_distance = 160
 
     planet = {
         name = "Ibleam"
@@ -88,7 +88,7 @@ endor_system_initializer = {
         }
         moon = {
             name = "Endor IX (Forest Moon of Endor)"
-            class = "pc_alpine"
+            class = "pc_cascadian"
             orbit_distance = 3
             orbit_angle = 17
             size = 8
@@ -96,16 +96,21 @@ endor_system_initializer = {
 			init_effect = {
 				create_species = {
 						name = "Ewok"
-						class = "MAM"
-						portrait = "mam6"
+						class = "EWOK"
+						portrait = "ewok"
 						homeworld = THIS
 						traits = {
-							trait = random_traits
+							trait="trait_additrait_hunter_gatherers"
+							trait="trait_additrait_mob_mentality"
+							trait="trait_additrait_rooted"
+							trait="trait_additrait_simple_minded"
+							trait="trait_charismatic"
+							trait="trait_communal"
 						}
 					}
 					create_country = {
 						name = "Ewok Tribes"
-						government = primitive_feudalism
+						
 						species = last_created
 						ethos = {
 						ethic="ethic_socialist"
@@ -132,7 +137,6 @@ endor_system_initializer = {
 					last_created_country = {
 						set_graphical_culture = preindustrial_01
 						set_country_flag = bronze_age
-						set_country_flag = SWGD
 						set_primitive_age = bronze_age
 							}
 							
@@ -161,12 +165,8 @@ endor_system_initializer = {
 								has_building = no 
 								has_grown_pop = yes
 							}
-							set_building = "building_primitive_farm"
-							add_resource = {
-								resource = food
-								amount = 1
-								replace = yes
-							}
+							set_building = "building_hydroponics_farm_1"
+							set_deposit = d_farmland_deposit
 						}
 					}					
 					

@@ -1,7 +1,7 @@
 tsoss_beacon_system_initializer = {
     name = "Tsoss Beacon"
     class = "rl_standard_stars"
-    asteroids_distance = 34
+    ##asteroids_distance = 34
 
     planet = {
         class = star

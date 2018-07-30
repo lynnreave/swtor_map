@@ -1,0 +1,398 @@
+toydaria_system_initializer = {
+    name = "Toydaria"
+    class = "rl_standard_stars"
+	##asteroids_distance = 15
+	##asteroids_distance = 90
+
+    planet = {
+		name = "Toydar"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+	
+	planet = {
+		name = "Little Toydar"
+        class = star
+        orbit_distance = 30
+        size = 15
+    }
+
+    planet = {
+        name = "Credquant"
+        class = "pc_gas_giant"
+        orbit_distance = 36
+        orbit_angle = 46
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Credquant I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 232
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Credquant II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Credquant III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 258
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Credquant IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 122
+            has_ring = no
+			size = 3
+        }
+    }
+
+    planet = {
+        name = "Nubisa"
+        class = "pc_hothouse"
+        orbit_distance = 45
+        orbit_angle = 258
+        size = 12
+        has_ring = no
+
+    }
+
+    planet = {
+        name = "Toydaria"
+        class = "pc_swamp"
+        orbit_distance = 54
+        orbit_angle = 347
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Toydarian"
+				class = "TOYDARIAN"
+				portrait = "avi17"
+				homeworld = THIS
+				traits = {
+					trait="trait_thrifty"
+					trait="trait_politically_adept"
+					trait="trait_additrait_lazy"
+				}
+			}
+			create_country = {
+				name = "Toydarian Kingdom"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_egalitarian"
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_13.dds"
+					}
+					background={
+						category="backgrounds"
+						file="pattern_01.dds"
+					}
+					colors={
+						"dark_green"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+        moon = {
+            name = "Toydaria I"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 109
+            size = 6
+            has_ring = no
+        }
+		moon = {
+            name = "Toydaria II"
+            class = random
+            orbit_distance = 5
+            orbit_angle = 114
+            size = 5
+            has_ring = no
+        }
+		moon = {
+            name = "Toydaria III"
+            class = random
+            orbit_distance = 9
+            orbit_angle = 52
+            size = 3
+            has_ring = no
+        }
+    }
+
+    planet = {
+        name = "Ziux"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 143
+        size = 23
+        has_ring = no
+		moon = {
+            name = "Ziux I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 134
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Ziux II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 245
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Ziux III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Ziux IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -78
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Ziux V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 249
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Ziux VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Ziux VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 212
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Ziux VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Ziux IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Ziux X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 293
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Ziux XXIV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 111
+            has_ring = no
+			size = 6
+        }
+    }
+
+    planet = {
+        name = "Far Ziux"
+        class = "pc_gas_giant"
+        orbit_distance = 98
+        orbit_angle = 344
+        size = 25
+        has_ring = no
+		moon = {
+            name = "Far Ziux I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 134
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Far Ziux II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 245
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Far Ziux III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Far Ziux IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -78
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Far Ziux V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 249
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Far Ziux VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Far Ziux VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 212
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Far Ziux VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Far Ziux IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Far Ziux X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 293
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Far Ziux XIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 111
+            has_ring = no
+			size = 6
+        }
+    }
+
+    planet = {
+        name = "Fii"
+        class = "pc_barren"
+        orbit_distance = 110
+        orbit_angle = 65
+        size = 8
+        has_ring = no
+		moon = {
+            name = "Fii Major"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 109
+            size = 6
+            has_ring = no
+        }
+    }
+}

@@ -1,7 +1,7 @@
 eclipse_system_initializer = {
     name = "Eclipse"
     class = "rl_standard_stars"
-    asteroids_distance = 33
+    ##asteroids_distance = 33
 
     planet = {
         class = star

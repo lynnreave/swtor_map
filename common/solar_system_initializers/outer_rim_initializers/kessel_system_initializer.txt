@@ -1,7 +1,7 @@
 kessel_system_initializer = {
     name = "Kessa (Kessel)"
 	 class = random
-    asteroids_distance = 48
+    ##asteroids_distance = 48
 
     planet = {
         class = "pc_a_star"
@@ -41,7 +41,8 @@ kessel_system_initializer = {
 		init_effect = {
 			add_modifier = {
 				modifier = "mineral_rich"
-					}
+				days = -1
+			}
 		}
 		
 		init_effect = {

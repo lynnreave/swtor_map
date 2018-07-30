@@ -1,7 +1,7 @@
 jerrilek_system_initializer = {
     name = "Jerrilek"
     class = "rl_standard_stars"
-    asteroids_distance = 84
+    ##asteroids_distance = 84
 
     planet = {
         class = star

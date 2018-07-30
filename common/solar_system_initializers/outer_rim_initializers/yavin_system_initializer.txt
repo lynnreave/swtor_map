@@ -1,7 +1,7 @@
 yavin_system_initializer = {
     name = "Yavin"
     class = "rl_standard_stars"
-    asteroids_distance = 50
+    ##asteroids_distance = 50
 
     planet = {
         class = "pc_k_star"

@@ -54,7 +54,7 @@ nal_hutta_system_initializer = {
 
     planet = {
         name = "Nal Hutta (Evocar)"
-		class = "pc_continental"
+		class = "pc_swamp"
         orbit_distance = 31
         orbit_angle = 64
         size = 20
@@ -62,6 +62,90 @@ nal_hutta_system_initializer = {
 		starting_planet = yes
 		tile_blockers = none
 		modifiers = none
+		
+		init_effect = {
+			create_species = {
+				name = "Hutt"
+				class = "HUTT"
+				portrait = "hutt"
+				homeworld = THIS
+				traits = {
+					trait=trait_venerable
+					trait=trait_additrait_lazy
+					trait=trait_additrait_sociable
+					trait=trait_additrait_influencial
+					trait=trait_additrait_prodigal
+					trait=trait_intelligent
+				}
+			}
+			create_country = {
+				name = "Hutt Cartel"
+				
+				species = last_created
+				ethos = {
+				ethic=ethic_fanatic_materialist
+				}
+				flag = {
+					icon = {
+						category = "pointy"
+						file = "flag_pointy_8.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "stripes.dds"
+					}
+					colors={
+						"black"
+						"red"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = early_space_age
+				set_primitive_age = early_space_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
      	
 
         moon = {

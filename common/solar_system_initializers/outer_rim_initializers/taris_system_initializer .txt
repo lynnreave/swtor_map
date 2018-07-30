@@ -2,7 +2,7 @@ taris_system_initializer = {
     name = "Taris"
     class = "rl_standard_stars"
 	flags = { taris }
-    asteroids_distance = 210
+    ##asteroids_distance = 210
 
     planet = {
         class = "pc_g_star"

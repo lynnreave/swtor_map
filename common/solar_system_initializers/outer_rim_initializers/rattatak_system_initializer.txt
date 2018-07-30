@@ -1,0 +1,560 @@
+rattatak_system_initializer = {
+    name = "Guter Wade"
+    class = "rl_standard_stars"
+
+    planet = {
+		name = "Rek"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Nach"
+        class = "pc_barren"
+        orbit_distance = 12
+        orbit_angle = 69
+        size = 12
+        has_ring = no
+		
+		moon = {
+            name = "Nach's Moon"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 211
+            size = 8
+            has_ring = no
+
+        }
+    }
+	
+	planet = {
+        name = "Zoge Ver"
+        class = "pc_toxic"
+        orbit_distance = 20
+        orbit_angle = 114
+        size = 12
+        has_ring = no
+		
+		moon = {
+            name = "Zoge Ver I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 308
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zoge Ver II"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 185
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zoge Ver III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 114
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zoge Ver IV"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 105
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zoge Ver V"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 183
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Zoge Ver VI"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 215
+            size = 8
+            has_ring = no
+
+        }
+    }
+	
+	planet = {
+        name = "Renenen"
+        class = "pc_toxic"
+        orbit_distance = 24
+        orbit_angle = 86
+        size = 12
+        has_ring = no
+		
+		moon = {
+            name = "Renenen Major"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 308
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Renenen Minor"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 185
+            size = 4
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Rattatak"
+        class = "pc_arid"
+        orbit_distance = 32
+        orbit_angle = 125
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Rattataki"
+				class = "RATTATAKI"
+				portrait = "thyrsian"
+				homeworld = THIS
+				traits = {
+					trait="trait_communal"
+					trait="trait_additrait_violent"
+					trait="trait_additrait_passionate"
+					trait="trait_additrait_belligerent"
+					trait="trait_additrait_zealous_defenders"
+				}
+			}
+			create_country = {
+				name = "Rattataki Tribes"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_xenophobe"
+					ethic="ethic_fanatic_militarist"
+				}
+				flag={
+					icon={
+						category="sins_of_a_solar_empire"
+						file="flag_sins_of_a_solar_empire_03.dds"
+					}
+					background={
+						category="backgrounds"
+						file="hexagone.dds"
+					}
+					colors={
+						"gray_0"
+						"hsv_48-20-80"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+
+        moon = {
+            name = "Rattatak I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 308
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Rattatak II"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 185
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Rattatak III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 114
+            size = 3
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Nettani"
+        class = "pc_toxic"
+        orbit_distance = 44
+        orbit_angle = 144
+        size = 10
+        has_ring = no
+		moon = {
+            name = "Nettani's Moon"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 308
+            size = 3
+            has_ring = no
+        }
+    }
+	
+	planet = {
+        name = "Hettig"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 292
+        size = 16
+        has_ring = no
+
+        moon = {
+            name = "Hettig I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 70
+            size = 5
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 215
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Hettig VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 328
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 292
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 15
+            size = 5
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 6
+            has_ring = no
+        }
+        moon = {
+            name = "Hettig LXV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = -67
+            size = 5
+            has_ring = no
+        }
+    }
+	
+	planet = {
+        name = "Sanzen"
+        class = "pc_gas_giant"
+        orbit_distance = 104
+        orbit_angle = 114
+        size = 12
+        has_ring = no
+
+        moon = {
+            name = "Sanzen I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 70
+            size = 5
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 215
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sanzen VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 328
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 292
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 15
+            size = 5
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 6
+            has_ring = no
+        }
+        moon = {
+            name = "Sanzen XIV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = -67
+            size = 5
+            has_ring = no
+        }
+    }
+	
+	planet = {
+        name = "Geribun"
+        class = "pc_gas_giant"
+        orbit_distance = 120
+        orbit_angle = 48
+        size = 20
+        has_ring = no
+
+        moon = {
+            name = "Geribun I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 70
+            size = 5
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 215
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Geribun VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 328
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 292
+            size = 4
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 15
+            size = 5
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 3
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 6
+            has_ring = no
+        }
+        moon = {
+            name = "Geribun LIV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = -67
+            size = 5
+            has_ring = no
+        }
+    }
+}

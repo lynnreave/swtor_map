@@ -1,0 +1,291 @@
+sriluur_system_initializer = {
+    name = "Sriluur"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Chaitun"
+        class = "pc_molten"
+        orbit_distance = 10
+        orbit_angle = 76
+        size = 10
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Weitun"
+        class = "pc_molten"
+        orbit_distance = 18
+        orbit_angle = 76
+        size = 12
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Alcrue"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 76
+        size = 8
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Lyntra"
+        class = "pc_barren"
+        orbit_distance = 36
+        orbit_angle = 76
+        size = 16
+        has_ring = no
+		moon = {
+            class = random
+			name = "Lyntra Minor"
+            orbit_distance = 6
+            orbit_angle = 47
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            class = random
+			name = "Lyntra Major"
+            orbit_distance = 5
+            orbit_angle = 142
+            has_ring = no
+			size = 6
+        }
+    }
+
+    planet = {
+        name = "Sriluur"		
+        class = "pc_arid"
+        orbit_distance = 65
+		orbit_angle = 213
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Weequay"
+				class = "WEEQUAY"
+				portrait = "humanoid_02"
+				homeworld = THIS
+				traits = {
+					trait="trait_communal"
+					trait="trait_thrifty"
+					trait="trait_dim"
+				}
+			}
+			create_country = {
+				name = "Weequay Clans"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_xenophobe"
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_13.dds"
+					}
+					background={
+						category="backgrounds"
+						file="pattern_01.dds"
+					}
+					colors={
+						"dark_green"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+        moon = {
+            class = random
+			name = "Quay"
+            orbit_distance = 6
+            orbit_angle = 47
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            class = "pc_tropical"
+			name = "Ruul"
+            orbit_distance = 5
+            orbit_angle = 142
+            has_ring = no
+			size = 6
+        }
+		moon = {
+            class = random
+			name = "Ruul"
+            orbit_distance = 6
+            orbit_angle = 112
+            has_ring = no
+			size = 6
+        }
+		moon = {
+            class = random
+			name = "Ruul"
+            orbit_distance = 8
+            orbit_angle = 48
+            has_ring = no
+			size = 3
+        }
+		moon = {
+            class = random
+			name = "Ruul"
+            orbit_distance = 10
+            orbit_angle = 90
+            has_ring = no
+			size = 4
+        }
+    }
+
+    planet = {
+        name = "Siquay"
+        class = "pc_gas_giant"
+        orbit_distance = 72
+        orbit_angle = 98
+        size = 25
+        has_ring = yes
+        moon = {
+			name = "Siquay I"
+            class = random
+            orbit_distance = 13
+            orbit_angle = 49
+			size = 8
+            has_ring = no
+        }
+        moon = {
+			name = "Siquay II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 287
+			size = 5
+            has_ring = no
+        }
+        moon = {
+			name = "Siquay III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -66
+			size = 4
+            has_ring = no
+        }
+        moon = {
+			name = "Siquay IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+			size = 6
+            has_ring = no
+        }
+        moon = {
+			name = "Siquay V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 78
+			size = 3
+            has_ring = no
+        }
+       moon = {
+			name = "Siquay VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 237
+			size = 4
+            has_ring = no
+        }
+		moon = {
+			name = "Siquay VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 189
+			size = 5
+            has_ring = no
+        }
+		moon = {
+            name = "Siquay VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Siquay IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Siquay X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 293
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Siquay XVIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 111
+            has_ring = no
+			size = 6
+        }
+    }
+}

@@ -1,4 +1,4 @@
-﻿naboo_system_initializer = {
+naboo_system_initializer = {
 	name = "Naboo"
     class = "rl_standard_stars"
 	flags={naboo_kingdom}
@@ -48,15 +48,95 @@
         has_ring = no
 		starting_planet = yes
 		tile_blockers = none
-		modifiers = none
      	init_effect = {
-			prevent_anomaly = yes
+			prevent_anomaly = no
 			add_modifier = {
-				modifier = "natural_beauty"				
+				modifier = "natural_beauty"
+				days = -1
+			}
+			create_species = {
+				name = "Gungan"
+				class = "GUNGAN"
+				portrait = "gungan"
+				homeworld = THIS
+				traits = {
+					trait="trait_communal"
+					trait="trait_rapid_breeders"
+					trait="trait_sedentary"
+					trait="trait_additrait_rooted"
+					trait="trait_additrait_zealous_defenders"
+					trait="trait_agrarian"
+				}
+			}
+			create_country = {
+				name = "Gungan Council"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_fanatic_pacifist"
+					ethic="ethic_spiritualist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_eve_online_02.dds"
+					}
+					background={
+						category="backgrounds"
+						file="circle.dds"
+					}
+					colors={
+						"hsv_8-20-80"
+						"hsv_8-100-80"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
 			}
 		}
-		
-		
 
 
         moon = {

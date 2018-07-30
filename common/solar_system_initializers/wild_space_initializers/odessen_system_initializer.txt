@@ -1,0 +1,22 @@
+odessen_system_initializer = {
+	name = "Odessen"
+    class = "rl_standard_stars"
+	
+	planet = {
+        class = star
+        orbit_distance = 0
+        size = 30
+    }
+	
+	planet = {
+        name = "Odessen"
+        class = "pc_ocean"
+        orbit_distance = 55
+        orbit_angle = 294
+        size = 16
+        has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+    }
+}

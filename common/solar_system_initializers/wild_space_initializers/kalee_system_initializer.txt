@@ -1,0 +1,263 @@
+kalee_system_initializer = {
+    name = "Kalee"
+    class = "rl_standard_stars"
+
+    planet = {
+		name = "Iminec"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Prelly"
+        class = "pc_molten"
+        orbit_distance = 20
+        orbit_angle = 125
+        size = 18
+        has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	
+	planet = {
+        name = "Norbon"
+        class = "pc_barren"
+        orbit_distance = 20
+        orbit_angle = 112
+        size = 6
+        has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+
+    planet = {
+        name = "Abbaji Minor"
+        class = "pc_continental"
+        orbit_distance = 28
+        orbit_angle = 254
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Abbaji Minor I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Abbaji Minor II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+			size = 4
+        }
+    }
+
+    planet = {
+        name = "Kalee"
+        class = "pc_tropical"
+        orbit_distance = 38
+        orbit_angle = 78
+        size = 16
+        has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Khaleesh"
+				class = "KHALEESH"
+				portrait = "rep5"
+				homeworld = THIS
+				traits = {
+					trait="trait_strong"
+					trait="trait_repugnant"
+					trait="trait_additrait_born_warriors"
+				}
+			}
+			create_country = {
+				name = "Khaleesh Tribes"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_fanatic_militarist"
+					ethic="ethic_spiritualist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_13.dds"
+					}
+					background={
+						category="backgrounds"
+						file="pattern_01.dds"
+					}
+					colors={
+						"dark_green"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+		moon = {
+            name = "Kalee Major"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+    }
+
+    planet = {
+        name = "Remsh"
+        class = "pc_gas_giant"
+        orbit_distance = 72
+        orbit_angle = 144
+        size = 25
+        has_ring = no
+		moon = {
+            name = "Remsh I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 134
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Remsh II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 245
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Remsh III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Remsh IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -78
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Remsh V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 249
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Remsh VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Remsh VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 212
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Remsh VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Remsh IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Remsh X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 293
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Remsh XLIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 111
+            has_ring = no
+			size = 6
+        }
+    }
+	
+	planet = {
+        name = "Elke"
+        class = "pc_frozen"
+        orbit_distance = 110
+        orbit_angle = 78
+        size = 8
+        has_ring = no
+    }
+}

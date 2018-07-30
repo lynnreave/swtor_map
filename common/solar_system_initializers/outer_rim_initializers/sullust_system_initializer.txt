@@ -1,0 +1,363 @@
+sullust_system_initializer = {
+    name = "Sullust"
+	class = "rl_standard_stars"
+	flags={sullust}
+	##asteroids_distance = 113
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+	
+	planet = {
+        name = "Sullumun"
+        class = "pc_gas_giant"
+        orbit_distance = 45
+        orbit_angle = 300
+        size = 18
+        has_ring = yes
+
+		moon = {
+            name = "Sullumun I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 70
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 215
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 328
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 292
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 15
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Sullumun XVIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = -67
+            size = 5
+            has_ring = no
+
+        }
+    }
+	planet = {
+        name = "Lununmo"
+        class = "pc_gas_giant"
+        orbit_distance = 50
+        orbit_angle = 180
+        size = 21
+        has_ring = yes
+		
+		moon = {
+            name = "Lununmo I"
+            class = random
+            orbit_distance = 7
+            orbit_angle = 63
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 202
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 71
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 70
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 215
+            size = 7
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 328
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 292
+            size = 4
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 15
+            size = 5
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 133
+            size = 3
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            size = 6
+            has_ring = no
+
+        }
+        moon = {
+            name = "Lununmo XXXIV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = -67
+            size = 5
+            has_ring = no
+
+        }
+    }
+
+    planet = {
+        name = "Sullust"
+		class = "pc_toxic"
+        orbit_distance = 64
+        orbit_angle = 85
+        size = 16
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = no
+			add_modifier = {
+				modifier = "hazardous_weather"
+				days = -1
+			}
+			add_modifier = {
+				modifier = "subterranean_civilization"
+				days = -1
+			}
+			create_species = {
+				name = "Sullustan"
+				class = "SULLUSTAN"
+				portrait = "sullustan"
+				homeworld = THIS
+				traits = {
+					trait="trait_communal"
+					trait="trait_nomadic"
+					trait="trait_weak"
+					trait="trait_natural_engineers"
+					trait="trait_additrait_sociable"
+				}
+			}
+			create_country = {
+				name = "Sullust Corporate Council"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_fanatic_xenophile"
+					ethic="ethic_pacifist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_eve_online_10.dds"
+					}
+					background={
+						category="backgrounds"
+						file="soleillevant.dds"
+					}
+					colors={
+						"hsv_16-68-80"
+						"hsv_8-100-80"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+
+        moon = {
+            name = "Sulon"
+            class = "pc_continental"
+            orbit_distance = 13
+            orbit_angle = 180
+            size = 8
+            has_ring = no
+
+        }
+
+        moon = {
+            name = "Umnub"
+            class = "pc_barren"
+            orbit_distance = 6
+            orbit_angle = 211
+            size = 8
+            has_ring = no
+
+        }
+    }
+	
+	planet = {
+        name = "Mumunubb"
+        class = "pc_frozen"
+        orbit_distance = 75
+        orbit_angle = 36
+        size = 12
+        has_ring = no
+    }
+
+}

@@ -1,0 +1,103 @@
+umbara_system_initializer = {
+    name = "Umbara"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = "pc_m_star"
+        orbit_distance = 0
+        size = 15
+    }
+    planet = {
+        name = "Umbara"
+        class = "pc_irradiated"
+        orbit_distance = 110
+        orbit_angle = 49
+        size = 20
+        has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Umbaran"
+				class = "UMBARAN"
+				portrait = "arkanianos"
+				homeworld = THIS
+				traits = {
+					trait="trait_intelligent"
+					trait="trait_politically_adept"
+					trait="trait_additrait_rooted"
+					trait="trait_additrait_influencial"
+				}
+			}
+			create_country = {
+				name = "Umbaran Rootai"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_authoritarian"
+					ethic="ethic_xenophobe"
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_phoenix_horizons_4.dds"
+					}
+					background={
+						category="backgrounds"
+						file="00_solid.dds"
+					}
+					colors={
+						"hsv_56-52-80"
+						"gray_0"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+    }
+
+}

@@ -1,0 +1,349 @@
+malastare_system_initializer = {
+    name = "Malastare"
+    class = "rl_standard_stars"
+	flags={malastare}
+	
+	planet = {
+		#name = "Striar"
+        class = none
+        orbit_distance = 0
+        size = 18
+    }
+	
+	planet = {
+        name = "Saba Reese"
+        class = "pc_molten"
+        orbit_distance = 12
+        orbit_angle = 300
+        size = 16
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Lacca"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 139
+        size = 10
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Malastare"
+        class = "pc_tropical"
+        orbit_distance = 25
+        orbit_angle = 71
+        size = 20
+        has_ring = no
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = None
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = "high_gravity"
+				days = -1
+			}
+			create_species = {
+				name = "Dug"
+				class = "DUG"
+				portrait = "dug"
+				homeworld = THIS
+				traits = {
+					trait="trait_additrait_belligerent"
+					trait="trait_additrait_competitive"
+					trait="trait_additrait_rooted"
+					trait="trait_strong"
+				}
+			}
+			create_country = {
+				name = "Malastrian Council"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_xenophobe"
+					ethic="ethic_militarist"
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_eve_online_14.dds"
+					}
+					background={
+						category="backgrounds"
+						file="ovalebandvertical.dds"
+					}
+					colors={
+						"gray_0"
+						"brown"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+		
+		moon = {
+            name = "Malastare Major"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 315
+            has_ring = no
+            size = 8
+
+        }
+        moon = {
+            name = "Malastare Minor"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 277
+            has_ring = no
+            size = 4
+
+        }
+    }
+	
+	planet = {
+        name = "Cogalle"
+        class = "pc_toxic"
+        orbit_distance = 34
+        orbit_angle = 281
+        size = 8
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Hespry"
+        class = "pc_barren_cold"
+        orbit_distance = 37
+        orbit_angle = 43
+        size = 12
+        has_ring = no
+    }
+	
+	planet = {
+        name = "Bingsang"
+        class = "pc_gas_giant"
+        orbit_distance = 62
+        orbit_angle = 180
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Bingsang I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 315
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Bingsang II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 277
+            has_ring = no
+            size = 8
+
+        }
+        moon = {
+            name = "Bingsang III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 188
+            has_ring = no
+            size = 3
+
+        }
+    }
+	
+	planet = {
+        name = "Melambo"
+        class = "pc_gas_giant"
+        orbit_distance = 75
+        orbit_angle = 131
+        size = 21
+        has_ring = yes
+		
+		moon = {
+            name = "Melambo I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 315
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Melambo II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 277
+            has_ring = no
+            size = 8
+
+        }
+        moon = {
+            name = "Melambo III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 188
+            has_ring = no
+            size = 3
+
+        }
+		
+		moon = {
+            name = "Melambo IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 52
+            has_ring = no
+            size = 5
+
+        }
+        moon = {
+            name = "Melambo V"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 112
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Melambo VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 43
+            has_ring = no
+            size = 6
+
+        }
+        moon = {
+            name = "Melambo VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 152
+            has_ring = no
+            size = 2
+
+        }
+        moon = {
+            name = "Melambo VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 96
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Melambo IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 317
+            has_ring = no
+            size = 5
+
+        }
+        moon = {
+            name = "Melambo X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 114
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Melambo XXXII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 94
+            has_ring = no
+            size = 4
+
+        }
+    }
+	
+	planet = {
+        name = "Allmittal"
+        class = "pc_gas_giant"
+        orbit_distance = 110
+        orbit_angle = 167
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Allmittal I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 315
+            has_ring = no
+            size = 4
+
+        }
+        moon = {
+            name = "Allmittal II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 277
+            has_ring = no
+            size = 8
+
+        }
+        moon = {
+            name = "Allmittal III"
+            class = random
+            orbit_distance = 2
+            orbit_angle = 188
+            has_ring = no
+            size = 3
+
+        }
+    }
+}

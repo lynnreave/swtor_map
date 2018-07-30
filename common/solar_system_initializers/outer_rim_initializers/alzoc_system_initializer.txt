@@ -1,0 +1,133 @@
+alzoc_system_initializer = {
+    name = "Alzoc"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+	
+	planet = {
+        name = "Alzoc I"
+        class = random
+        orbit_distance = 24
+        orbit_angle = 114
+        size = 10
+        has_ring = no
+    }
+
+    planet = {
+        name = "Alzoc II"
+        class = random
+        orbit_distance = 45
+        orbit_angle = 76
+        size = 12
+        has_ring = no
+    }
+
+    planet = {
+        name = "Alzoc III"		
+        class = "pc_arctic"
+        orbit_distance = 65
+		orbit_angle = 213
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Talz"
+				class = "TALZ"
+				portrait = "avi12"
+				homeworld = THIS
+				traits = {
+					trait="trait_very_strong"
+					trait="trait_additrait_simple_minded"
+					trait="trait_additrait_hunter_gatherers"
+					trait="trait_additrait_rooted"
+					trait="trait_additrait_born_warriors"
+					trait="trait_additrait_zealous_defenders"
+				}
+			}
+			create_country = {
+				name = "Talz Tribes"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_egalitarian"
+					ethic="ethic_militarist"
+					ethic="ethic_spiritualist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_phoenix_horizons_4.dds"
+					}
+					background={
+						category="backgrounds"
+						file="00_solid.dds"
+					}
+					colors={
+						"hsv_56-52-80"
+						"gray_0"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = bronze_age
+				set_primitive_age = bronze_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+    }
+
+    planet = {
+        name = "Monsolar"
+        class = "pc_arid"
+        orbit_distance = 72
+        orbit_angle = 98
+        size = 25
+        has_ring = no
+	}
+}

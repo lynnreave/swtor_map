@@ -1,7 +1,7 @@
 telos_system_initializer = {
     name = "Telos"
     class = "rl_standard_stars"
-    asteroids_distance = 30
+    ##asteroids_distance = 30
 
     planet = {
         class = star

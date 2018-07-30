@@ -28,5 +28,4 @@ setup_scenario = {
 	supports_shape = spiral_2
 	supports_shape = spiral_4
 	supports_shape = ring
-    supports_shape = star_wars_galaxy_divided
 }

@@ -1,0 +1,597 @@
+dathomir_system_initializer = {
+    name = "Dathomir"
+    class = "rl_standard_stars"
+
+    planet = {
+        name = "Dathomir"
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+
+    planet = {
+        name = "Arro"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 76
+        size = 9
+        has_ring = no
+    }
+
+    planet = {
+        name = "Euton"
+        class = "pc_molten"
+        orbit_distance = 28
+        orbit_angle = 132
+        size = 12
+        has_ring = no
+    }
+
+    planet = {
+        name = "Laseel"
+        class = "pc_hothouse"
+        orbit_distance = 30
+        orbit_angle = 115
+        size = 18
+        has_ring = no
+		moon = {
+            name = "Laseel Major"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Laseel Minor"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+			size = 4
+        }
+    }
+
+    planet = {
+        name = "Dathomir"
+        class = "pc_continental"
+        orbit_distance = 28
+        orbit_angle = 220
+        size = 20
+        has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Dathomiri"
+				class = "DATHOMIRI"
+				portrait = "zabrak"
+				homeworld = THIS
+				traits = {
+					trait="trait_strong"
+					trait="trait_repugnant"
+					trait="trait_conformists"
+					trait="trait_additrait_rooted"
+					trait="trait_additrait_born_warriors"
+					trait="trait_force_attuned"
+				}
+			}
+			create_country = {
+				name = "Witches of Dathomir"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_militarist"
+					ethic="ethic_spiritualist"
+					ethic="ethic_dark_side"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_13.dds"
+					}
+					background={
+						category="backgrounds"
+						file="pattern_01.dds"
+					}
+					colors={
+						"dark_green"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+		moon = {
+            name = "Dathomir I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Dathomir II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Dathomir III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 166
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Koratas"
+            class = pc_arid
+            orbit_distance = 2.5
+            orbit_angle = 338
+            has_ring = no
+			size = 6
+			init_effect = {
+				add_modifier = {
+					modifier = "mineral_rich"
+					days = -1
+				}
+			}
+        }
+    }
+	
+    planet = {
+        name = "BABYgnon"
+        class = "pc_gas_giant"
+        orbit_distance = 70
+        orbit_angle = 176
+        size = 24
+        has_ring = no
+
+        moon = {
+            name = "BABYgnon I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "BABYgnon II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "BABYgnon III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 166
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "BABYgnon IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 338
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "BABYgnon V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -43
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "BABYgnon VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 243
+            has_ring = no
+			size = 2
+        }
+        moon = {
+            name = "BABYgnon VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 54
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "BABYgnon VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+			size = 4
+        }
+    }
+	
+    planet = {
+        name = "Barmasel"
+        class = "pc_gas_giant"
+        orbit_distance = 70
+        orbit_angle = 144
+        size = 26
+        has_ring = no
+        moon = {
+            name = "Barmasel I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 134
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Barmasel II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 245
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Barmasel III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Barmasel IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -78
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Barmasel V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 249
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Barmasel VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Barmasel VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 212
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Barmasel VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Barmasel IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Barmasel X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 293
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Barmasel XIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 111
+            has_ring = no
+			size = 6
+        }
+
+    }
+	
+    planet = {
+        name = "Stindaron"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 254
+        size = 29
+        has_ring = no
+
+        moon = {
+            name = "Stindaron I"
+            class = random
+            orbit_distance = 12
+            orbit_angle = 45
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Stindaron II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 123
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Stindaron III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 87
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Stindaron IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 275
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Stindaron V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 146
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Stindaron VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 265
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Stindaron VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 144
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Stindaron VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Stindaron IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Stindaron X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Stindaron XX"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 49
+            has_ring = no
+			size = 5
+        }
+    }
+	
+    planet = {
+        name = "Arodoni"
+        class = "pc_gas_giant"
+        orbit_distance = 70
+        orbit_angle = 76
+        size = 22
+        has_ring = no
+
+        moon = {
+            name = "Arodoni I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 232
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Arodoni II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Arodoni III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 258
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Arodoni IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 122
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Arodoni V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 85
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Arodoni VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 304
+            has_ring = no
+			size = 6
+        }
+		moon = {
+            name = "Arodoni VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 144
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Arodoni VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -54
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Arodoni IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 132
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Arodoni X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 65
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Arodoni XVIII"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 49
+            has_ring = no
+			size = 5
+        }
+    }
+	
+	planet = {
+        name = "Chirgay"
+        class = "pc_frozen"
+        orbit_distance = 98
+        orbit_angle = 76
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Chirgay Major"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 232
+            has_ring = no
+			size = 6
+        }
+    }
+
+    planet = {
+        name = "Chav"
+        class = "pc_barren"
+        orbit_distance = 28
+        orbit_angle = 110
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Chav Major"
+            class = "pc_barren_cold"
+            orbit_distance = 10
+            orbit_angle = 232
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Chav Minor"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+			size = 4
+        }
+    }
+}

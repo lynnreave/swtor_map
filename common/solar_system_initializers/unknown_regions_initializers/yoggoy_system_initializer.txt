@@ -30,64 +30,64 @@ yoggoy_system_initializer = {
 		tile_blockers = none
 		modifiers = none
 			
-			init_effect = {
-				set_planet_flag = fallen_empire_world			
-				create_species = {
-			name = "Killik"
-			class = "ART"
-			portrait = "art3"
-			traits = { trait = "trait_pc_alpine_preference" 			
-			trait = "trait_natural_engineers"
-			trait = "trait_rapid_breeders"
-			trait = "trait_venerable"
-			trait = "trait_communal"
-			trait = "trait_adaptive"
-					}
-			extra_trait_points = 2
-			allow_negative_traits = no
-		}
-		create_country = {
-			name = "The Colony"
-			type = fallen_empire
-			ignore_initial_colony_error = yes
-			government= "military_dictatorship"
-			#ftl=hyperdrive			
-			species = last_created
-			ethos = {
-				ethic = ethic_fanatic_collectivist				
-				ethic = ethic_xenophile
+		init_effect = {
+			set_planet_flag = fallen_empire_world			
+			create_species = {
+				name = "Killik"
+				class = "KILLIK"
+				portrait = "art3"
+				traits = { trait = "trait_pc_alpine_preference" 			
+				trait = "trait_natural_engineers"
+				trait = "trait_rapid_breeders"
+				trait = "trait_venerable"
+				trait = "trait_communal"
+				trait = "trait_adaptive"
+						}
+				extra_trait_points = 2
+				allow_negative_traits = no
 			}
-			flag={
-								icon={
-						category="pointy"
-						file="flag_pointy_23.dds"
-					}
-					background={
-						category="backgrounds"
-						file="circle.dds"
-					}
-					colors={
-						"brown"
-						"brown"
-						"null"
-						"null"
-					}
+			create_country = {
+				name = "The Colony"
+				type = fallen_empire
+				ignore_initial_colony_error = yes
+				#government= "military_dictatorship"
+				#ftl=hyperdrive			
+				species = last_created
+				ethos = {
+					ethic = ethic_fanatic_collectivist				
+					ethic = ethic_xenophile
 				}
-			effect = {
-				set_country_flag = fallen_empire_3	
-				set_graphical_culture = "fallen_empire_03"
-				add_minerals = 5000
-				add_energy = 5000		
-				# must initialize global designs here
-				add_global_ship_design = "Imperium"
-				add_global_ship_design = "Supremacy"
-				add_global_ship_design = "Glory"
-				add_global_ship_design = "Reaper"
-				add_global_ship_design = "Devastator"
-				add_global_ship_design = "Servitor"
-				add_global_ship_design = "Destiny"		
+				flag={
+									icon={
+							category="pointy"
+							file="flag_pointy_23.dds"
+						}
+						background={
+							category="backgrounds"
+							file="circle.dds"
+						}
+						colors={
+							"brown"
+							"brown"
+							"null"
+							"null"
+						}
+					}
+				effect = {
+					set_country_flag = fallen_empire_3	
+					set_graphical_culture = "fallen_empire_03"
+					add_minerals = 5000
+					add_energy = 5000		
+					# must initialize global designs here
+					add_global_ship_design = "Imperium"
+					add_global_ship_design = "Supremacy"
+					add_global_ship_design = "Glory"
+					add_global_ship_design = "Reaper"
+					add_global_ship_design = "Devastator"
+					add_global_ship_design = "Servitor"
+					add_global_ship_design = "Destiny"		
+				}
 			}
-		}
 	}
 			
 
@@ -179,187 +179,104 @@ yoggoy_system_initializer = {
 				random_tile = {
 					limit = { has_building = no has_blocker = no num_adjacent_tiles > 3 }
 					set_building = "building_capital_3"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}
-					add_resource = {
-						resource = food
-						amount = 1
-					}			
+					set_deposit = d_mineral_deposit
+					set_deposit = d_farmland_deposit			
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_agri_processing_complex"
-					add_resource = {
-						resource = food
-						amount = 1
-						replace = yes
-					}				
+					set_deposit = d_farmland_deposit				
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_agri_processing_complex"
-					add_resource = {
-						resource = food
-						amount = 1
-						replace = yes
-					}				
+					set_deposit = d_farmland_deposit				
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_ancient_factory"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}					
+					set_deposit = d_mineral_deposit					
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_ancient_factory"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}					
+					set_deposit = d_mineral_deposit					
 				}
 				
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}			
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_dark_matter_power_plant"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}	
+					set_deposit = d_energy_deposit	
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_ancient_factory"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}					
+					set_deposit = d_mineral_deposit					
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_ancient_factory"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}					
+					set_deposit = d_mineral_deposit					
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_ancient_factory"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}					
+					set_deposit = d_mineral_deposit					
 				}
 				random_tile = {
 					limit = { has_building = no has_blocker = no }
 					set_building = "building_ancient_factory"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}					
+					set_deposit = d_mineral_deposit					
 				}
 				every_tile = {
 					limit = { has_building = no has_blocker = no has_pop = no }			

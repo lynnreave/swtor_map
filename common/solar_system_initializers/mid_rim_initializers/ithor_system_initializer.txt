@@ -1,0 +1,427 @@
+ithor_system_initializer = {
+    name = "Ottega"
+    class = "rl_standard_stars"
+
+    planet = {
+        class = "pc_g_star"
+        orbit_distance = 0
+        size = 20
+    }
+	
+	planet = {
+        name = "Imrooso"
+        class = "pc_molten"
+        orbit_distance = 22
+        orbit_angle = 76
+        size = 9
+        has_ring = no
+		moon = {
+            name = "Imrooso Major"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+    }
+	
+	planet = {
+        name = "Torgazi"
+        class = "pc_hothouse"
+        orbit_distance = 28
+        orbit_angle = 132
+        size = 12
+        has_ring = no
+		moon = {
+            name = "Torgazi I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Torgazi II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Torgazi III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 166
+            has_ring = no
+			size = 3
+        }
+    }
+
+    planet = {
+        name = "Ottega"
+        class = "pc_continental"
+        orbit_distance = 32
+        orbit_angle = 344
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Ottega I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Ottega II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Ottega III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 166
+            has_ring = no
+			size = 3
+        }
+    }
+
+    planet = {
+        name = "Ithor"
+        class = "pc_gaia"
+        orbit_distance = 39
+        orbit_angle = 69
+        size = 20
+        has_ring = no
+		tile_blockers = none
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Ithorian"
+				class = "ITHORIAN"
+				portrait = "fun13"
+				homeworld = THIS
+				traits = {
+					trait="trait_communal"
+					trait="trait_conservationists"
+					trait="trait_additrait_sociable"
+					trait="trait_natural_sociologists"
+				}
+			}
+			create_country = {
+				name = "Ithorian Council"
+				species = last_created
+				ethos = {
+					ethic="ethic_fanatic_pacifist"
+					ethic="ethic_spiritualist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_13.dds"
+					}
+					background={
+						category="backgrounds"
+						file="pattern_01.dds"
+					}
+					colors={
+						"dark_green"
+						"dark_blue"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
+		moon = {
+            name = "Ithor I"
+            class = random
+            orbit_distance = 8
+            orbit_angle = 332
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Ithor II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 56
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Ithor III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 166
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Ithor IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 338
+            has_ring = no
+			size = 6
+        }
+        moon = {
+            name = "Ithor V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -43
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Ithor VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 243
+            has_ring = no
+			size = 2
+        }
+    }
+
+    planet = {
+        name = "Shihor"
+        class = "pc_gas_giant"
+        orbit_distance = 80
+        orbit_angle = 279
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Shihor I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 134
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Shihor II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 245
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Shihor III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Shihor IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -78
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Shihor V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 249
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Shihor VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Shihor VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 212
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Shihor VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Shihor IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Shihor X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 293
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Shihor XXIX"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 111
+            has_ring = no
+			size = 6
+        }
+    }
+	
+	planet = {
+        name = "Gyo"
+        class = "pc_gas_giant"
+        orbit_distance = 100
+        orbit_angle = 279
+        size = 16
+        has_ring = no
+		moon = {
+            name = "Gyo I"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 134
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Gyo II"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 245
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Gyo III"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 66
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Gyo IV"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = -78
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Gyo V"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 249
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Gyo VI"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 35
+            has_ring = no
+	    size = 6
+        }
+        moon = {
+            name = "Gyo VII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 212
+            has_ring = no
+			size = 4
+        }
+        moon = {
+            name = "Gyo VIII"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 138
+            has_ring = no
+			size = 5
+        }
+        moon = {
+            name = "Gyo IX"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 67
+            has_ring = no
+			size = 3
+        }
+        moon = {
+            name = "Gyo X"
+            class = random
+            orbit_distance = 2.5
+            orbit_angle = 293
+            has_ring = no
+			size = 7
+        }
+        moon = {
+            name = "Gyo XV"
+            class = random
+            orbit_distance = 10
+            orbit_angle = 111
+            has_ring = no
+			size = 6
+        }
+    }
+}

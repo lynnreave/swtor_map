@@ -1,7 +1,0 @@
-# Triggers when the game starts
-on_game_start = {
-	events = {		
-		swgd_start.2
-		swgd_start.3		
-	}
-}

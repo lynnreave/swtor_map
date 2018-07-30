@@ -1,7 +1,7 @@
 naos_system_initializer = {
     name = "Naos"
     class = "rl_standard_stars"
-	asteroids_distance = 160
+	##asteroids_distance = 160
 
     planet = {
         class = star

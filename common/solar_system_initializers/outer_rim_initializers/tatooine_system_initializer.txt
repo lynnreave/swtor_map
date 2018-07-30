@@ -30,13 +30,104 @@ tatooine_system_initializer = {
 
     planet = {
         name = "Tatooine"
-        class = "pc_desert"
+        class = "pc_sandsea"
         orbit_distance = 42
         orbit_angle = 102
         size = 20
         has_ring = no
 		tile_blockers = none
-		
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Tuskens"
+				class = "TUSKEN"
+				portrait = "rep9"
+				homeworld = THIS
+				traits = {
+					trait="trait_dim"
+					trait="trait_communal"
+					trait="trait_additrait_hunter_gatherers"
+					trait="trait_additrait_rooted"
+					trait="trait_additrait_born_warriors"
+					trait="trait_additrait_belligerent"
+					trait="trait_additrait_zealous_defenders"
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			create_species = {
+				name = "Jawa"
+				class = "JAWA"
+				portrait = "jawa"
+				homeworld = THIS
+				traits = {
+					trait="trait_additrait_mob_mentality"
+					trait="trait_additrait_fast_analysers"
+					trait="trait_additrait_multitasking"
+					trait="trait_additrait_delicate"
+					trait="trait_communal"
+					trait="trait_nomadic"
+					trait="trait_weak"
+					trait="trait_thrifty"
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			create_country = {
+				name = "Tatooinian Tribes"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_04.dds"
+					}
+					background={
+						category="backgrounds"
+						file="new_dawn.dds"
+					}
+					colors={
+						"hsv_16-52-80"
+						"brown"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = bronze_age
+				set_primitive_age = bronze_age
+			}
+		}
 
         moon = {
             name = "Ghomrassen"

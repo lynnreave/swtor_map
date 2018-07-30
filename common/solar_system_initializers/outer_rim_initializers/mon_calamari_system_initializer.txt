@@ -26,7 +26,6 @@ mon_calamari_system_initializer = {
         orbit_angle = 180
         size = 16
         has_ring = no
-
     }
 
     planet = {
@@ -49,6 +48,117 @@ mon_calamari_system_initializer = {
 		starting_planet = yes
 		tile_blockers = none
 		modifiers = none
+		
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Quarren"
+				class = "QUARREN"
+				portrait = "mol15"
+				homeworld = THIS
+				traits = {
+					trait="trait_repugnant"
+					trait="trait_additrait_rooted"
+					trait="trait_additrait_aggressive"
+				}
+			}
+			while = {
+				count = 6
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			create_species = {
+				name = "Mon Calamari"
+				class = "MON_CALAMARI"
+				portrait = "mon_calamari"
+				homeworld = THIS
+				traits = {
+					trait="trait_intelligent"
+					trait="trait_natural_physicists"
+					trait="trait_additrait_sociable"
+					trait="trait_additrait_pioneers"
+					trait="trait_sedentary"
+				}
+			}
+			create_country = {
+				name = "Calamarian Republic"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_egalitarian"
+					ethic="ethic_xenophile"
+					ethic="ethic_pacifist"
+				}
+				flag={
+					icon={
+						category="various"
+						file="flag_elite_dangerous_08.dds"
+					}
+					background={
+						category="backgrounds"
+						file="threebandsstar.dds"
+					}
+					colors={
+						"dark_teal"
+						"hsv_16-20-80"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 6
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
      	
         moon = {
             name = "Dac Minor"

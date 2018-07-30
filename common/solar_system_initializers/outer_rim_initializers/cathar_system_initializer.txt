@@ -2,7 +2,7 @@ cathar_system_initializer = {
     name = "Cathar"
     class = "rl_standard_stars"
 	flags={cathar_tribes}
-    asteroids_distance = 179
+    ##asteroids_distance = 179
 
     planet = {
         class = star
@@ -41,7 +41,90 @@ cathar_system_initializer = {
      	init_effect = {
 			prevent_anomaly = yes
 		}
-		
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Cathar"
+				class = "CATHAR"
+				portrait = "mam14"
+				homeworld = THIS
+				traits = {
+					trait="trait_strong"
+					trait="trait_additrait_hunter_gatherers"
+					trait="trait_additrait_born_warriors"
+					trait="trait_additrait_zealous_defenders"
+					trait="trait_additrait_passionate"
+				}
+			}
+			create_country = {
+				name = "Cathar Council"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_fanatic_militarist"
+					ethic="ethic_spiritualist"
+				}
+				flag={
+					icon={
+						category="zoological"
+						file="flag_zoological_14.dds"
+					}
+					background={
+						category="backgrounds"
+						file="circle.dds"
+					}
+					colors={
+						"brown"
+						"orange"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
 		
 
         moon = {

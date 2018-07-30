@@ -1,7 +1,7 @@
 keeara_major_system_initializer = {
     name = "Keeara Major"
     class = "rl_standard_stars"
-    asteroids_distance = 28
+    ##asteroids_distance = 28
 
     planet = {
         class = star

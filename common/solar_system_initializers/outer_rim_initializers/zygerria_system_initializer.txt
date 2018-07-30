@@ -23,7 +23,7 @@ zygerria_system_initializer = {
 
     planet = {
         name = "Zygerria"
-        class = "pc_savannah"
+        class = "pc_mesa"
         orbit_distance = 25
         orbit_angle = 125
         size = 20
@@ -31,7 +31,91 @@ zygerria_system_initializer = {
 		starting_planet = yes
 		tile_blockers = none
 		modifiers = none
-     
+		init_effect = {
+			prevent_anomaly = yes
+			create_species = {
+				name = "Zygerrian"
+				class = "ZYGERRIAN"
+				portrait = "mam3"
+				homeworld = THIS
+				traits = {
+					trait="trait_communal"
+					trait="trait_additrait_born_warriors"
+					trait="trait_thrifty"
+					trait="trait_decadent"
+					trait="trait_additrait_belligerent"
+				}
+			}
+			create_country = {
+				name = "Zygerrian Slave Empire"
+				
+				species = last_created
+				ethos = {
+					ethic="ethic_xenophobe"
+					ethic="ethic_militarist"
+					ethic="ethic_materialist"
+				}
+				flag={
+					icon={
+						category="pirate"
+						file="flag_pirate_10.dds"
+					}
+					background={
+						category="backgrounds"
+						file="stripes.dds"
+					}
+					colors={
+						"hsv_0-100-50"
+						"brown"
+						"null"
+						"null"
+					}
+				}
+				type = primitive
+			}
+			last_created_country = {
+				set_graphical_culture = preindustrial_01
+				set_country_flag = machine_age
+				set_primitive_age = machine_age
+			}
+			while = {
+				count = 10
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = owner
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = { 
+						has_blocker = no 
+						has_building = no 
+						has_grown_pop = yes
+					}
+					set_building = "building_hydroponics_farm_1"
+					set_deposit = d_farmland_deposit
+				}
+			}					
+			last_created_country = {		
+				PREV = {
+					create_army = {
+						name = "National Military"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				break = yes
+			}
+		}
 
         moon = {
             name = "Zygor"
