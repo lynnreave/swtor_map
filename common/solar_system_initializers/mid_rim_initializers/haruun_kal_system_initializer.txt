@@ -1,8 +1,11 @@
 haruun_kal_system_initializer = {
     name = "Al'Har"
     class = "rl_standard_stars"
-    ##asteroids_distance = 100
 	flags={haruun_kal}
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
 
     planet = {
         class = "pc_g_star"
@@ -46,7 +49,7 @@ haruun_kal_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_eve_online_15.dds"
 					}
 					background={

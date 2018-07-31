@@ -11,7 +11,7 @@ skako_system_initializer = {
 
     planet = {
         name = "Skako"
-		class = "pc_tropical" 		
+		class = "pc_tropical"
         orbit_distance = 25
         orbit_angle = 85
         size = 20
@@ -33,7 +33,7 @@ skako_system_initializer = {
 			}
 			create_country = {
 				name = "Collectivized Techno Guild"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_xenophobe"
@@ -41,8 +41,8 @@ skako_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
-						file="cis_g.dds"
+						category="swtor"
+						file="cis.dds"
 					}
 					background={
 						category="backgrounds"
@@ -79,16 +79,16 @@ skako_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"

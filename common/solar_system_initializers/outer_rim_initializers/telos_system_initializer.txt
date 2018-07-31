@@ -1,7 +1,10 @@
 telos_system_initializer = {
     name = "Telos"
     class = "rl_standard_stars"
-    ##asteroids_distance = 30
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 30
+	}
 
     planet = {
         class = star

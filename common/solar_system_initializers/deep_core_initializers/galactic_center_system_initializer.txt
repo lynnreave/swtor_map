@@ -9,7 +9,7 @@ galactic_center_system_initializer = {
 		init_effect = {
 			orbital_deposit_tile = {				
 				add_deposit = d_enormous3_physics_deposit  
-				add_deposit = d_dark_matter_deposit  
+				##add_deposit = d_dark_matter_deposit  
 			}
 		create_cloud_country = yes		
 			save_event_target_as = voidhome_star

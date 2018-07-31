@@ -1,6 +1,6 @@
 starswarm_cluster_system_initializer = {
     name = "Starswarm Cluster"
-    class = random
+    class = rl_standard_stars
 
     planet = {
         class = none

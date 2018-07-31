@@ -1,8 +1,14 @@
 toydaria_system_initializer = {
     name = "Toydaria"
     class = "rl_standard_stars"
-	##asteroids_distance = 15
-	##asteroids_distance = 90
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 15
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
 
     planet = {
 		name = "Toydar"
@@ -100,7 +106,7 @@ toydaria_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_elite_dangerous_13.dds"
 					}
 					background={

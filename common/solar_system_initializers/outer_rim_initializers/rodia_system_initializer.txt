@@ -57,7 +57,7 @@ rodia_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_eve_online_08.dds"
 					}
 					background={

@@ -2,7 +2,10 @@ taris_system_initializer = {
     name = "Taris"
     class = "rl_standard_stars"
 	flags = { taris }
-    ##asteroids_distance = 210
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 210
+	}
 
     planet = {
         class = "pc_g_star"

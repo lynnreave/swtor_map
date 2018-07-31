@@ -33,22 +33,22 @@ corellia_system_initializer = {
 			}
 			create_country = {
 				name = "Corellian Kingdom"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_fanatic_materialist"
 				}
 				flag={
 					icon={
-					category="various"
-					file="jedi_g.dds"
+					category="swtor"
+					file="jedi.dds"
 					}
 					background={
 						category="backgrounds"
 						file="circle.dds"
 					}
 					colors={
-						"gray_96"
+						"gray_90"
 						"gray_0"
 						"null"
 						"null"
@@ -78,16 +78,16 @@ corellia_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"

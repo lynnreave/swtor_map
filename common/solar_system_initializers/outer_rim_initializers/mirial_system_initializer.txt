@@ -69,7 +69,7 @@ mirial_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_supreme_commander_5.dds"
 					}
 					background={

@@ -2,7 +2,10 @@ sullust_system_initializer = {
     name = "Sullust"
 	class = "rl_standard_stars"
 	flags={sullust}
-	##asteroids_distance = 113
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 113
+	}
 
     planet = {
         class = star
@@ -270,7 +273,7 @@ sullust_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_eve_online_10.dds"
 					}
 					background={

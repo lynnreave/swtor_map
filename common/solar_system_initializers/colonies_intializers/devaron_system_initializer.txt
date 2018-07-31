@@ -32,7 +32,7 @@ devaron_system_initializer = {
 			}
 			create_country = {
 				name = "Devaronian Republic"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_xenophile"
@@ -40,7 +40,7 @@ devaron_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_elite_dangerous_13.dds"
 					}
 					background={
@@ -78,16 +78,16 @@ devaron_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"

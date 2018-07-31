@@ -1,7 +1,10 @@
 endor_system_initializer = {
     name = "Endor"
     class = "rl_standard_stars"
-    ##asteroids_distance = 160
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 160
+	}
 
     planet = {
         name = "Ibleam"

@@ -80,7 +80,7 @@ pantora_system_initializer= {
             orbit_angle = 114
             size = 12
             has_ring = no
-			
+
 			init_effect = {
 			prevent_anomaly = yes
 			create_species = {
@@ -95,7 +95,7 @@ pantora_system_initializer= {
 			}
 			create_country = {
 				name = "Pantoran Republic"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_materialist"
@@ -103,7 +103,7 @@ pantora_system_initializer= {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_elite_dangerous_09.dds"
 					}
 					background={
@@ -112,7 +112,7 @@ pantora_system_initializer= {
 					}
 					colors={
 						"hsv_64-100-50"
-						"gray_96"
+						"gray_90"
 						"null"
 						"null"
 					}
@@ -141,16 +141,16 @@ pantora_system_initializer= {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"

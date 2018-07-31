@@ -1,7 +1,10 @@
 lamaro_system_initializer = {
     name = "Lamaro"
     class = "rl_standard_stars"
-	##asteroids_distance = 210
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 210
+	}
 
     planet = {
         class = star

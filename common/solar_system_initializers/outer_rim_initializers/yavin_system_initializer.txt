@@ -1,7 +1,10 @@
 yavin_system_initializer = {
     name = "Yavin"
     class = "rl_standard_stars"
-    ##asteroids_distance = 50
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 50
+	}
 
     planet = {
         class = "pc_k_star"

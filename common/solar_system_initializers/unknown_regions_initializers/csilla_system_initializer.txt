@@ -64,8 +64,8 @@ csilla_system_initializer = {
 				}
 				flag={
 					icon={
-						category="domination"
-						file="domination_9.dds"
+						category="swtor"
+						file="chiss_ascendancy.dds"
 					}
 					background={
 						category="backgrounds"
@@ -102,16 +102,16 @@ csilla_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"
@@ -123,7 +123,7 @@ csilla_system_initializer = {
 				break = yes
 			}
 		}
-     	
+
 
         moon = {
             name = "Csilla Minor"

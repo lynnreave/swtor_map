@@ -1,7 +1,10 @@
 korriban_system_initializer = {
     name = "Horuset (Korriban)"
     class = "rl_standard_stars"
-    ##asteroids_distance = 113
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 113
+	}
 
     planet = {
         class = star
@@ -110,8 +113,8 @@ korriban_system_initializer = {
 				}
 				flag = {
 					icon = {
-						category = "various"
-						file = "gr_g.dds"
+						category = "swtor"
+						file = "galactic_republic.dds"
 					}
 					background= {
 						category = "backgrounds"

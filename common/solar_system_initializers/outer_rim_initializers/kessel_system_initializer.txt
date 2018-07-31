@@ -1,7 +1,10 @@
 kessel_system_initializer = {
     name = "Kessa (Kessel)"
-	 class = random
-    ##asteroids_distance = 48
+	 class = rl_standard_stars
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 48
+	}
 
     planet = {
         class = "pc_a_star"
@@ -44,25 +47,25 @@ kessel_system_initializer = {
 				days = -1
 			}
 		}
-		
+
 		init_effect = {
-		random_tile = {					
-			limit = { has_building = no has_blocker = no has_pop = no }			
+		random_tile = {
+			limit = { has_building = no has_blocker = no has_pop = no }
 				set_blocker = tb_ancient_ruins
-			}			
-			
-		random_tile = {					
-			limit = { has_building = no has_blocker = no has_pop = no }			
+			}
+
+		random_tile = {
+			limit = { has_building = no has_blocker = no has_pop = no }
 				set_blocker = tb_ancient_ruins
-			}		
-		random_tile = {					
-			limit = { has_building = no has_blocker = no has_pop = no }			
+			}
+		random_tile = {
+			limit = { has_building = no has_blocker = no has_pop = no }
 				set_blocker = tb_ancient_ruins
-			}	
-		random_tile = {					
-			limit = { has_building = no has_blocker = no has_pop = no }			
+			}
+		random_tile = {
+			limit = { has_building = no has_blocker = no has_pop = no }
 				set_blocker = tb_ancient_ruins
-			}	
+			}
 		}
 
 

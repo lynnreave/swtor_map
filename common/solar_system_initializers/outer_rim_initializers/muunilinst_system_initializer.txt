@@ -1,7 +1,10 @@
 muunilinst_system_initializer = {
     name = "Muunilinst"
     class = "rl_standard_stars"
-    ##asteroids_distance = 82
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 82
+	}
 
     planet = {
         class = star

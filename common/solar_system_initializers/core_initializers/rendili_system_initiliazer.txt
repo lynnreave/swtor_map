@@ -2,7 +2,10 @@ rendili_system_initializer = {
     name = "Rendili"
     class = "rl_standard_stars"
 	flags={rendili}
-    ##asteroids_distance = 193
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 193
+	}
 
     planet = {
         class = star
@@ -50,8 +53,8 @@ rendili_system_initializer = {
 				}
 				flag={
 					icon={
-					category="various"
-					file="jedi_g.dds"
+					category="swtor"
+					file="jedi.dds"
 					}
 					background={
 						category="backgrounds"

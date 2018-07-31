@@ -1,10 +1,13 @@
 neimoidia_system_initializer = {
     name = "Neimodia"
     class = "rl_standard_stars"
-    ####asteroids_distance = 127
 	flags= {neimoidian}
 	usage = custom_empire
 	max_instances = 1
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 127
+	}
 
     planet = {
 	name = "Nen"
@@ -79,14 +82,14 @@ neimoidia_system_initializer = {
 			}
 			create_country = {
 				name = "Trade Federation"
-				
+
 				species = last_created
 				ethos = {
 				ethic=ethic_materialist
 				}
 				flag={
 					icon={
-						category="divers"
+						category="swtor"
 						file="flag_divers_61.dds"
 					}
 					background={
@@ -124,16 +127,16 @@ neimoidia_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"

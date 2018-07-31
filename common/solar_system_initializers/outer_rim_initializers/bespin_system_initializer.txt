@@ -2,7 +2,10 @@ bespin_system_initializer = {
     name = "Bespin"
     class = "rl_standard_stars"
 	flags={bespin_guilds}
-    ##asteroids_distance = 75
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 75
+	}
 
     planet = {
         class = star

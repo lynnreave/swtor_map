@@ -61,7 +61,7 @@ alzoc_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_phoenix_horizons_4.dds"
 					}
 					background={

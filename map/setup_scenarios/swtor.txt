@@ -1,5 +1,5 @@
 static_galaxy_scenario = {
-	name = "Star Wars: A Galaxy Divided"
+	name = "Star Wars: The Old Republic"
 	priority = 0					#priority decides in which order the scenarios are listed
 	default = yes
 	num_empires = { min = 4 max = 40 }	#limits player customization
@@ -7,14 +7,14 @@ static_galaxy_scenario = {
 	fallen_empire_default = 3
 	fallen_empire_max = 3
 	advanced_empire_default = 0
-	colonizable_planet_odds = 1.0	
+	colonizable_planet_odds = 1.0
 	random_hyperlanes = no
 	##num_nebulas	= 6
 	##nebula_size = 60
 	##nebula_min_dist = 200
 	###new ids after 2234
 
-	
+
 	##Deep Core
 		system = { id = "6" name = "Prakith" position = { x = 19 y = 37 } initializer = prakith_system_initializer }
 		system = { id = "7" name = "Keeara Major" position = { x = 3 y = 25 } initializer = keeara_major_system_initializer }
@@ -70,8 +70,8 @@ static_galaxy_scenario = {
 			add_hyperlane = { from = "26" to = "25" }
 			add_hyperlane = { from = "25" to = "23" }
 			add_hyperlane = { from = "8" to = "18" }
-					
-			
+
+
 	##Core
 		system = { id = "29" name = "Pollillus" position = { x = 43 y = 27 } }
 		system = { id = "30" name = "Osssorck Nebulae" position = { x = 43 y = 112 } }
@@ -138,7 +138,7 @@ static_galaxy_scenario = {
 						}
 					}}
 		system = { id = "76" name = "Grizmallt" position = { x = -12 y = -7 } }
-		system = { id = "77" name = "Alsakan" position = { x = -7 y = -5 } 
+		system = { id = "77" name = "Alsakan" position = { x = -7 y = -5 }
 		initializer = alsakan_system_initializer
 		spawn_weight = {
 					base = 0
@@ -175,7 +175,7 @@ static_galaxy_scenario = {
 		system = { id = "103" name = "Glithnos" position = { x = -53 y = 17 } }
 		system = { id = "104" name = "Fedalle" position = { x = -59 y = 23 } }
 		system = { id = "105" name = "Raxxa" position = { x = -70 y = 23 } }
-		system = { id = "106" name = "Kuat" position = { x = -78 y = 25 } 
+		system = { id = "106" name = "Kuat" position = { x = -78 y = 25 }
 		initializer = kuat_system_initializer
 		spawn_weight = {
 					base = 0
@@ -229,7 +229,7 @@ static_galaxy_scenario = {
 						 has_country_flag = coruscant
 						}
 					}}
-		system = { id = "2017" name = "Rendili" position = { x = -69 y = 59 } 
+		system = { id = "2017" name = "Rendili" position = { x = -69 y = 59 }
 		initializer = rendili_system_initializer
 		spawn_weight = {
 					base = 0
@@ -242,7 +242,7 @@ static_galaxy_scenario = {
 		system = { id = "2089" name = "Columus" position = { x = -56 y = 54 } }
 
 
-		
+
 
 			##HYPERLANES
 				add_hyperlane = { from = "118" to = "2017"}
@@ -345,10 +345,10 @@ static_galaxy_scenario = {
 				add_hyperlane = { from = "77" to = "134" }
 				add_hyperlane = { from = "132" to = "2025" }
 				add_hyperlane = { from = "2025" to = "133" }
-				add_hyperlane = { from = "117" to = "2089" }				
-				
-				
-	
+				add_hyperlane = { from = "117" to = "2089" }
+
+
+
 	##Colonies
 		system = { id = "137" name = "Vakkar" position = { x = 40 y = -41 } }
 		system = { id = "138" name = "Palanhi" position = { x = 27 y = -42 } }
@@ -502,9 +502,9 @@ static_galaxy_scenario = {
 
 
 
-							
 
-					
+
+
 	##Inner Rim
 		system = { id = "311" name = "Affa" position = { x = -64 y = 165 } }
 		system = { id = "744" name = "Rondai" position = { x = 54 y = -73 } }
@@ -558,7 +558,7 @@ static_galaxy_scenario = {
 		system = { id = "799" name = "Dalcretti" position = { x = -132 y = -49 } }
 		system = { id = "800" name = "Taanab" position = { x = -148 y = -46 } }
 		system = { id = "801" name = "Hapes" position = { x = -147 y = -22 } }
-		system = { id = "802" name = "Onderon" position = { x = -156 y = -7 } 
+		system = { id = "802" name = "Onderon" position = { x = -156 y = -7 }
 		initializer = onderon_system_initializer
 		spawn_weight = {
 					base = 0
@@ -683,7 +683,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "759" to = "2021"}
 				add_hyperlane = { from = "717" to = "2076"}
 				add_hyperlane = { from = "2076" to = "776"}
-				add_hyperlane = { from = "2076" to = "2074"}	
+				add_hyperlane = { from = "2076" to = "2074"}
 				add_hyperlane = { from = "2074" to = "2073"}
 				add_hyperlane = { from = "2073" to = "2075"}
 				add_hyperlane = { from = "2073" to = "2078"}
@@ -698,10 +698,10 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "808" to = "2087"}
 
 
-		
-				
-				
-				
+
+
+
+
 	##Expansion Region
 		system = { id = "609" name = "Har Binande" position = { x = 49 y = 265 } }
 		system = { id = "612" name = "Noe'ha'on" position = { x = 35 y = 262 } }
@@ -761,7 +761,7 @@ initializer = almera_system_initializer}
 		system = { id = "680" name = "Charra" position = { x = -171 y = 172 } }
 		system = { id = "687" name = "Aridus" position = { x = -154 y = 177 } }
 		system = { id = "689" name = "Mimban" position = { x = -156 y = 84 } }
-		system = { id = "690" name = "Gyndine" position = { x = -131 y = 94 } }		
+		system = { id = "690" name = "Gyndine" position = { x = -131 y = 94 } }
 		system = { id = "692" name = "Fabrin" position = { x = -156 y = 99 } }
 		system = { id = "694" name = "Quas Killam" position = { x = -185 y = 1 } }
 		system = { id = "695" name = "Umbara" position = { x = -171 y = 8 } }
@@ -770,9 +770,9 @@ initializer = almera_system_initializer}
 		system = { id = "699" name = "Belasco" position = { x = -162 y = 57 } }
 		system = { id = "700" name = "Zirulast" position = { x = -172 y = 46 } }
 		system = { id = "701" name = "Trammen" position = { x = -153 y = 67 } }
-		system = { id = "702" name = "Chanosant" position = { x = -149 y = 70 } }		
+		system = { id = "702" name = "Chanosant" position = { x = -149 y = 70 } }
 		system = { id = "704" name = "Reytha" position = { x = -140 y = 86 } }
-		system = { id = "707" name = "Zaloriis" position = { x = -171 y = 94 } }	
+		system = { id = "707" name = "Zaloriis" position = { x = -171 y = 94 } }
 		system = { id = "712" name = "Draria" position = { x = -62 y = -89 } }
 		system = { id = "713" name = "Adin" position = { x = -65 y = -90 } }
 		system = { id = "714" name = "Nessem" position = { x = -47 y = -78 } }
@@ -893,7 +893,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "899" to = "900" }
 				add_hyperlane = { from = "900" to = "901" }
 				add_hyperlane = { from = "616" to = "627" }
-				add_hyperlane = { from = "657" to = "662" }    
+				add_hyperlane = { from = "657" to = "662" }
 				add_hyperlane = { from = "634" to = "983" }
 				add_hyperlane = { from = "764" to = "2019" }
 				add_hyperlane = { from = "2019" to = "2030" }
@@ -906,8 +906,8 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "2234" to = "2231" }
 				add_hyperlane = { from = "2231" to = "620" }
 
-				
-					
+
+
 	##Hutt Space
 			system = { id = "2" name = "Cyax" position = { x = -332 y = 60 } }
 			system = { id = "813" name = "Keldooine" position = { x = -276 y = 35 } }
@@ -937,7 +937,7 @@ initializer = almera_system_initializer}
 		system = { id = "2063" name = "Nimban" position = { x = -304 y = 14 } }
 		system = { id = "2064" name = "Quesh" position = { x = -309 y = 27 } }
 		system = { id = "2065" name = "Darvannis" position = { x = -338 y = -6 } }
-		
+
 
 
 
@@ -951,8 +951,8 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "814" to = "824" }
 				add_hyperlane = { from = "824" to = "820" }
 				add_hyperlane = { from = "820" to = "821" }
-				add_hyperlane = { from = "821" to = "822" }				
-				add_hyperlane = { from = "2" to = "830" }					
+				add_hyperlane = { from = "821" to = "822" }
+				add_hyperlane = { from = "2" to = "830" }
 				add_hyperlane = { from = "830" to = "828" }
 				add_hyperlane = { from = "827" to = "828" }
 				add_hyperlane = { from = "828" to = "829" }
@@ -977,11 +977,11 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "2007" to = "2065" }
 				add_hyperlane = { from = "588" to = "2065" }
 				add_hyperlane = { from = "2065" to = "822" }
-	
-				
-				
-	
-	##Mid Rim	
+
+
+
+
+	##Mid Rim
 		system = { id = "833" name = "Cerea" position = { x = 102 y = 279 } }
 		system = { id = "834" name = "Cheelit" position = { x = 96 y = 285 } }
 		system = { id = "836" name = "Koba" position = { x = 82 y = 290 } }
@@ -995,7 +995,7 @@ initializer = almera_system_initializer}
 		system = { id = "846" name = "Quamar" position = { x = 31 y = 335 } }
 		system = { id = "847" name = "Quaensan Prime" position = { x = 43 y = 319 } }
 		system = { id = "848" name = "Elbara" position = { x = 50 y = 308 } }
-		system = { id = "849" name = "Hirsi" position = { x = 53 y = 305 } }		
+		system = { id = "849" name = "Hirsi" position = { x = 53 y = 305 } }
 		system = { id = "852" name = "Miztoc" position = { x = 6 y = 306 } }
 		system = { id = "853" name = "Bomis Koori" position = { x = 25 y = 289 } }
 		system = { id = "854" name = "Cyphar" position = { x = -4 y = 313 } }
@@ -1129,7 +1129,7 @@ initializer = almera_system_initializer}
 		system = { id = "980" name = "Kalinda" position = { x = -136 y = 261 } }
 		system = { id = "981" name = "Alassa Major" position = { x = -142 y = 272 } }
 		system = { id = "982" name = "Nigel" position = { x = -126 y = 256 } }
-		system = { id = "983" name = "Roldalna" position = { x = -120 y = 255 } } 
+		system = { id = "983" name = "Roldalna" position = { x = -120 y = 255 } }
 		system = { id = "986" name = "Salvara" position = { x = -244 y = -84 } }
 		system = { id = "987" name = "Contruum" position = { x = -167 y = -58 } }
 		system = { id = "988" name = "Jeyell" position = { x = -216 y = -62 } }
@@ -1408,8 +1408,8 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "836" to = "837" }
 				add_hyperlane = { from = "837" to = "849" }
 				add_hyperlane = { from = "849" to = "848" }
-				add_hyperlane = { from = "848" to = "847" }			
-				add_hyperlane = { from = "976" to = "1012" }	
+				add_hyperlane = { from = "848" to = "847" }
+				add_hyperlane = { from = "976" to = "1012" }
 				add_hyperlane = { from = "1067" to = "1019" }
 				add_hyperlane = { from = "725" to = "2022" }
 				add_hyperlane = { from = "2022" to = "728" }
@@ -1424,10 +1424,10 @@ initializer = almera_system_initializer}
 
 
 
-				
-				
+
+
 	##Outer Rim
-	
+
 		system = { id = "1" name = "Arami" position = { x = -351 y = 161 } }
 		system = { id = "3" name = "Bavva" position = { x = 28 y = 353 } }
 		system = { id = "4" name = "Wrea" position = { x = -298 y = 333 } }
@@ -1522,7 +1522,7 @@ initializer = almera_system_initializer}
 		system = { id = "298" name = "Christophsis" position = { x = -242 y = 284 } }
 		system = { id = "299" name = "Tythe" position = { x = -243 y = 294 } }
 		system = { id = "300" name = "Nelvaan" position = { x = -246 y = 294 } }
-		system = { id = "301" name = "Rodia" position = { x = -255 y = 276 } 
+		system = { id = "301" name = "Rodia" position = { x = -255 y = 276 }
 		initializer = rodia_system_initializer
 				spawn_weight = {
 					base = 0
@@ -1632,7 +1632,7 @@ initializer = almera_system_initializer}
 		system = { id = "401" name = "Veragi" position = { x = -16 y = -283 } }
 		system = { id = "402" name = "Plesstil" position = { x = -16 y = -288 } }
 		system = { id = "403" name = "Dantooine" position = { x = 0 y = -235 } initializer = dantooine_system_initializer}
-		system = { id = "404" name = "Sinsang" position = { x = -8 y = -230 } }		
+		system = { id = "404" name = "Sinsang" position = { x = -8 y = -230 } }
 		system = { id = "409" name = "Ruuria" position = { x = -244 y = -255 } }
 		system = { id = "410" name = "Tiss'sharl" position = { x = -260 y = -251 } }
 		system = { id = "412" name = "Ranroon" position = { x = -288 y = -203 } }
@@ -1652,7 +1652,7 @@ initializer = almera_system_initializer}
 		system = { id = "422" name = "Krayiss" position = { x = -274 y = -213 } }
 		system = { id = "423" name = "Korriban" position = { x = -259 y = -196 } initializer = korriban_system_initializer}
 		system = { id = "424" name = "Bosthirda" position = { x = -262 y = -200 } }
-		system = { id = "425" name = "Dromund" position = { x = -267 y = -203 } initializer = dromund_system_initializer 
+		system = { id = "425" name = "Dromund" position = { x = -267 y = -203 } initializer = dromund_system_initializer
 		spawn_weight = {
 					base = 0
 					modifier = {
@@ -1784,7 +1784,7 @@ initializer = almera_system_initializer}
 		system = { id = "568" name = "Gamorr" position = { x = -355 y = 181 } }
 		system = { id = "570" name = "Borgo Prime" position = { x = -73 y = -157 } }
 		system = { id = "571" name = "Er'Kit" position = { x = -73 y = -140 } }
-		system = { id = "573" name = "Vinsoth" position = { x = -117 y = -172 } }		
+		system = { id = "573" name = "Vinsoth" position = { x = -117 y = -172 } }
 		system = { id = "575" name = "Halmad" position = { x = -122 y = -140 } }
 		system = { id = "576" name = "Dathomir" position = { x = -132 y = -152 } }
 		system = { id = "577" name = "Drackmar" position = { x = -140 y = -157 } }
@@ -1890,7 +1890,7 @@ initializer = almera_system_initializer}
 		system = { id = "2116" name = "Toong'l" position = { x = -372 y = -95 } }
 		system = { id = "2117" name = "Iego" position = { x = -348 y = -105 } }
 		system = { id = "2118" name = "Tund" position = { x = -401 y = -61 } }
-		system = { id = "2120" name = "Renatasia" position = { x = -382 y = -52 } }		
+		system = { id = "2120" name = "Renatasia" position = { x = -382 y = -52 } }
 		system = { id = "2121" name = "Oseon" position = { x = -361 y = -63 } }
 		system = { id = "2154" name = "Cholganna" position = { x = -344 y = -200 } }
 		system = { id = "2155" name = "Drongar" position = { x = -364 y = -183 } }
@@ -1901,14 +1901,14 @@ initializer = almera_system_initializer}
 		system = { id = "2206" name = "Firrerre" position = { x = 152 y = 275 } }
 		system = { id = "2227" name = "Deralia" position = { x = -374 y = 219 } }
 		system = { id = "2229" name = "Fest" position = { x = -34 y = -185 } }
-		
+
 
 
 
 
 
 			##HYPERLANES
-			
+
 				add_hyperlane = { from = "547" to = "465" }
 				add_hyperlane = { from = "459" to = "598" }
 				add_hyperlane = { from = "452" to = "459" }
@@ -2052,7 +2052,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "590" to = "589" }
 				add_hyperlane = { from = "589" to = "587" }
 				add_hyperlane = { from = "589" to = "588" }
-				add_hyperlane = { from = "588" to = "586" }				
+				add_hyperlane = { from = "588" to = "586" }
 				add_hyperlane = { from = "830" to = "588" }
 
 				add_hyperlane = { from = "590" to = "591" }
@@ -2226,7 +2226,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "412" to = "430" }
 				add_hyperlane = { from = "430" to = "465" }
 				add_hyperlane = { from = "449" to = "451" }
-				add_hyperlane = { from = "449" to = "448" }				
+				add_hyperlane = { from = "449" to = "448" }
 				add_hyperlane = { from = "455" to = "457" }
 				add_hyperlane = { from = "457" to = "466" }
 				add_hyperlane = { from = "466" to = "465" }
@@ -2260,7 +2260,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "583" to = "2005" }
 				add_hyperlane = { from = "358" to = "359" }
 				add_hyperlane = { from = "359" to = "360" }
-				add_hyperlane = { from = "360" to = "361" }				
+				add_hyperlane = { from = "360" to = "361" }
 				add_hyperlane = { from = "583" to = "2014" }
 				add_hyperlane = { from = "2014" to = "348" }
 				add_hyperlane = { from = "348" to = "347" }
@@ -2275,7 +2275,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "354" to = "355" }
 				add_hyperlane = { from = "355" to = "349" }
 				add_hyperlane = { from = "354" to = "345" }
-				add_hyperlane = { from = "345" to = "333" }				
+				add_hyperlane = { from = "345" to = "333" }
 				add_hyperlane = { from = "333" to = "336" }
 				add_hyperlane = { from = "336" to = "327" }
 				add_hyperlane = { from = "2010" to = "337" }
@@ -2336,7 +2336,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "968" to = "970" }
 				add_hyperlane = { from = "970" to = "967" }
 				add_hyperlane = { from = "967" to = "951" }
-				add_hyperlane = { from = "430" to = "1068" }				
+				add_hyperlane = { from = "430" to = "1068" }
 				add_hyperlane = { from = "471" to = "468" }
 				add_hyperlane = { from = "468" to = "469" }
 				add_hyperlane = { from = "469" to = "472" }
@@ -2357,7 +2357,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "409" to = "2023" }
 				add_hyperlane = { from = "2023" to = "410" }
 				add_hyperlane = { from = "277" to = "2027" }
-				add_hyperlane = { from = "402" to = "2029" }						
+				add_hyperlane = { from = "402" to = "2029" }
 				add_hyperlane = { from = "2028" to = "2029" }
 				add_hyperlane = { from = "283" to = "2031" }
 				add_hyperlane = { from = "275" to = "2032" }
@@ -2365,7 +2365,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "232" to = "2035" }
 				add_hyperlane = { from = "2035" to = "235" }
 				add_hyperlane = { from = "278" to = "2034" }
-				add_hyperlane = { from = "422" to = "2055" }					
+				add_hyperlane = { from = "422" to = "2055" }
 				add_hyperlane = { from = "367" to = "2047" }
 				add_hyperlane = { from = "2047" to = "2048" }
 				add_hyperlane = { from = "2031" to = "2054" }
@@ -2412,15 +2412,15 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "566" to = "2227" }
 
 
-				
-				
-				
-				
-							
+
+
+
+
+
 
 	##Unknown Regions
 		system = { id = "1046" name = "Lwhekk" position = { x = 342 y = 267 }
-			initializer = lwhekk_system_initializer	
+			initializer = lwhekk_system_initializer
 		spawn_weight = {
 					base = 0
 					modifier = {
@@ -2429,7 +2429,7 @@ initializer = almera_system_initializer}
 						}
 					}}
 		system = { id = "1047" name = "Ilum" position = { x = 173 y = -103 } }
-		system = { id = "1048" name = "Lehon" position = { x = 193 y = 78 } initializer = lehon_system_initializer	
+		system = { id = "1048" name = "Lehon" position = { x = 193 y = 78 } initializer = lehon_system_initializer
 		spawn_weight = {
 					base = 0
 					modifier = {
@@ -2777,7 +2777,7 @@ initializer = almera_system_initializer}
 				add_hyperlane = { from = "2148" to = "2149" }
 
 
-		
+
 
 ##NEBULAE
 
@@ -2794,10 +2794,10 @@ nebula = { name = "Rata Nebula" position = { x = 253 y = -36 } radius = 10 }
 nebula = { name = "Parthovian Cluster" position = { x = -349 y = -247 } radius = 10 }
 nebula = { name = "Perann Nebula" position = { x = 336 y = 47 } radius = 12 }
 
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	}	}

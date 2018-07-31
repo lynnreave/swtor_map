@@ -195,8 +195,8 @@ zeltros_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
-						file="oldrep_g.dds"
+						category="swtor"
+						file="old_republic.dds"
 					}
 					background={
 						category="backgrounds"

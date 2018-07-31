@@ -50,8 +50,8 @@ chandrila_system_initializer = {
 				}
 				flag={
 					icon={
-					category="various"
-					file="jedi_g.dds"
+					category="swtor"
+					file="jedi.dds"
 					}
 					background={
 						category="backgrounds"

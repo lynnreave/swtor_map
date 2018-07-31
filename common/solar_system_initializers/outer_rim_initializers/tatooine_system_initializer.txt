@@ -106,7 +106,7 @@ tatooine_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_elite_dangerous_04.dds"
 					}
 					background={

@@ -1,7 +1,10 @@
 plunder_system_initializer = {
     name = "Plunder"
     class = "pc_black_hole"
-    ##asteroids_distance = 150
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
 
     planet = {
         name = "Plunder Abyss"

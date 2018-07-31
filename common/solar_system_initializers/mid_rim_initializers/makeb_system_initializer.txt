@@ -2,7 +2,10 @@ makeb_system_initializer = {
     name = "Makeb"
     class = "rl_standard_stars"
 	flags = {hutt_clans}
-    ##asteroids_distance = 100
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
 
     planet = {
         class = "pc_g_star"

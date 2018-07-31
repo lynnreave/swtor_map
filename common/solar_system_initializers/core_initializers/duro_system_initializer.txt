@@ -1,8 +1,8 @@
 duro_system_initializer= {
     name = "Duro"
-    class = random
+    class = rl_standard_stars
 	flags = {duro}
- 
+
     planet = {
         class = star
         orbit_distance = 0
@@ -53,14 +53,14 @@ duro_system_initializer= {
 			}
 			create_country = {
 				name = "Duros Corporate Systems"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_materialist"
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_elite_dangerous_06.dds"
 					}
 					background={
@@ -98,16 +98,16 @@ duro_system_initializer= {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"
@@ -122,7 +122,7 @@ duro_system_initializer= {
 
     }
 
-    
+
 
     planet = {
         name = "Koli"

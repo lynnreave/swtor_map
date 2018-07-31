@@ -16,7 +16,7 @@ rattatak_system_initializer = {
         orbit_angle = 69
         size = 12
         has_ring = no
-		
+
 		moon = {
             name = "Nach's Moon"
             class = random
@@ -27,7 +27,7 @@ rattatak_system_initializer = {
 
         }
     }
-	
+
 	planet = {
         name = "Zoge Ver"
         class = "pc_toxic"
@@ -35,7 +35,7 @@ rattatak_system_initializer = {
         orbit_angle = 114
         size = 12
         has_ring = no
-		
+
 		moon = {
             name = "Zoge Ver I"
             class = random
@@ -91,7 +91,7 @@ rattatak_system_initializer = {
 
         }
     }
-	
+
 	planet = {
         name = "Renenen"
         class = "pc_toxic"
@@ -99,7 +99,7 @@ rattatak_system_initializer = {
         orbit_angle = 86
         size = 12
         has_ring = no
-		
+
 		moon = {
             name = "Renenen Major"
             class = random
@@ -147,7 +147,7 @@ rattatak_system_initializer = {
 			}
 			create_country = {
 				name = "Rattataki Tribes"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_xenophobe"
@@ -155,7 +155,7 @@ rattatak_system_initializer = {
 				}
 				flag={
 					icon={
-						category="sins_of_a_solar_empire"
+						category="swtor"
 						file="flag_sins_of_a_solar_empire_03.dds"
 					}
 					background={
@@ -193,16 +193,16 @@ rattatak_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"
@@ -260,7 +260,7 @@ rattatak_system_initializer = {
             has_ring = no
         }
     }
-	
+
 	planet = {
         name = "Hettig"
         class = "pc_gas_giant"
@@ -359,7 +359,7 @@ rattatak_system_initializer = {
             has_ring = no
         }
     }
-	
+
 	planet = {
         name = "Sanzen"
         class = "pc_gas_giant"
@@ -458,7 +458,7 @@ rattatak_system_initializer = {
             has_ring = no
         }
     }
-	
+
 	planet = {
         name = "Geribun"
         class = "pc_gas_giant"

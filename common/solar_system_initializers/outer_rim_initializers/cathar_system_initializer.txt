@@ -2,7 +2,10 @@ cathar_system_initializer = {
     name = "Cathar"
     class = "rl_standard_stars"
 	flags={cathar_tribes}
-    ##asteroids_distance = 179
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 179
+	}
 
     planet = {
         class = star

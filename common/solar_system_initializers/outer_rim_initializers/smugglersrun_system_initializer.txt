@@ -1,7 +1,10 @@
 smugglersrun_system_initializer = {
     name = "Smuggler's Run"
     class = "rl_standard_stars"
-    ##asteroids_distance = 100
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
 
     planet = {
         class = none

@@ -122,7 +122,7 @@ ithor_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_elite_dangerous_13.dds"
 					}
 					background={

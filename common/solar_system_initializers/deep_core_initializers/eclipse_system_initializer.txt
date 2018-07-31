@@ -1,7 +1,10 @@
 eclipse_system_initializer = {
     name = "Eclipse"
     class = "rl_standard_stars"
-    ##asteroids_distance = 33
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 33
+	}
 
     planet = {
         class = star

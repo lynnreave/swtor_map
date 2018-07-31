@@ -1,7 +1,10 @@
 kashyyyk_system_initializer = {
     name = "Kashyyyk (Hsskassi)"
     class = "rl_standard_stars"
-    ##asteroids_distance = 100
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
 
     planet = {
         class = star
@@ -105,7 +108,7 @@ kashyyyk_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_eve_online_18.dds"
 					}
 					background={
@@ -239,7 +242,7 @@ kashyyyk_system_initializer = {
 				}
 				flag={
 					icon={
-						category="various"
+						category="swtor"
 						file="flag_eve_online_18.dds"
 					}
 					background={
