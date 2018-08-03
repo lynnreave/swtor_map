@@ -77,7 +77,7 @@ neimoidia_system_initializer = {
 					trait="trait_politically_adept"
 					trait="trait_thrifty"
 					trait="trait_additrait_lazy"
-					trait="trait_additrait_influencial"
+					trait="trait_additrait_influential"
 				}
 			}
 			create_country = {

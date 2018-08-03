@@ -30,7 +30,7 @@ nal_hutta_system_initializer = {
         size = 12
         has_ring = no
 			tile_blockers = none
-			
+
         moon = {
             name = "Qeumia"
             class = random
@@ -62,7 +62,7 @@ nal_hutta_system_initializer = {
 		starting_planet = yes
 		tile_blockers = none
 		modifiers = none
-		
+
 		init_effect = {
 			create_species = {
 				name = "Hutt"
@@ -73,14 +73,14 @@ nal_hutta_system_initializer = {
 					trait=trait_venerable
 					trait=trait_additrait_lazy
 					trait=trait_additrait_sociable
-					trait=trait_additrait_influencial
+					trait=trait_additrait_influential
 					trait=trait_additrait_prodigal
 					trait=trait_intelligent
 				}
 			}
 			create_country = {
 				name = "Hutt Cartel"
-				
+
 				species = last_created
 				ethos = {
 				ethic=ethic_fanatic_materialist
@@ -125,16 +125,16 @@ nal_hutta_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"
@@ -146,7 +146,7 @@ nal_hutta_system_initializer = {
 				break = yes
 			}
 		}
-     	
+
 
         moon = {
             name = "Trabaya"
@@ -204,9 +204,9 @@ nal_hutta_system_initializer = {
         size = 12
         has_ring = no
 			tile_blockers = none
-						
-			
-			
+
+
+
 
         moon = {
             name = "Giyno"

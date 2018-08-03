@@ -25,12 +25,12 @@ umbara_system_initializer = {
 					trait="trait_intelligent"
 					trait="trait_politically_adept"
 					trait="trait_additrait_rooted"
-					trait="trait_additrait_influencial"
+					trait="trait_additrait_influential"
 				}
 			}
 			create_country = {
 				name = "Umbaran Rootai"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_authoritarian"
@@ -77,16 +77,16 @@ umbara_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"

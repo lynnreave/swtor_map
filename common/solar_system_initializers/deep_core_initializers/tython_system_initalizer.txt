@@ -81,13 +81,13 @@ tython_system_initializer = {
 				homeworld = THIS
 				traits = {
 					trait="trait_deliberators"
-					trait="trait_additrait_influencial"
+					trait="trait_additrait_influential"
 					trait="trait_force_attuned"
 				}
 			}
 			create_country = {
 				name = "Jedi Order"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_pacifist"
@@ -133,16 +133,16 @@ tython_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"
@@ -154,7 +154,7 @@ tython_system_initializer = {
 				break = yes
 			}
 		}
-		
+
 
 
         moon = {

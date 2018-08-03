@@ -61,10 +61,10 @@ coruscant_system_initializer = {
         class = "pc_ecumenopolis"
 		orbit_distance = 13
         orbit_angle = 100
-        size = 25        
+        size = 25
         has_ring = no
-		entity = "ai_planet_01_entity"			
-		starting_planet = yes			
+		entity = "ai_planet_01_entity"
+		starting_planet = yes
 		tile_blockers = none
 		modifiers = None
      	init_effect = {
@@ -80,12 +80,12 @@ coruscant_system_initializer = {
 					trait="trait_charismatic"
 					trait="trait_additrait_free_spirits"
 					trait="trait_additrait_pioneers"
-					trait="trait_additrait_influencial"
+					trait="trait_additrait_influential"
 				}
 			}
 			create_country = {
 				name = "Galactic Republic"
-				
+
 				species = last_created
 				ethos = {
 					ethic="ethic_egalitarian"
@@ -132,16 +132,16 @@ coruscant_system_initializer = {
 			while = {
 				count = 4
 				random_tile = {
-					limit = { 
-						has_blocker = no 
-						has_building = no 
+					limit = {
+						has_blocker = no
+						has_building = no
 						has_grown_pop = yes
 					}
 					set_building = "building_hydroponics_farm_1"
 					set_deposit = d_farmland_deposit
 				}
-			}					
-			last_created_country = {		
+			}
+			last_created_country = {
 				PREV = {
 					create_army = {
 						name = "National Military"
