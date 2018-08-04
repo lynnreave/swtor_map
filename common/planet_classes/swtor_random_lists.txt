@@ -1,0 +1,55 @@
+# ###########
+# Planet Seed Lists
+# ###########
+
+random_list = {
+    name = "rl_habitable_normal"
+    planets = {
+        "pc_continental"
+        "pc_desert"
+        "pc_tropical"
+        "pc_arid"
+        "pc_ocean"
+        "pc_tundra"
+        "pc_arctic"
+        "pc_alpine"
+        "pc_savannah"
+		"pc_cascadian"
+		"pc_swamp"
+		"pc_frozen_desert"
+		"pc_steppe"
+		"pc_mesa"
+		"pc_oasis"
+		"pc_geothermal"
+		"pc_hadesert"
+		"pc_desertislands"
+		"pc_ammonia"
+		"pc_methane"
+		"pc_irradiated"
+    }
+}
+
+random_list = {
+	name = "rl_habitable_special"
+	planets = {
+		"pc_gaia"
+		"pc_molten"
+		"pc_ringworld_habitable"
+		"pc_ringworld_habitable_damaged"
+		"pc_tidallylocked"
+		"pc_toxic"
+		"pc_frozen"
+		"pc_barren_cold"
+		"pc_barren"
+		"pc_hothouse"
+		
+	}
+}
+
+random_list = {
+    name = "rl_unhabitable_planets"
+    planets = {
+        "pc_nuked"
+        "pc_infested"
+    }
+}

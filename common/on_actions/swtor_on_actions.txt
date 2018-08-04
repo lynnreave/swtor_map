@@ -1,0 +1,19 @@
+############################
+#
+# Game Start
+#
+############################
+
+on_game_start = {
+	events = {
+		swtor_start.2
+		swtor_start.3
+	}
+}
+
+on_press_begin = {
+	events = {
+		#swtor_start.0
+		#swtor_station_events.0	# starts prescripted countries
+	}
+}
